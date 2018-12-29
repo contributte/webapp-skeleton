@@ -1,0 +1,37 @@
+{layout '../../Base/templates/@layout.latte'}
+
+{block #head}
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" defer/>
+	<link rel="stylesheet" href="{$basePath}/assets/front.css" defer/>
+	<script src="{$basePath}/assets/front.js" defer></script>
+{/}
+
+{block #main}
+	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<header class="masthead mb-auto">
+			<div class="inner">
+				<h3 class="masthead-brand">Nutella</h3>
+				<nav class="nav nav-masthead justify-content-center">
+					<a n:class="$presenter->isLinkCurrent(':Front:Home:') ? active, nav-link" n:href=":Front:Home:">Home</a>
+					<a n:class="$presenter->isLinkCurrent(':Admin:Home:') ? active, nav-link" n:href=":Admin:Home:">Admin</a>
+				</nav>
+			</div>
+		</header>
+
+		<main role="main" class="inner cover">
+			<h1 class="cover-heading">Nutella project.</h1>
+			<p class="lead">This is example project based on <a href="https://nette.org">Nette Framework</a></p>
+			<p class="lead">And also many <a href="https://contributte.org">Contributte + Nettrine</a> packages.</p>
+			<div class="lead">
+				<a href="https://nutella.planette.io" class="btn btn-lg btn-secondary">Learn more in docs</a>
+			</div>
+		</main>
+
+		<footer class="mastfoot mt-auto">
+			<div class="inner">
+				<p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by
+					<a href="https://twitter.com/mdo">@mdo</a>.</p>
+			</div>
+		</footer>
+	</div>
+{/}

@@ -1,0 +1,29 @@
+{block #content}
+<form n:name="loginForm" class="form-signin">
+	<div class="text-center mb-4">
+		<img class="mb-4" src="https://avatars0.githubusercontent.com/u/99965?s=200&v=4" alt="" width="72" height="72">
+		<h1 class="h3 mb-3 font-weight-normal">Nutella Admin</h1>
+	</div>
+
+	<div n:foreach="$form->errors as $error" class="alert alert-danger" role="alert">
+		{$error}
+	</div>
+
+	<div class="form-label-group">
+		<input type="email" n:name="email" class="form-control" placeholder="Email address" required autofocus>
+		<label n:name="email">Email address</label>
+	</div>
+
+	<div class="form-label-group">
+		<input type="password" n:name="password" class="form-control" placeholder="Password" required>
+		<label n:name="password">Password</label>
+	</div>
+
+	<div class="checkbox mb-3">
+		<label>
+			<input n:name="remember" type="checkbox"> Remember me
+		</label>
+	</div>
+	<button n:name="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+	<p class="mt-5 mb-3 text-muted text-center">&copy; {=date('Y')}</p>
+</form>

@@ -1,0 +1,32 @@
+# Parameters
+#
+parameters:
+
+	# System
+	system:
+		error:
+			email: nutella@localhost
+			presenter: Front:Error
+
+	# Database
+	database:
+		driver: pdo_pgsql
+
+	# Project
+	project:
+		rev: "1.0.0"
+
+	# File
+	files:
+		root: %appDir%/../data/files
+
+	# Mailing
+	mailing:
+		from: nutella@localhost
+		from_name: Nutella
+
+	# STMP
+	smtp:
+		host: localhost
+		username: fake
+		password: fake

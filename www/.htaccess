@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # RewriteBase /
+
+    ## Redirect from non-www na www.example.com
+    #RewriteCond %{HTTP_HOST} ^([^\.]+\.[^\.]+)$ [NC]
+    #RewriteRule ^(.*)$ http://www.%1/$1 [R=301,L]
+
+    ## Redirect from www to non-www
+    #RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+    #RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+    # Prevents files starting with dot to be viewed by browser
+    RewriteRule /\.|^\.(?!well-known/) - [F]
+
+    # Front controller
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule !\.(pdf|js|ico|gif|jpg|png|css|rar|zip|tar\.gz|map)$ index.php [L]
+</IfModule>

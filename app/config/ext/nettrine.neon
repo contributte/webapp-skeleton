@@ -1,0 +1,55 @@
+# Extension > Nettrine
+#
+extensions:
+
+	# Dbal
+	dbal: Nettrine\DBAL\DI\DbalExtension
+	dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
+
+	# Orm
+	orm: Nettrine\ORM\DI\OrmExtension
+	orm.cache: Nettrine\ORM\DI\OrmCacheExtension
+	orm.console: Nettrine\ORM\DI\OrmConsoleExtension
+	orm.annotations: Nettrine\ORM\DI\OrmAnnotationsExtension
+
+	migrations: Nettrine\Migrations\DI\MigrationsExtension
+	fixtures: Nettrine\Fixtures\DI\FixturesExtension
+
+dbal:
+	debug: %debugMode%
+	configuration:
+		sqlLogger: Contributte\Monolog\Bridges\DoctrineDbal\SqlLogger(@Monolog\Logger)
+	connection:
+		driver: %database.driver%
+		host: %database.host%
+		user: %database.user%
+		password: %database.password%
+		dbname: %database.dbname%
+
+orm:
+	entityManagerDecoratorClass: App\Model\Database\EntityManager
+	configuration:
+		autoGenerateProxyClasses: %debugMode%
+
+orm.annotations:
+	debug: %debugMode%
+	paths:
+		- %appDir%/model/Database/Entity
+
+orm.cache:
+	defaultDriver: apcu
+
+migrations:
+	table: doctrine_migrations
+	column: version
+	directory: %rootDir%/db/Migrations
+	namespace: Database\Migrations
+	versionsOrganization: null
+
+fixtures:
+	paths:
+		- %rootDir%/db/Fixtures
+
+decorator:
+	Doctrine\Common\EventSubscriber:
+		tags: [nettrine.subscriber]

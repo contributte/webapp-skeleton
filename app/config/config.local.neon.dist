@@ -1,0 +1,22 @@
+# Host Config
+parameters:
+
+	# Database
+	database:
+		host: localhost
+		dbname: nutella
+		user: nutella
+		password: nutella
+
+# For 0.0.0.0 instead of localhost
+# php -S 0.0.0.0 -t www
+#	session:
+#		cookieDomain: "?->getUrl()->getDomain(4)"(@Nette\Http\IRequest)
+
+# STMP server
+# E.q. mailtrap is cool.
+#	smtp:
+#		host: smtp.mailtrap.io
+#		username: "***"
+#		password: ***
+#		port: 2525

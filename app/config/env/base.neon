@@ -1,0 +1,51 @@
+# Core Config
+includes:
+	# Application
+	- ../app/parameters.neon
+	- ../app/services.neon
+
+	# Extensions
+	- ../ext/contributte.neon
+	- ../ext/nettrine.neon
+
+php:
+	date.timezone: Europe/Prague
+	output_buffering: 4096
+
+# Nette section
+latte:
+	xhtml: no
+
+session:
+	autoStart: smart
+	cookieDomain: '?->getUrl()->getDomain(3)'(@Nette\Http\IRequest)
+	cookieHttponly: true
+	cookiePath: '?->getUrl()->getBasePath()'(@Nette\Http\IRequest) # Cookie path same as $basePath
+	cookieSamesite: Strict
+	cookieSecure: auto
+	debugger: false
+	expiration: 1 year
+	name: SID
+	hashFunction: sha384
+	readAndClose: true
+	#savePath: %tempDir%/session
+	sidBitsPerCharacter: 6 # 4-6
+	sidLength: 128 # 22-250
+	useCookies: true
+	useOnlyCookies: true
+	useStrictMode: true
+
+application:
+	catchExceptions: %productionMode%
+	errorPresenter: %system.error.presenter%
+	mapping:
+		Admin: [App\Modules\Admin, *, *\*Presenter]
+		Front: [App\Modules\Front, *, *\*Presenter]
+
+di:
+	debugger: false
+
+tracy:
+	email: %system.error.email%
+	logSeverity: E_ALL
+	strictMode: yes

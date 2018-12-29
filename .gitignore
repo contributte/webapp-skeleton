@@ -1,0 +1,16 @@
+# Nette
+/app/config/config.local.neon
+
+# Composer
+/vendor
+
+# NodeJS
+/node_modules
+
+# Assets
+/www/dist
+
+# Tests
+/tests/*.log
+/tests/tmp
+/tests/coverage.html

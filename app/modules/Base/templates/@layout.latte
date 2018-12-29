@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="{$basePath}/favicon.ico">
+
+	<!-- Seo -->
+	<title>{block #title|stripHtml|trim}Nutella{/} | Nette project</title>
+
+	<!-- Meta -->
+	<meta name="description" n:ifset="#description" content="{include #description}">
+	<meta name="keywords" n:ifset="#keywords" content="{include #keywords}">
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="snippet,archive">
+	<meta name="author" content="f3l1x">
+
+	{block #head}{/}
+</head>
+<body>
+{block #main}
+	<div class="container">
+		{include #content}
+	</div>
+{/}
+</body>
+</html>

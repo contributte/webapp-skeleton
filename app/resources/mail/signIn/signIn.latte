@@ -1,0 +1,10 @@
+{layout $_config->layout}
+
+{block #header}
+	Automatické přihlášení
+{/block}
+
+{block #content}
+	<h2>Přihlášení</h2>
+	<a href="{link Admin:SignIn:, do => auth, token => $token}" target="_blank">Přihlásit se</a>
+{/block}
