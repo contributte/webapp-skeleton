@@ -18,6 +18,7 @@
 		"contributte/tracy": "^0.3.1",
 
 		"contributte/console": "^0.5.0",
+		"contributte/console-extra": "^0.4.0",
 		"contributte/event-dispatcher": "^0.5.0",
 		"contributte/event-dispatcher-extra": "^0.4.1",
 		"contributte/neonizer": "^0.3.0",

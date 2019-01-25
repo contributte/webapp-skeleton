@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b5fd19e46c31fd2916c1f3e682cb7f94",
+    "content-hash": "f3d4f44f7488ac769449c68f7fba1ca4",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -283,6 +283,71 @@
                 "symfony"
             ],
             "time": "2018-06-21T18:48:21+00:00"
+        },
+        {
+            "name": "contributte/console-extra",
+            "version": "v0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/console-extra.git",
+                "reference": "fa390bcfdc540ab74a61b327a825bc92a1d1f58a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/console-extra/zipball/fa390bcfdc540ab74a61b327a825bc92a1d1f58a",
+                "reference": "fa390bcfdc540ab74a61b327a825bc92a1d1f58a",
+                "shasum": ""
+            },
+            "require": {
+                "nette/di": "~2.4.11",
+                "php": ">= 7.1",
+                "symfony/console": "^4.0.0"
+            },
+            "require-dev": {
+                "latte/latte": "~2.4.7",
+                "nette/application": "~2.4.9",
+                "nette/bootstrap": "~2.4.6",
+                "nette/security": "~2.4.3",
+                "nette/utils": "~2.5.1",
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.8.0"
+            },
+            "suggest": {
+                "contributte/console": "Symfony\\Console for Nette"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Console\\Extra\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Šulc",
+                    "homepage": "https://f3l1x.io"
+                },
+                {
+                    "name": "Marek Bartoš",
+                    "homepage": "https://marek-bartos.cz"
+                }
+            ],
+            "description": "Nette-based console commands for latte, DIC, security, utils and many others",
+            "homepage": "https://github.com/contributte/console-extra",
+            "keywords": [
+                "console",
+                "nette",
+                "symfony"
+            ],
+            "time": "2018-11-07T12:02:45+00:00"
         },
         {
             "name": "contributte/di",

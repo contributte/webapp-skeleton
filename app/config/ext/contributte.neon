@@ -4,6 +4,7 @@ extensions:
 	version: Contributte\Latte\DI\VersionExtension
 	post: Contributte\Mail\DI\MailExtension
 	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
+	console.extra: Contributte\Console\Extra\DI\ConsoleBridgesExtension
 	events: Contributte\EventDispatcher\DI\EventDispatcherExtension
 	events2nette: Contributte\Events\Extra\DI\EventBridgesExtension
 	mailing: Contributte\Mailing\DI\MailingExtension
@@ -13,6 +14,8 @@ extensions:
 console:
 	url: http://localhost/
 	lazy: true
+	name: Nutella
+	version: "1.0"
 
 post:
 	debug: false

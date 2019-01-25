@@ -32,8 +32,15 @@ services:
 		class: Nette\Application\IRouter
 		factory: @App\Model\Router\RouterFactory::create
 
+
 	# Domain =================
 	- App\Domain\User\CreateUserFacade
+
+
+	# Console ================
+	- {class: App\Model\Console\HelloCommand, tags: {console.command: hello}}
+
+
 
 latte:
 	macros:
