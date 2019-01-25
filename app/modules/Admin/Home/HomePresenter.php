@@ -2,9 +2,30 @@
 
 namespace App\Modules\Admin\Home;
 
+use App\Domain\Order\Event\OrderCreated;
 use App\Modules\Admin\BaseAdminPresenter;
+use Nette\Application\UI\Form;
+use Symfony\Component\EventDispatcher\EventDispatcher;
 
 final class HomePresenter extends BaseAdminPresenter
 {
+
+	/** @var EventDispatcher @inject */
+	public $dispatcher;
+
+	protected function createComponentOrderForm(): Form
+	{
+		$form = new Form();
+
+		$form->addText('order', 'Order name')
+			->setRequired(true);
+		$form->addSubmit('send', 'OK');
+
+		$form->onSuccess[] = function (Form $form): void {
+			$this->dispatcher->dispatch(OrderCreated::NAME, new OrderCreated($form->values->order));
+		};
+
+		return $form;
+	}
 
 }

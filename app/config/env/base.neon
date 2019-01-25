@@ -18,10 +18,10 @@ latte:
 
 session:
 	autoStart: smart
-	cookieDomain: '?->getUrl()->getDomain(3)'(@Nette\Http\IRequest)
+	#cookieDomain: '?->getUrl()->getDomain(4)'(@Nette\Http\IRequest)
 	cookieHttponly: true
-	cookiePath: '?->getUrl()->getBasePath()'(@Nette\Http\IRequest) # Cookie path same as $basePath
-	cookieSamesite: Strict
+	#cookiePath: '?->getUrl()->getBasePath()'(@Nette\Http\IRequest) # Cookie path same as $basePath
+	cookieSamesite: Lax
 	cookieSecure: auto
 	debugger: false
 	expiration: 1 year
