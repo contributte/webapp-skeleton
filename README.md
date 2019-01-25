@@ -53,6 +53,8 @@ Focused on:
 
     Run `NETTE_DEBUG=1 bin/console migrations:migrate` to create tables.
     Run `NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append` to create first user(s).
+    
+    Or via task `make app-init`.
 
 5) Start your devstack or use PHP local development server.
 
