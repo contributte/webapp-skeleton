@@ -36,6 +36,7 @@ services:
 	# Domain =================
 	- App\Domain\User\CreateUserFacade
 	- App\Domain\Order\OrderLogSubscriber
+	- App\Domain\Http\RequestLoggerSubscriber
 
 
 	# Console ================
