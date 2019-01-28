@@ -17,6 +17,10 @@ Focused on:
 - static analysing via **phpstan**
 - unit / integration tests via **Nette Tester** and `ninjify/*`
 
+## Demo
+
+https://examples.planette.io/planette/nutella-project/
+
 ## Install
 
 1) At first, use composer to install this project.
@@ -64,7 +68,7 @@ Focused on:
 
     Take a look at: 
     - http://localhost:8000.
-    - http://localhost:8000/admin.
+    - http://localhost:8000/admin (admin@admin.cz / admin)
 
 ## Features
 
