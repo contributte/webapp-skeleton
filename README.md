@@ -37,9 +37,9 @@ https://examples.planette.io/planette/nutella-project/
     
     Or use make task, `make loc-postgres`.
 
-3) Custom configuration file is located at `app/config/config.local.neon`. Edit him if you want.
+3) Custom configuration file is located at `app/config/config.local.neon`. Edit it if you want.
 
-    Default configuration should looks like:
+    Default configuration should look like:
 
     ```yaml
     # Host Config
@@ -53,7 +53,7 @@ https://examples.planette.io/planette/nutella-project/
             password: nutella
     ```
 
-4) Database is running, application is configure to connect to it. Create initial data.
+4) Ok database is now running and application is configured to connect to it. Let's create initial data.
 
     Run `NETTE_DEBUG=1 bin/console migrations:migrate` to create tables.
     Run `NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append` to create first user(s).
@@ -62,9 +62,9 @@ https://examples.planette.io/planette/nutella-project/
 
 5) Start your devstack or use PHP local development server.
 
-    PHP server is started by `php -S localhost:8000 -t www` or use prepared make task `make loc-web`.
+    You can start PHP server by running `php -S localhost:8000 -t www` or use prepared make task `make loc-web`.
 
-6) Open http://localhost and enjoy it!
+6) Open http://localhost and enjoy!
 
     Take a look at: 
     - http://localhost:8000.
@@ -107,7 +107,7 @@ Here is a list of all features you can find in this project.
 
 ### Composer packages
 
-Take a detail look :eyes: at each single package.
+Take a detailed look :eyes: at each single package.
 
 - [contributte/bootstrap](https://contributte.org/packages/contributte/bootstrap.html)
 - [contributte/application](https://contributte.org/packages/contributte/application.html)
