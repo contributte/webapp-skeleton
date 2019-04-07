@@ -21,6 +21,7 @@ services:
 		setup:
 			- setNamespace("Nutella")
 
+	security.passwords: App\Model\Security\Passwords
 	security.user: App\Model\Security\SecurityUser
 	security.authenticator: App\Model\Security\Authenticator\UserAuthenticator
 	security.authorizator: App\Model\Security\Authorizator\StaticAuthorizator
@@ -35,8 +36,8 @@ services:
 
 	# Domain =================
 	- App\Domain\User\CreateUserFacade
-	- App\Domain\Order\OrderLogSubscriber
-	- App\Domain\Http\RequestLoggerSubscriber
+#	- App\Domain\Order\OrderLogSubscriber
+#	- App\Domain\Http\RequestLoggerSubscriber
 
 
 	# Console ================

@@ -10,8 +10,4 @@ orm.cache:
 
 # Services ===================
 services:
-	latte.latteFactory:
-		setup:
-			- setTempDirectory(null)
-
-	post.mailer: Contributte\Mail\Mailer\TraceableMailer(Contributte\Mail\Mailer\FileMailer(%tempDir%/mails))
+#	post.mailer: Contributte\Mail\Mailer\TraceableMailer(Contributte\Mail\Mailer\FileMailer(%tempDir%/mails))

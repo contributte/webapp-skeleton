@@ -11,7 +11,7 @@ final class HomePresenter extends BaseAdminPresenter
 {
 
 	/** @var EventDispatcher @inject */
-	public $dispatcher;
+	private $dispatcher;
 
 	protected function createComponentOrderForm(): Form
 	{

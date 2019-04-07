@@ -1,43 +1,43 @@
 # Extension > Contributte
 #
 extensions:
-	version: Contributte\Latte\DI\VersionExtension
-	post: Contributte\Mail\DI\MailExtension
+#	version: Contributte\Latte\DI\VersionExtension
+#	post: Contributte\Mail\DI\MailExtension
 	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
-	console.extra: Contributte\Console\Extra\DI\ConsoleBridgesExtension
-	events: Contributte\EventDispatcher\DI\EventDispatcherExtension
-	events2nette: Contributte\Events\Extra\DI\EventBridgesExtension
-	mailing: Contributte\Mailing\DI\MailingExtension
-	cacheFactory: Contributte\Cache\DI\CacheFactoryExtension
-	monolog: Contributte\Monolog\DI\MonologExtension
-
+#	console.extra: Contributte\Console\Extra\DI\ConsoleBridgesExtension
+#	events: Contributte\EventDispatcher\DI\EventDispatcherExtension
+#	events2nette: Contributte\Events\Extra\DI\EventBridgesExtension
+#	mailing: Contributte\Mailing\DI\MailingExtension
+#	cacheFactory: Contributte\Cache\DI\CacheFactoryExtension
+#	monolog: Contributte\Monolog\DI\MonologExtension
+#
 console:
 	url: http://localhost/
 	lazy: true
 	name: Nutella
 	version: "1.0"
-
-post:
-	debug: false
-	mailer: Nette\Mail\SmtpMailer(%smtp%)
-
-version:
-	generated: on
-
-mailing:
-	template:
-		config:
-			layout: %appDir%/resources/mail/@layout.latte
-
-monolog:
-	holder:
-		enabled: true
-	channel:
-		default:
-			handlers:
-				- Monolog\Handler\RotatingFileHandler(%appDir%/../log/syslog.log, 30, Monolog\Logger::WARNING)
-			processors:
-				- Monolog\Processor\WebProcessor()
-				- Monolog\Processor\IntrospectionProcessor()
-				- Monolog\Processor\MemoryPeakUsageProcessor()
-				- Monolog\Processor\ProcessIdProcessor()
+#
+#post:
+#	debug: false
+#	mailer: Nette\Mail\SmtpMailer(%smtp%)
+#
+#version:
+#	generated: on
+#
+#mailing:
+#	template:
+#		config:
+#			layout: %appDir%/resources/mail/@layout.latte
+#
+#monolog:
+#	holder:
+#		enabled: true
+#	channel:
+#		default:
+#			handlers:
+#				- Monolog\Handler\RotatingFileHandler(%appDir%/../log/syslog.log, 30, Monolog\Logger::WARNING)
+#			processors:
+#				- Monolog\Processor\WebProcessor()
+#				- Monolog\Processor\IntrospectionProcessor()
+#				- Monolog\Processor\MemoryPeakUsageProcessor()
+#				- Monolog\Processor\ProcessIdProcessor()
