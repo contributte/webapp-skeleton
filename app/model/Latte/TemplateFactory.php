@@ -27,7 +27,7 @@ final class TemplateFactory extends NetteTemplateFactory
 		$this->user = $user;
 	}
 
-	public function crseateTemplate(Control $control = null): ITemplate
+	public function createTemplate(Control $control = null): ITemplate
 	{
 		$template = parent::createTemplate($control);
 
