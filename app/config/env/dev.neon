@@ -1,4 +1,4 @@
-# Production Config
+# Development Config
 includes:
 	- base.neon
 
