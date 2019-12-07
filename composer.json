@@ -12,7 +12,7 @@
 		"contributte/http": "^0.2.0",
 		"contributte/forms": "^0.3.0",
 		"contributte/latte": "^0.3.0",
-		"contributte/mail": "^0.2.0",
+		"contributte/mail": "^0.3.0",
 		"contributte/security": "^0.2.0",
 		"contributte/utils": "^0.3.1",
 		"contributte/tracy": "^0.3.1",
