@@ -5,12 +5,12 @@ namespace App\Modules\Admin\Home;
 use App\Domain\Order\Event\OrderCreated;
 use App\Modules\Admin\BaseAdminPresenter;
 use Nette\Application\UI\Form;
-use Symfony\Component\EventDispatcher\EventDispatcher;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 final class HomePresenter extends BaseAdminPresenter
 {
 
-	/** @var EventDispatcher @inject */
+	/** @var EventDispatcherInterface @inject */
 	public $dispatcher;
 
 	protected function createComponentOrderForm(): Form
@@ -22,7 +22,7 @@ final class HomePresenter extends BaseAdminPresenter
 		$form->addSubmit('send', 'OK');
 
 		$form->onSuccess[] = function (Form $form): void {
-			$this->dispatcher->dispatch(OrderCreated::NAME, new OrderCreated($form->values->order));
+			$this->dispatcher->dispatch(new OrderCreated($form->values->order));
 		};
 
 		return $form;

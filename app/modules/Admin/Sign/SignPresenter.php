@@ -7,6 +7,7 @@ use App\Model\Exception\Runtime\AuthenticationException;
 use App\Modules\Admin\BaseAdminPresenter;
 use App\UI\Form\BaseForm;
 use App\UI\Form\FormFactory;
+use Nette\Application\UI\ComponentReflection;
 
 final class SignPresenter extends BaseAdminPresenter
 {
@@ -18,6 +19,7 @@ final class SignPresenter extends BaseAdminPresenter
 	public $formFactory;
 
 	/**
+	 * @param ComponentReflection|mixed $element
 	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
 	 */
 	public function checkRequirements($element): void

@@ -3,12 +3,14 @@
 namespace App\Modules\Base;
 
 use App\Model\App;
+use Nette\Application\UI\ComponentReflection;
 use Nette\Security\IUserStorage;
 
 abstract class SecuredPresenter extends BasePresenter
 {
 
 	/**
+	 * @param ComponentReflection|mixed $element
 	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
 	 */
 	public function checkRequirements($element): void

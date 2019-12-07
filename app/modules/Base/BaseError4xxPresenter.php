@@ -17,7 +17,9 @@ abstract class BaseError4xxPresenter extends SecuredPresenter
 	{
 		parent::startup();
 
-		if ($this->getRequest() !== null && $this->getRequest()->isMethod(Request::FORWARD)) return;
+		if ($this->getRequest() !== null && $this->getRequest()->isMethod(Request::FORWARD)) {
+			return;
+		}
 
 		$this->error();
 	}
@@ -28,7 +30,9 @@ abstract class BaseError4xxPresenter extends SecuredPresenter
 		$fileName = $rf1->getFileName();
 
 		// Validate if class is not in PHP core
-		if ($fileName === false) throw new InvalidStateException('Class is defined in the PHP core or in a PHP extension');
+		if ($fileName === false) {
+			throw new InvalidStateException('Class is defined in the PHP core or in a PHP extension');
+		}
 
 		$dir = dirname($fileName);
 

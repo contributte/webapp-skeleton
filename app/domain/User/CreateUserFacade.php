@@ -30,11 +30,13 @@ class CreateUserFacade
 			$data['surname'],
 			$data['email'],
 			$data['username'],
-			Passwords::hash($data['password'] ?? md5(microtime()))
+			Passwords::create()->hash($data['password'] ?? md5(microtime()))
 		);
 
 		// Set role
-		if (isset($data['role'])) $user->setRole($data['role']);
+		if (isset($data['role'])) {
+			$user->setRole($data['role']);
+		}
 
 		// Save user
 		$this->em->persist($user);

@@ -16,9 +16,10 @@ extensions:
 	fixtures: Nettrine\Fixtures\DI\FixturesExtension
 
 dbal:
-	debug: %debugMode%
+	debug:
+		panel: %debugMode%
 	configuration:
-		sqlLogger: Contributte\Monolog\Bridges\DoctrineDbal\SqlLogger(@Monolog\Logger)
+		sqlLogger: Nettrine\DBAL\Logger\PsrLogger(@Monolog\Logger)
 	connection:
 		driver: %database.driver%
 		host: %database.host%
@@ -49,7 +50,9 @@ migrations:
 fixtures:
 	paths:
 		- %rootDir%/db/Fixtures
-
 decorator:
 	Doctrine\Common\EventSubscriber:
 		tags: [nettrine.subscriber]
+
+services:
+	- Nettrine\Migrations\Events\FixPostgreSQLDefaultSchemaSubscriber

@@ -4,6 +4,7 @@ namespace App\Model\Latte;
 
 use App\Model\Security\SecurityUser;
 use Nette\Application\UI\Control;
+use Nette\Application\UI\ITemplate;
 use Nette\Bridges\ApplicationLatte\ILatteFactory;
 use Nette\Bridges\ApplicationLatte\Template;
 use Nette\Bridges\ApplicationLatte\TemplateFactory as NetteTemplateFactory;
@@ -21,14 +22,16 @@ final class TemplateFactory extends NetteTemplateFactory
 		IRequest $httpRequest,
 		SecurityUser $user,
 		IStorage $cacheStorage,
-		$templateClass = null)
+		string $templateClass = null
+	)
 	{
 		parent::__construct($latteFactory, $httpRequest, $user, $cacheStorage, $templateClass);
 		$this->user = $user;
 	}
 
-	public function createTemplate(Control $control = null): Template
+	public function createTemplate(Control $control = null): ITemplate
 	{
+		/** @var Template $template */
 		$template = parent::createTemplate($control);
 
 		// Remove default $template->user for prevent misused

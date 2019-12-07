@@ -8,6 +8,9 @@ use Nette\Application\Routers\RouteList;
 final class RouterFactory
 {
 
+	/**
+	 * @phpstan-return RouteList<Route>
+	 */
 	public function create(): RouteList
 	{
 		$router = new RouteList();
@@ -18,20 +21,28 @@ final class RouterFactory
 		return $router;
 	}
 
+	/**
+	 * @phpstan-param RouteList<Route> $router
+	 * @phpstan-return RouteList<Route>
+	 */
 	protected function buildAdmin(RouteList $router): RouteList
 	{
 		$router[] = $list = new RouteList('Admin');
 		$list[] = new Route('admin/<presenter>/<action>[/<id>]', 'Home:default');
 
-		return $list;
+		return $router;
 	}
 
+	/**
+	 * @phpstan-param RouteList<Route> $router
+	 * @phpstan-return RouteList<Route>
+	 */
 	protected function buildFront(RouteList $router): RouteList
 	{
 		$router[] = $list = new RouteList('Front');
 		$list[] = new Route('<presenter>/<action>[/<id>]', 'Home:default');
 
-		return $list;
+		return $router;
 	}
 
 }

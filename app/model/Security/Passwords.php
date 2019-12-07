@@ -7,4 +7,9 @@ use Nette\Security\Passwords as NettePasswords;
 final class Passwords extends NettePasswords
 {
 
+	public static function create(): Passwords
+	{
+		return new Passwords();
+	}
+
 }

@@ -3,16 +3,13 @@ parameters:
 		- /tests/tmp/*
 		- /db/*
 
-	autoload_files:
-		- %currentWorkingDirectory%/app/bootstrap.php
-
 	fileExtensions:
 		- php
 
 	ignoreErrors:
 		# App/Model/Database/TRepository
 		- '#Method App\\Model\\Database\\EntityManager::getUserRepository\(\) should return App\\Model\\Database\\Repository\\[a-zA-Z]+Repository but returns Doctrine\\ORM\\EntityRepository<App\\Model\\Database\\Entity\\[a-zA-Z]+>.#'
-
+		- '#Method App\\Model\\Database\\EntityManager::getUserRepository\(\) return type with generic class App\\Model\\Database\\Repository\\UserRepository does not specify its types: TEntityClass#'
 includes:
 	- vendor/phpstan/phpstan-nette/extension.neon
 	- vendor/phpstan/phpstan-nette/rules.neon

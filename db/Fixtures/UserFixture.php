@@ -22,7 +22,7 @@ class UserFixture extends AbstractFixture
 				$user['surname'],
 				$user['email'],
 				$user['username'],
-				Passwords::hash('admin')
+				$this->container->getByType(Passwords::class)->hash('admin')
 			);
 			$entity->activate();
 			$entity->setRole($user['role']);
