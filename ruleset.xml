@@ -7,7 +7,6 @@
         <exclude name="SlevomatCodingStandard.ControlStructures.ControlStructureSpacing"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.EarlyExit"/>
-        <exclude name="SlevomatCodingStandard.ControlStructures.UselessConditionWithReturn"/>
         <exclude name="SlevomatCodingStandard.Operators.RequireOnlyStandaloneIncrementAndDecrementOperators"/>
         <exclude name="SlevomatCodingStandard.ControlStructures.RequireMultiLineTernaryOperator"/>
     </rule>

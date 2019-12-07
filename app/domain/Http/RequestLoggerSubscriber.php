@@ -14,7 +14,7 @@ class RequestLoggerSubscriber implements EventSubscriberInterface
 	 */
 	public static function getSubscribedEvents(): array
 	{
-		return [RequestEvent::NAME => 'onRequest'];
+		return [RequestEvent::class => 'onRequest'];
 	}
 
 	public function onRequest(RequestEvent $event): void

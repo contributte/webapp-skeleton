@@ -93,21 +93,25 @@ class Environment
 			clearstatcache(true, $dir);
 			$error = error_get_last();
 			if (is_dir($dir) === false && !file_exists($dir) === false) {
-				throw new RuntimeException(sprintf("Unable to create directory '%s'. " . $error['message'], $dir));
+				throw new RuntimeException(sprintf("Unable to create directory '%s'. " . ($error['message'] ?? null), $dir));
 			}
 		}
 	}
 
 	public static function rmdir(string $dir): void
 	{
-		if (!is_dir($dir)) return;
+		if (!is_dir($dir)) {
+			return;
+		}
 		self::purge($dir);
 		@rmdir($dir);
 	}
 
 	private static function purge(string $dir): void
 	{
-		if (!is_dir($dir)) self::mkdir($dir);
+		if (!is_dir($dir)) {
+			self::mkdir($dir);
+		}
 		THelpers::purge($dir);
 	}
 

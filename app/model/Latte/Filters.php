@@ -2,9 +2,9 @@
 
 namespace App\Model\Latte;
 
-use App\Model\Utils\Json;
 use Nette\Neon\Neon;
 use Nette\StaticClass;
+use Nette\Utils\Json;
 
 final class Filters
 {

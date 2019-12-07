@@ -32,9 +32,10 @@ final class DummyUserStorage implements IUserStorage
 		return $this->authenticated;
 	}
 
-	public function setIdentity(?IIdentity $identity = null): void
+	public function setIdentity(?IIdentity $identity): self
 	{
 		$this->identity = $identity;
+		return $this;
 	}
 
 	public function getIdentity(): ?IIdentity
@@ -44,10 +45,9 @@ final class DummyUserStorage implements IUserStorage
 
 	/**
 	 * @param string|int|DateTimeInterface $time
-	 * @param int $flags IUserStorage::CLEAR_IDENTITY
 	 * @return static
 	 */
-	public function setExpiration($time, $flags = 0)
+	public function setExpiration($time, int $flags = 0)
 	{
 		return $this;
 	}

@@ -26,8 +26,6 @@ session:
 	debugger: false
 	expiration: 1 year
 	name: SID
-	hashFunction: sha384
-	readAndClose: true
 	#savePath: %tempDir%/session
 	sidBitsPerCharacter: 6 # 4-6
 	sidLength: 128 # 22-250
@@ -43,7 +41,7 @@ application:
 		Front: [App\Modules\Front, *, *\*Presenter]
 
 di:
-	debugger: false
+	debugger: true
 
 tracy:
 	email: %system.error.email%

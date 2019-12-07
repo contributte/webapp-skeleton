@@ -30,11 +30,11 @@ https://examples.planette.io/planette/nutella-project/
     ```
 
 2) After that, you have to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
-     
+
     ```
     docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=nutella -e POSTGRES_USER=nutella postgres:10
     ```
-    
+
     Or use make task, `make loc-postgres`.
 
 3) Custom configuration file is located at `app/config/config.local.neon`. Edit it if you want.
@@ -44,7 +44,7 @@ https://examples.planette.io/planette/nutella-project/
     ```yaml
     # Host Config
     parameters:
-    
+
         # Database
         database:
             host: localhost
@@ -57,8 +57,8 @@ https://examples.planette.io/planette/nutella-project/
 
     Run `NETTE_DEBUG=1 bin/console migrations:migrate` to create tables.
     Run `NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append` to create first user(s).
-    
-    Or via task `make app-init`.
+
+    Or via task `make build`.
 
 5) Start your devstack or use PHP local development server.
 
@@ -66,7 +66,7 @@ https://examples.planette.io/planette/nutella-project/
 
 6) Open http://localhost and enjoy!
 
-    Take a look at: 
+    Take a look at:
     - http://localhost:8000.
     - http://localhost:8000/admin (admin@admin.cz / admin)
 

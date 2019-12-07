@@ -4,11 +4,13 @@ namespace App\Modules\Admin;
 
 use App\Model\App;
 use App\Modules\Base\SecuredPresenter;
+use Nette\Application\UI\ComponentReflection;
 
 abstract class BaseAdminPresenter extends SecuredPresenter
 {
 
 	/**
+	 * @param ComponentReflection|mixed $element
 	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
 	 */
 	public function checkRequirements($element): void

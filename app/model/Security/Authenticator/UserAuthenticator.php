@@ -15,9 +15,13 @@ final class UserAuthenticator implements IAuthenticator
 	/** @var EntityManager */
 	private $em;
 
-	public function __construct(EntityManager $em)
+	/** @var Passwords */
+	private $passwords;
+
+	public function __construct(EntityManager $em, Passwords $passwords)
 	{
 		$this->em = $em;
+		$this->passwords = $passwords;
 	}
 
 	/**
@@ -34,7 +38,7 @@ final class UserAuthenticator implements IAuthenticator
 			throw new AuthenticationException('The username is incorrect.', self::IDENTITY_NOT_FOUND);
 		} elseif (!$user->isActivated()) {
 			throw new AuthenticationException('The user is not active.', self::INVALID_CREDENTIAL);
-		} elseif (!Passwords::verify($password, $user->getPasswordHash())) {
+		} elseif (!$this->passwords->verify($password, $user->getPasswordHash())) {
 			throw new AuthenticationException('The password is incorrect.', self::INVALID_CREDENTIAL);
 		}
 

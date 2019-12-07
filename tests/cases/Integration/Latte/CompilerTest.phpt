@@ -7,6 +7,7 @@ use Nette\Application\UI\ITemplateFactory;
 use Nette\Bridges\ApplicationLatte\Template;
 use Nette\DI\Container;
 use Nette\Utils\Finder;
+use SplFileInfo;
 use Tester\Assert;
 use Throwable;
 
@@ -23,8 +24,9 @@ test(function () use ($container): void {
 	$finder = Finder::findFiles('*.latte')->from(APP_DIR);
 
 	try {
+		/** @var SplFileInfo $file */
 		foreach ($finder as $file) {
-			$template->getLatte()->warmupCache($file);
+			$template->getLatte()->warmupCache($file->getRealPath());
 		}
 	} catch (Throwable $e) {
 		Assert::fail(sprintf('Template compilation failed ([%s] %s)', get_class($e), $e->getMessage()));

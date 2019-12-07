@@ -2,7 +2,7 @@
 
 namespace App\Model\Utils;
 
-use Contributte\Utils\DateTime as ContributteDateTime;
+use Nette\Utils\DateTime as ContributteDateTime;
 
 /**
  * @method DateTime modifyClone(string $modify = '')

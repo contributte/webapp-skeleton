@@ -19,7 +19,9 @@ trait TModuleUtils
 		$name = $this->getName();
 
 		// Validate presenter has a proper name
-		if ($name === null) throw new InvalidStateException('Presenter don\'t have a name');
+		if ($name === null) {
+			throw new InvalidStateException('Presenter don\'t have a name');
+		}
 
 		$parts = explode(':', $name);
 
@@ -44,12 +46,16 @@ trait TModuleUtils
 		$fileName = $this->getReflection()->getFileName();
 
 		// Validate if class is not in PHP core
-		if ($fileName === false) throw new InvalidStateException('Class is defined in the PHP core or in a PHP extension');
+		if ($fileName === false) {
+			throw new InvalidStateException('Class is defined in the PHP core or in a PHP extension');
+		}
 
 		$realpath = realpath(dirname($fileName) . '/../templates');
 
 		// Validate if file exists
-		if ($realpath === false) throw new InvalidStateException('File does not exist');
+		if ($realpath === false) {
+			throw new InvalidStateException('File does not exist');
+		}
 
 		return $realpath;
 	}

@@ -5,7 +5,7 @@ parameters:
 	# System
 	system:
 		error:
-			email: nutella@localhost
+			email: dev@contributte.org
 			presenter: Front:Error
 
 	# Database

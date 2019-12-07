@@ -15,9 +15,11 @@ class HelloCommand extends Command
 		$this->setDescription('Hello world!');
 	}
 
-	protected function execute(InputInterface $input, OutputInterface $output): void
+	protected function execute(InputInterface $input, OutputInterface $output): int
 	{
 		$output->write('Hello world!');
+
+		return 0;
 	}
 
 }
