@@ -9,8 +9,7 @@ use App\Model\Database\Entity\User;
  * @method User|NULL findOneBy(array $criteria, array $orderBy = NULL)
  * @method User[] findAll()
  * @method User[] findBy(array $criteria, array $orderBy = NULL, ?int $limit = NULL, ?int $offset = NULL)
- * @template TEntityClass of User
- * @extends AbstractRepository<TEntityClass>
+ * @extends AbstractRepository<User>
  */
 class UserRepository extends AbstractRepository
 {
