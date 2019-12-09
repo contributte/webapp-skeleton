@@ -1,8 +1,30 @@
-# Nutella Project
+<h1 align=center>Nutella Project</h1>
 
-**Nutella project** is an example project based on Nette Framework and many useful packages by [@f3l1x](https://github.com/f3l1x).
+<p align=center>
+    <strong>Nutella project</strong> is an example project based on Nette Framework and many useful packages by <a href="https://github.com/f3l1x">@f3l1x</a>.
+</p>
 
-Why **nutella**? Because it's all mixed into 1 awesome piece.
+<p align=center>
+    Why <strong>nutella</strong>? Because it's all mixed into 1 awesome piece.
+</p>
+
+<p align=center>
+🕹 <a href="https://f3l1x.io">f3l1x.io</a> | 💻 <a href="https://github.com/f3l1x">f3l1x</a> | 🐦 <a href="https://twitter.com/xf3l1x">@xf3l1x</a>
+</p>
+
+<p align=center>
+    <code>composer create-project -s dev planette/nutella-project acme</code>
+</p>
+<p align=center>
+    Take a look at demo <a href="https://examples.planette.io/planette/nutella-project/">examples.planette.io/planette/nutella-project/</a>
+</p>
+
+<p align=center>
+    <img src="https://raw.githubusercontent.com/planette/nutella-project/master/.docs/assets/screenshot1.png">
+</p>
+
+[![Build Status](https://img.shields.io/travis/planette/nutella-project.svg?style=flat-square)](https://travis-ci.org/planette/nutella-project)
+[![Join the chat](https://img.shields.io/gitter/room/contributte/contributte.svg?style=flat-square)](http://bit.ly/ctteg)
 
 ## Goal
 
@@ -75,7 +97,7 @@ https://examples.planette.io/planette/nutella-project/
 Here is a list of all features you can find in this project.
 
 - :package: Packages
-    - Nette 2.4
+    - Nette 3.0
     - Contributte
     - Nettrine
 - :deciduous_tree: Structure
@@ -143,10 +165,10 @@ Take a detailed look :eyes: at each single package.
 
 ## Demo
 
-![](docs/assets/screenshot1.png)
+![](.docs/assets/screenshot1.png)
 
 > admin@admin.cz / admin
 
-![](docs/assets/screenshot2.png)
-![](docs/assets/screenshot3.png)
-![](docs/assets/screenshot4.png)
+![](.docs/assets/screenshot2.png)
+![](.docs/assets/screenshot3.png)
+![](.docs/assets/screenshot4.png)
