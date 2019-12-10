@@ -926,16 +926,16 @@
         },
         {
             "name": "contributte/neonizer",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/neonizer.git",
-                "reference": "831ee0d0d0d058f8e851db7670590b4002a5f5d8"
+                "reference": "8a8e5bc31c19285107bf6ee7d260b671f68d7542"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/neonizer/zipball/831ee0d0d0d058f8e851db7670590b4002a5f5d8",
-                "reference": "831ee0d0d0d058f8e851db7670590b4002a5f5d8",
+                "url": "https://api.github.com/repos/contributte/neonizer/zipball/8a8e5bc31c19285107bf6ee7d260b671f68d7542",
+                "reference": "8a8e5bc31c19285107bf6ee7d260b671f68d7542",
                 "shasum": ""
             },
             "require": {
@@ -983,7 +983,7 @@
                 "nette",
                 "parameters"
             ],
-            "time": "2019-06-17T17:59:52+00:00"
+            "time": "2019-12-10T08:41:04+00:00"
         },
         {
             "name": "contributte/security",
