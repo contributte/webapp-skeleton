@@ -26,6 +26,8 @@
 [![Build Status](https://img.shields.io/travis/planette/nutella-project.svg?style=flat-square)](https://travis-ci.org/planette/nutella-project)
 [![Join the chat](https://img.shields.io/gitter/room/contributte/contributte.svg?style=flat-square)](http://bit.ly/ctteg)
 
+-----
+
 ## Goal
 
 Main goal is to provide best prepared starter-kit project for Nette developers.
