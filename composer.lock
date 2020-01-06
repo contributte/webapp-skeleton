@@ -671,20 +671,20 @@
         },
         {
             "name": "contributte/latte",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/latte.git",
-                "reference": "0538b5e893ce9f38409f08fbc89b918bc20ca810"
+                "reference": "45b929dde1f759246014d86e0efb07cb8a482b49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/latte/zipball/0538b5e893ce9f38409f08fbc89b918bc20ca810",
-                "reference": "0538b5e893ce9f38409f08fbc89b918bc20ca810",
+                "url": "https://api.github.com/repos/contributte/latte/zipball/45b929dde1f759246014d86e0efb07cb8a482b49",
+                "reference": "45b929dde1f759246014d86e0efb07cb8a482b49",
                 "shasum": ""
             },
             "require": {
-                "latte/latte": "~2.5.1",
+                "latte/latte": "~2.5.1|~2.6.0",
                 "php": "^7.2"
             },
             "conflict": {
@@ -693,8 +693,8 @@
             "require-dev": {
                 "nette/application": "~3.0.0",
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
+                "ninjify/nunjuck": "^0.3.0",
+                "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11",
                 "phpstan/phpstan-nette": "^0.11",
@@ -732,7 +732,7 @@
                 "latte",
                 "nette"
             ],
-            "time": "2019-06-16T14:01:16+00:00"
+            "time": "2020-01-05T00:27:30+00:00"
         },
         {
             "name": "contributte/mail",
@@ -867,18 +867,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/monolog.git",
-                "reference": "8e0a33999194bf7cdd8d8b09799537de5accdffb"
+                "reference": "44b1f9e84f5ccd2c43e010f07d78226baa54fe15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/monolog/zipball/8e0a33999194bf7cdd8d8b09799537de5accdffb",
-                "reference": "8e0a33999194bf7cdd8d8b09799537de5accdffb",
+                "url": "https://api.github.com/repos/contributte/monolog/zipball/44b1f9e84f5ccd2c43e010f07d78226baa54fe15",
+                "reference": "44b1f9e84f5ccd2c43e010f07d78226baa54fe15",
                 "shasum": ""
             },
             "require": {
                 "contributte/di": "^0.4.0",
                 "monolog/monolog": "^2.0.0",
-                "nette/utils": "~3.0.0",
+                "nette/utils": "~3.0.0 || ~3.1.0",
                 "php": "^7.2.0"
             },
             "conflict": {
@@ -887,12 +887,12 @@
             "require-dev": {
                 "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
                 "phpunit/phpunit": "^8.1.3",
-                "tracy/tracy": "~2.6.2"
+                "tracy/tracy": "~2.6.2 || ~2.7.0"
             },
             "type": "library",
             "extra": {
@@ -922,7 +922,7 @@
                 "monolog",
                 "nette"
             ],
-            "time": "2019-09-19T18:42:05+00:00"
+            "time": "2020-01-05T18:13:01+00:00"
         },
         {
             "name": "contributte/neonizer",
@@ -2227,16 +2227,16 @@
         },
         {
             "name": "latte/latte",
-            "version": "v2.5.3",
+            "version": "v2.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "7ee09e0d1af1f1e3c7cc85fb5e742ab078f1b7a6"
+                "reference": "211bec057917e1d771aa09fc334cde1229738860"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/7ee09e0d1af1f1e3c7cc85fb5e742ab078f1b7a6",
-                "reference": "7ee09e0d1af1f1e3c7cc85fb5e742ab078f1b7a6",
+                "url": "https://api.github.com/repos/nette/latte/zipball/211bec057917e1d771aa09fc334cde1229738860",
+                "reference": "211bec057917e1d771aa09fc334cde1229738860",
                 "shasum": ""
             },
             "require": {
@@ -2250,6 +2250,7 @@
             "require-dev": {
                 "nette/tester": "~2.0",
                 "nette/utils": "^3.0",
+                "phpstan/phpstan": "^0.12",
                 "tracy/tracy": "^2.3"
             },
             "suggest": {
@@ -2296,7 +2297,7 @@
                 "template",
                 "twig"
             ],
-            "time": "2019-09-24T10:42:57+00:00"
+            "time": "2019-12-11T19:48:05+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4484,6 +4485,7 @@
                 "code",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2019-10-05T23:18:22+00:00"
         },
         {
@@ -4538,6 +4540,7 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         }
     ],
