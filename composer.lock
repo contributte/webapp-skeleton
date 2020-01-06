@@ -671,20 +671,20 @@
         },
         {
             "name": "contributte/latte",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/latte.git",
-                "reference": "0538b5e893ce9f38409f08fbc89b918bc20ca810"
+                "reference": "45b929dde1f759246014d86e0efb07cb8a482b49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/latte/zipball/0538b5e893ce9f38409f08fbc89b918bc20ca810",
-                "reference": "0538b5e893ce9f38409f08fbc89b918bc20ca810",
+                "url": "https://api.github.com/repos/contributte/latte/zipball/45b929dde1f759246014d86e0efb07cb8a482b49",
+                "reference": "45b929dde1f759246014d86e0efb07cb8a482b49",
                 "shasum": ""
             },
             "require": {
-                "latte/latte": "~2.5.1",
+                "latte/latte": "~2.5.1|~2.6.0",
                 "php": "^7.2"
             },
             "conflict": {
@@ -693,8 +693,8 @@
             "require-dev": {
                 "nette/application": "~3.0.0",
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
+                "ninjify/nunjuck": "^0.3.0",
+                "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11",
                 "phpstan/phpstan-nette": "^0.11",
@@ -732,7 +732,7 @@
                 "latte",
                 "nette"
             ],
-            "time": "2019-06-16T14:01:16+00:00"
+            "time": "2020-01-05T00:27:30+00:00"
         },
         {
             "name": "contributte/mail",
