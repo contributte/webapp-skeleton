@@ -1120,20 +1120,20 @@
         },
         {
             "name": "contributte/utils",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/utils.git",
-                "reference": "a231f8be9e08c179e72b44085ef832df379c8e6d"
+                "reference": "e94da66a802b2895e07641e7f47b6c963de59d67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/utils/zipball/a231f8be9e08c179e72b44085ef832df379c8e6d",
-                "reference": "a231f8be9e08c179e72b44085ef832df379c8e6d",
+                "url": "https://api.github.com/repos/contributte/utils/zipball/e94da66a802b2895e07641e7f47b6c963de59d67",
+                "reference": "e94da66a802b2895e07641e7f47b6c963de59d67",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "~3.0.1",
+                "nette/utils": "~3.0.1|~3.1.0",
                 "php": "^7.2"
             },
             "conflict": {
@@ -1141,8 +1141,8 @@
             },
             "require-dev": {
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.9.0",
+                "ninjify/nunjuck": "^0.3.0",
+                "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11",
                 "phpstan/phpstan-nette": "^0.11",
@@ -1182,7 +1182,7 @@
                 "strings",
                 "utils"
             ],
-            "time": "2019-09-24T08:56:38+00:00"
+            "time": "2020-01-05T18:16:08+00:00"
         },
         {
             "name": "doctrine/annotations",
