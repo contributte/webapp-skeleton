@@ -20,7 +20,7 @@
 		"contributte/console": "^0.7.1",
 		"contributte/console-extra": "^0.5.1",
 		"contributte/event-dispatcher": "^0.6.0",
-		"contributte/event-dispatcher-extra": "^0.6.0",
+		"contributte/event-dispatcher-extra": "^0.7.1",
 		"contributte/monolog": "^0.5.0",
 		"contributte/neonizer": "^0.4.0",
 		"contributte/mailing": "^0.3.1",
