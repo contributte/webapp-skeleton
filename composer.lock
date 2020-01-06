@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70880a5e371d577bc9723055426c64d2",
+    "content-hash": "ca68af2ec668c78fc69caba7504854ed",
     "packages": [
         {
             "name": "contributte/application",
@@ -458,28 +458,28 @@
         },
         {
             "name": "contributte/event-dispatcher-extra",
-            "version": "v0.6.0",
+            "version": "v0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/event-dispatcher-extra.git",
-                "reference": "945489b98bb356264bf16402cee23c08c9df0880"
+                "reference": "fc73be816546dc984625d756d82e7942cadb44af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/event-dispatcher-extra/zipball/945489b98bb356264bf16402cee23c08c9df0880",
-                "reference": "945489b98bb356264bf16402cee23c08c9df0880",
+                "url": "https://api.github.com/repos/contributte/event-dispatcher-extra/zipball/fc73be816546dc984625d756d82e7942cadb44af",
+                "reference": "fc73be816546dc984625d756d82e7942cadb44af",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "~3.0.0",
                 "php": "^7.2",
-                "symfony/event-dispatcher": "^4.3.1"
+                "symfony/event-dispatcher": "^4.3.1|^5.0.0"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
-                "contributte/event-dispatcher": "^0.6.0",
+                "contributte/event-dispatcher": "^0.6.0|^0.7.0",
                 "latte/latte": "~2.5.1",
                 "nette/application": "~3.0.0",
                 "nette/http": "~3.0.1",
@@ -495,7 +495,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.7.x-dev"
+                    "dev-master": "0.8.x-dev"
                 }
             },
             "autoload": {
@@ -526,7 +526,7 @@
                 "security",
                 "template"
             ],
-            "time": "2019-07-07T10:16:12+00:00"
+            "time": "2020-01-05T13:14:47+00:00"
         },
         {
             "name": "contributte/forms",
@@ -4018,7 +4018,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.4.1",
+            "version": "v4.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
