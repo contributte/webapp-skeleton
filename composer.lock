@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca68af2ec668c78fc69caba7504854ed",
+    "content-hash": "e74130ec61646245887775b2f3607fcb",
     "packages": [
         {
             "name": "contributte/application",
@@ -194,27 +194,27 @@
         },
         {
             "name": "contributte/console",
-            "version": "v0.7.1",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/console.git",
-                "reference": "a676e1a395ec48ff647abdbdc697dd0e55fdd6e7"
+                "reference": "5bf019e2df77683a2473129f8aa6af32c8ab7c3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/console/zipball/a676e1a395ec48ff647abdbdc697dd0e55fdd6e7",
-                "reference": "a676e1a395ec48ff647abdbdc697dd0e55fdd6e7",
+                "url": "https://api.github.com/repos/contributte/console/zipball/5bf019e2df77683a2473129f8aa6af32c8ab7c3e",
+                "reference": "5bf019e2df77683a2473129f8aa6af32c8ab7c3e",
                 "shasum": ""
             },
             "require": {
                 "contributte/di": "^0.4.0",
                 "php": "^7.2",
-                "symfony/console": "^4.2.9"
+                "symfony/console": "^4.2.9|^5.0.0"
             },
             "require-dev": {
                 "nette/http": "~3.0.1",
                 "ninjify/nunjuck": "^0.3.0",
-                "ninjify/qa": "^0.9.0",
+                "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11.2",
                 "phpstan/phpstan-nette": "^0.11.1",
@@ -250,7 +250,7 @@
                 "nette",
                 "symfony"
             ],
-            "time": "2019-07-29T16:34:33+00:00"
+            "time": "2020-01-03T18:18:33+00:00"
         },
         {
             "name": "contributte/console-extra",
