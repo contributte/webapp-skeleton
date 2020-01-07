@@ -254,28 +254,28 @@
         },
         {
             "name": "contributte/console-extra",
-            "version": "v0.5.1",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/console-extra.git",
-                "reference": "b27af55e03a95cd0621c3561c2505194057fd331"
+                "reference": "f3ca2128e55bb074484ba07231cd78b4df73aec2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/console-extra/zipball/b27af55e03a95cd0621c3561c2505194057fd331",
-                "reference": "b27af55e03a95cd0621c3561c2505194057fd331",
+                "url": "https://api.github.com/repos/contributte/console-extra/zipball/f3ca2128e55bb074484ba07231cd78b4df73aec2",
+                "reference": "f3ca2128e55bb074484ba07231cd78b4df73aec2",
                 "shasum": ""
             },
             "require": {
                 "contributte/di": "^0.4.0",
                 "php": "^7.2",
-                "symfony/console": "^4.0.0"
+                "symfony/console": "^4.0.0|^5.0.0"
             },
             "conflict": {
                 "nette/schema": "<1.0.1"
             },
             "require-dev": {
-                "contributte/console": "~0.7",
+                "contributte/console": "^0.7.0|^0.8.0",
                 "latte/latte": "~2.5.1",
                 "nette/application": "~3.0.0",
                 "nette/bootstrap": "~3.0.0",
@@ -324,7 +324,7 @@
                 "nette",
                 "symfony"
             ],
-            "time": "2019-11-01T10:59:58+00:00"
+            "time": "2020-01-05T17:28:57+00:00"
         },
         {
             "name": "contributte/di",
