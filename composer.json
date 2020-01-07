@@ -17,7 +17,7 @@
 		"contributte/latte": "^0.4.0",
 		"contributte/tracy": "^0.4.1",
 
-		"contributte/console": "^0.7.1",
+		"contributte/console": "^0.8.0",
 		"contributte/console-extra": "^0.5.1",
 		"contributte/event-dispatcher": "^0.6.0",
 		"contributte/event-dispatcher-extra": "^0.7.1",
