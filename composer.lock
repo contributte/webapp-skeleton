@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e74130ec61646245887775b2f3607fcb",
+    "content-hash": "2d8ec9cb2aa41fa2133183c9033d383f",
     "packages": [
         {
             "name": "contributte/application",
@@ -395,22 +395,22 @@
         },
         {
             "name": "contributte/event-dispatcher",
-            "version": "v0.6.0",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/event-dispatcher.git",
-                "reference": "e8a9b55a520f7046545cccee597efd9805c9d2fd"
+                "reference": "0c6678feb059b112ed642155c3f08b77b92f36a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/event-dispatcher/zipball/e8a9b55a520f7046545cccee597efd9805c9d2fd",
-                "reference": "e8a9b55a520f7046545cccee597efd9805c9d2fd",
+                "url": "https://api.github.com/repos/contributte/event-dispatcher/zipball/0c6678feb059b112ed642155c3f08b77b92f36a8",
+                "reference": "0c6678feb059b112ed642155c3f08b77b92f36a8",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "^3.0.0",
                 "php": "^7.2",
-                "symfony/event-dispatcher": "^4.3.1"
+                "symfony/event-dispatcher": "^4.3.1|^5.0.0"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
@@ -427,7 +427,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.7.x-dev"
+                    "dev-master": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -454,7 +454,7 @@
                 "nette",
                 "symfony"
             ],
-            "time": "2019-06-30T20:24:32+00:00"
+            "time": "2020-01-03T18:12:50+00:00"
         },
         {
             "name": "contributte/event-dispatcher-extra",
