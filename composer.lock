@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d8ec9cb2aa41fa2133183c9033d383f",
+    "content-hash": "24397901b5066702888c3153303eedef",
     "packages": [
         {
             "name": "contributte/application",
@@ -3461,27 +3461,88 @@
             "time": "2019-12-27T03:47:50+00:00"
         },
         {
-            "name": "nettrine/dbal",
-            "version": "v0.5.1",
+            "name": "nettrine/cache",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nettrine/dbal.git",
-                "reference": "59af5ecc8eeff2869c3bd0a9ad8d22dbfef3b91b"
+                "url": "https://github.com/nettrine/cache.git",
+                "reference": "2d129d31ad2271631dc0a54434a9f4d7282125fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/dbal/zipball/59af5ecc8eeff2869c3bd0a9ad8d22dbfef3b91b",
-                "reference": "59af5ecc8eeff2869c3bd0a9ad8d22dbfef3b91b",
+                "url": "https://api.github.com/repos/nettrine/cache/zipball/2d129d31ad2271631dc0a54434a9f4d7282125fe",
+                "reference": "2d129d31ad2271631dc0a54434a9f4d7282125fe",
                 "shasum": ""
             },
             "require": {
+                "contributte/di": "^0.4.0",
+                "doctrine/cache": "^1.8.0",
+                "php": "^7.2.0"
+            },
+            "require-dev": {
+                "ninjify/qa": "^0.9.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^0.11.0",
+                "phpstan/phpstan-nette": "^0.11.0",
+                "phpstan/phpstan-shim": "^0.11.5",
+                "phpstan/phpstan-strict-rules": "^0.11.0",
+                "phpunit/phpunit": "^8.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nettrine\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Marek Bartoš",
+                    "homepage": "https://github.com/mabar"
+                }
+            ],
+            "description": "Doctrine Cache for Nette Framework",
+            "homepage": "https://github.com/nettrine/cache",
+            "keywords": [
+                "cache",
+                "doctrine",
+                "nette",
+                "nettrine"
+            ],
+            "time": "2019-11-26T15:14:51+00:00"
+        },
+        {
+            "name": "nettrine/dbal",
+            "version": "v0.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nettrine/dbal.git",
+                "reference": "0545b8b390350d57508a79a71e75d566959b8291"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nettrine/dbal/zipball/0545b8b390350d57508a79a71e75d566959b8291",
+                "reference": "0545b8b390350d57508a79a71e75d566959b8291",
+                "shasum": ""
+            },
+            "require": {
+                "contributte/di": "^0.4.2",
                 "doctrine/dbal": "^2.9.2",
-                "nette/di": "~3.0.0",
+                "nettrine/cache": "^0.1.0",
                 "php": "^7.2"
             },
             "require-dev": {
                 "contributte/console": "^0.5.0",
                 "mockery/mockery": "^1.2.2",
+                "nettrine/cache": "^0.1.0",
                 "ninjify/qa": "^0.9.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11.0",
@@ -3494,7 +3555,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.6.x-dev"
+                    "dev-master": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -3523,7 +3584,7 @@
                 "postgres",
                 "sqlite"
             ],
-            "time": "2019-10-14T14:06:23+00:00"
+            "time": "2020-01-05T20:53:24+00:00"
         },
         {
             "name": "nettrine/fixtures",
