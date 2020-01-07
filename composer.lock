@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca68af2ec668c78fc69caba7504854ed",
+    "content-hash": "d13d2d9f36f23b438c0a457947521c8e",
     "packages": [
         {
             "name": "contributte/application",
@@ -3461,26 +3461,27 @@
         },
         {
             "name": "nettrine/dbal",
-            "version": "v0.5.1",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/dbal.git",
-                "reference": "59af5ecc8eeff2869c3bd0a9ad8d22dbfef3b91b"
+                "reference": "d4e2ef35dacff55c05a99ac3b7b9dbd244181677"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/dbal/zipball/59af5ecc8eeff2869c3bd0a9ad8d22dbfef3b91b",
-                "reference": "59af5ecc8eeff2869c3bd0a9ad8d22dbfef3b91b",
+                "url": "https://api.github.com/repos/nettrine/dbal/zipball/d4e2ef35dacff55c05a99ac3b7b9dbd244181677",
+                "reference": "d4e2ef35dacff55c05a99ac3b7b9dbd244181677",
                 "shasum": ""
             },
             "require": {
+                "contributte/di": "^0.4.0",
                 "doctrine/dbal": "^2.9.2",
-                "nette/di": "~3.0.0",
                 "php": "^7.2"
             },
             "require-dev": {
                 "contributte/console": "^0.5.0",
                 "mockery/mockery": "^1.2.2",
+                "nettrine/cache": "^0.1.0",
                 "ninjify/qa": "^0.9.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11.0",
@@ -3522,7 +3523,7 @@
                 "postgres",
                 "sqlite"
             ],
-            "time": "2019-10-14T14:06:23+00:00"
+            "time": "2019-12-04T18:29:19+00:00"
         },
         {
             "name": "nettrine/fixtures",
