@@ -328,21 +328,21 @@
         },
         {
             "name": "contributte/di",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/di.git",
-                "reference": "89dfa32b0181e67342f0323449f61ff5e8f957fa"
+                "reference": "9ec21373c037838a61bac5a1b1833b84b9d1e7d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/di/zipball/89dfa32b0181e67342f0323449f61ff5e8f957fa",
-                "reference": "89dfa32b0181e67342f0323449f61ff5e8f957fa",
+                "url": "https://api.github.com/repos/contributte/di/zipball/9ec21373c037838a61bac5a1b1833b84b9d1e7d3",
+                "reference": "9ec21373c037838a61bac5a1b1833b84b9d1e7d3",
                 "shasum": ""
             },
             "require": {
-                "nette/di": "~3.0.0",
-                "nette/utils": "~3.0.1",
+                "nette/di": "~3.0.2",
+                "nette/utils": "~3.0.3|~3.1.0",
                 "php": "^7.2"
             },
             "conflict": {
@@ -350,7 +350,7 @@
             },
             "require-dev": {
                 "nette/bootstrap": "~3.0.0",
-                "nette/robot-loader": "~3.0.4|~3.1.0|~3.2.0",
+                "nette/robot-loader": "~3.0.4|~3.1.0|~3.2.1",
                 "ninjify/nunjuck": "^0.3.0",
                 "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
@@ -391,7 +391,7 @@
                 "inject",
                 "nette"
             ],
-            "time": "2019-12-04T00:04:58+00:00"
+            "time": "2020-01-05T18:11:45+00:00"
         },
         {
             "name": "contributte/event-dispatcher",
@@ -3596,19 +3596,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/migrations.git",
-                "reference": "a353dc18525164d5cb97aeae03f58669d4617aa4"
+                "reference": "f632685fa601dd71f863d72362b500b00e5ea5e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/migrations/zipball/a353dc18525164d5cb97aeae03f58669d4617aa4",
-                "reference": "a353dc18525164d5cb97aeae03f58669d4617aa4",
+                "url": "https://api.github.com/repos/nettrine/migrations/zipball/f632685fa601dd71f863d72362b500b00e5ea5e9",
+                "reference": "f632685fa601dd71f863d72362b500b00e5ea5e9",
                 "shasum": ""
             },
             "require": {
+                "contributte/di": "^0.4.2",
                 "doctrine/migrations": "^2.0.0",
-                "nette/di": "~3.0.0",
                 "php": "^7.2",
-                "symfony/console": "^4.2.5"
+                "symfony/console": "^4.2.5|^5.0.0"
             },
             "require-dev": {
                 "doctrine/orm": "^2.6",
@@ -3653,7 +3653,7 @@
                 "migrations",
                 "nette"
             ],
-            "time": "2019-11-18T11:40:30+00:00"
+            "time": "2020-01-06T15:49:45+00:00"
         },
         {
             "name": "nettrine/orm",
