@@ -926,20 +926,20 @@
         },
         {
             "name": "contributte/neonizer",
-            "version": "v0.4.1",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/neonizer.git",
-                "reference": "8a8e5bc31c19285107bf6ee7d260b671f68d7542"
+                "reference": "43ea4484f231c701e6e82ef4e103228da583a29d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/neonizer/zipball/8a8e5bc31c19285107bf6ee7d260b671f68d7542",
-                "reference": "8a8e5bc31c19285107bf6ee7d260b671f68d7542",
+                "url": "https://api.github.com/repos/contributte/neonizer/zipball/43ea4484f231c701e6e82ef4e103228da583a29d",
+                "reference": "43ea4484f231c701e6e82ef4e103228da583a29d",
                 "shasum": ""
             },
             "require": {
-                "nette/neon": "~3.0.0",
+                "nette/neon": "~3.0.0|~3.1.0",
                 "php": "^7.2"
             },
             "require-dev": {
@@ -983,7 +983,7 @@
                 "nette",
                 "parameters"
             ],
-            "time": "2019-12-10T08:41:04+00:00"
+            "time": "2020-01-03T15:43:10+00:00"
         },
         {
             "name": "contributte/security",
@@ -3022,31 +3022,32 @@
         },
         {
             "name": "nette/neon",
-            "version": "v3.0.0",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/neon.git",
-                "reference": "cbff32059cbdd8720deccf9e9eace6ee516f02eb"
+                "reference": "0a18fc88801a14d66587932de133eeca01f7ce8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/neon/zipball/cbff32059cbdd8720deccf9e9eace6ee516f02eb",
-                "reference": "cbff32059cbdd8720deccf9e9eace6ee516f02eb",
+                "url": "https://api.github.com/repos/nette/neon/zipball/0a18fc88801a14d66587932de133eeca01f7ce8e",
+                "reference": "0a18fc88801a14d66587932de133eeca01f7ce8e",
                 "shasum": ""
             },
             "require": {
                 "ext-iconv": "*",
                 "ext-json": "*",
-                "php": ">=7.0"
+                "php": ">=7.1"
             },
             "require-dev": {
                 "nette/tester": "^2.0",
+                "phpstan/phpstan": "^0.12",
                 "tracy/tracy": "^2.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -3070,7 +3071,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "? Nette NEON: encodes and decodes NEON file format.",
+            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
             "homepage": "http://ne-on.org",
             "keywords": [
                 "export",
@@ -3079,7 +3080,7 @@
                 "nette",
                 "yaml"
             ],
-            "time": "2019-02-05T21:30:40+00:00"
+            "time": "2019-12-27T04:00:04+00:00"
         },
         {
             "name": "nette/php-generator",
