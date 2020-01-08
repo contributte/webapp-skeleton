@@ -70,21 +70,21 @@
         },
         {
             "name": "contributte/bootstrap",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/bootstrap.git",
-                "reference": "2e34ab3186dfc0a00656863d5acba5fd3aaf8f8e"
+                "reference": "ede13bdff51bbfd71380010e435a2fdc97df6d48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/bootstrap/zipball/2e34ab3186dfc0a00656863d5acba5fd3aaf8f8e",
-                "reference": "2e34ab3186dfc0a00656863d5acba5fd3aaf8f8e",
+                "url": "https://api.github.com/repos/contributte/bootstrap/zipball/ede13bdff51bbfd71380010e435a2fdc97df6d48",
+                "reference": "ede13bdff51bbfd71380010e435a2fdc97df6d48",
                 "shasum": ""
             },
             "require": {
                 "nette/bootstrap": "~3.0.0",
-                "nette/utils": "~3.0.1",
+                "nette/utils": "~3.0.1|~3.1.0",
                 "php": "^7.2"
             },
             "require-dev": {
@@ -125,7 +125,7 @@
                 "docker",
                 "nette"
             ],
-            "time": "2019-06-17T19:29:38+00:00"
+            "time": "2020-01-05T18:30:11+00:00"
         },
         {
             "name": "contributte/cache",
