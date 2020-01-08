@@ -736,21 +736,21 @@
         },
         {
             "name": "contributte/mail",
-            "version": "v0.5.0",
+            "version": "v0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/mail.git",
-                "reference": "e3e420f74bc3005583585d5f1bc5b1c5ea99d968"
+                "reference": "1567f7f6005d456686573fec5d2fb1323bebeea0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/mail/zipball/e3e420f74bc3005583585d5f1bc5b1c5ea99d968",
-                "reference": "e3e420f74bc3005583585d5f1bc5b1c5ea99d968",
+                "url": "https://api.github.com/repos/contributte/mail/zipball/1567f7f6005d456686573fec5d2fb1323bebeea0",
+                "reference": "1567f7f6005d456686573fec5d2fb1323bebeea0",
                 "shasum": ""
             },
             "require": {
                 "nette/mail": "~3.1.0",
-                "nette/utils": "~3.0.0",
+                "nette/utils": "~3.0.0|~3.1.0",
                 "php": "^7.2"
             },
             "require-dev": {
@@ -762,7 +762,7 @@
                 "phpstan/phpstan-nette": "^0.11",
                 "phpstan/phpstan-shim": "^0.11",
                 "phpstan/phpstan-strict-rules": "^0.11",
-                "tracy/tracy": "~2.6.2"
+                "tracy/tracy": "~2.6.2|~2.7.0"
             },
             "suggest": {
                 "contributte/di": "to use MailerExtension[CompilerExtension]"
@@ -795,7 +795,7 @@
                 "mail",
                 "nette"
             ],
-            "time": "2019-08-12T06:28:37+00:00"
+            "time": "2020-01-05T18:25:23+00:00"
         },
         {
             "name": "contributte/mailing",
