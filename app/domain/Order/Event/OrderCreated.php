@@ -2,7 +2,7 @@
 
 namespace App\Domain\Order\Event;
 
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 final class OrderCreated extends Event
 {

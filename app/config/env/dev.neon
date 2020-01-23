@@ -4,8 +4,8 @@ includes:
 
 
 # Nettrine ===================
-orm.cache:
-	defaultDriver: filesystem
+nettrine.cache:
+#	driver: Doctrine\Common\Cache\ApcuCache
 
 
 # Services ===================
