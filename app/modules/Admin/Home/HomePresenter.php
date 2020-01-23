@@ -22,7 +22,7 @@ final class HomePresenter extends BaseAdminPresenter
 		$form->addSubmit('send', 'OK');
 
 		$form->onSuccess[] = function (Form $form): void {
-			$this->dispatcher->dispatch(new OrderCreated($form->values->order));
+			$this->dispatcher->dispatch(new OrderCreated($form->values->order), OrderCreated::NAME);
 		};
 
 		return $form;

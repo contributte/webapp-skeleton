@@ -2,11 +2,26 @@
 
 namespace App\Model\Database\Entity\Attributes;
 
-use Nettrine\ORM\Entity\Attributes\Id;
-
 trait TId
 {
 
-	use Id;
+	/**
+	 * @var int
+	 * @ORM\Column(type="integer", nullable=FALSE)
+	 * @ORM\Id
+	 * @ORM\GeneratedValue
+	 */
+	private $id;
+
+	public function getId(): int
+	{
+		return $this->id;
+	}
+
+
+	public function __clone()
+	{
+		$this->id = null;
+	}
 
 }

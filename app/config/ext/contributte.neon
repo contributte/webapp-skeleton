@@ -1,24 +1,24 @@
 # Extension > Contributte
 #
 extensions:
-	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
-	console.extra: Contributte\Console\Extra\DI\ConsoleBridgesExtension
-	events: Contributte\EventDispatcher\DI\EventDispatcherExtension
-	events2nette: Contributte\Events\Extra\DI\EventBridgesExtension
-	monolog: Contributte\Monolog\DI\MonologExtension
-	mailing: Contributte\Mailing\DI\MailingExtension
-	post: Contributte\Mail\DI\MailExtension
+	contributte.console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
+	contributte.console.extra: Contributte\Console\Extra\DI\ConsoleBridgesExtension
+	contributte.events: Contributte\EventDispatcher\DI\EventDispatcherExtension
+	contributte.events2nette: Contributte\Events\Extra\DI\EventBridgesExtension
+	contributte.monolog: Contributte\Monolog\DI\MonologExtension
+	contributte.mailing: Contributte\Mailing\DI\MailingExtension
+	contributte.post: Contributte\Mail\DI\MailExtension
 
-console:
+contributte.console:
 	url: http://localhost/
 	lazy: true
 
-mailing:
+contributte.mailing:
 	template:
 		config:
 			layout: %appDir%/resources/mail/@layout.latte
 
-monolog:
+contributte.monolog:
 	holder:
 		enabled: true
 	channel:
@@ -31,6 +31,6 @@ monolog:
 				- Monolog\Processor\MemoryPeakUsageProcessor()
 				- Monolog\Processor\ProcessIdProcessor()
 
-post:
+contributte.post:
 	debug: false
 	mailer: Nette\Mail\SmtpMailer(%smtp%)

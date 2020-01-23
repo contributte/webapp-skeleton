@@ -3,19 +3,21 @@
 extensions:
 
 	# Dbal
-	dbal: Nettrine\DBAL\DI\DbalExtension
-	dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
+	nettrine.dbal: Nettrine\DBAL\DI\DbalExtension
+	nettrine.dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
 
 	# Orm
-	orm: Nettrine\ORM\DI\OrmExtension
-	orm.cache: Nettrine\ORM\DI\OrmCacheExtension
-	orm.console: Nettrine\ORM\DI\OrmConsoleExtension
-	orm.annotations: Nettrine\ORM\DI\OrmAnnotationsExtension
+	nettrine.orm: Nettrine\ORM\DI\OrmExtension
+	nettrine.orm.cache: Nettrine\ORM\DI\OrmCacheExtension
+	nettrine.orm.console: Nettrine\ORM\DI\OrmConsoleExtension
+	nettrine.orm.annotations: Nettrine\ORM\DI\OrmAnnotationsExtension
 
-	migrations: Nettrine\Migrations\DI\MigrationsExtension
-	fixtures: Nettrine\Fixtures\DI\FixturesExtension
+	nettrine.annotations: Nettrine\Annotations\DI\AnnotationsExtension
+	nettrine.cache: Nettrine\Cache\DI\CacheExtension
+	nettrine.migrations: Nettrine\Migrations\DI\MigrationsExtension
+	nettrine.fixtures: Nettrine\Fixtures\DI\FixturesExtension
 
-dbal:
+nettrine.dbal:
 	debug:
 		panel: %debugMode%
 	configuration:
@@ -27,29 +29,31 @@ dbal:
 		password: %database.password%
 		dbname: %database.dbname%
 
-orm:
+nettrine.orm:
 	entityManagerDecoratorClass: App\Model\Database\EntityManager
 	configuration:
 		autoGenerateProxyClasses: %debugMode%
 
-orm.annotations:
-	debug: %debugMode%
+nettrine.orm.annotations:
 	paths:
 		- %appDir%/model/Database/Entity
 
-orm.cache:
-	defaultDriver: apcu
+nettrine.orm.cache:
 
-migrations:
+nettrine.cache:
+#	driver: Doctrine\Common\Cache\ApcuCache
+
+nettrine.migrations:
 	table: doctrine_migrations
 	column: version
 	directory: %rootDir%/db/Migrations
 	namespace: Database\Migrations
 	versionsOrganization: null
 
-fixtures:
+nettrine.fixtures:
 	paths:
 		- %rootDir%/db/Fixtures
+
 decorator:
 	Doctrine\Common\EventSubscriber:
 		tags: [nettrine.subscriber]

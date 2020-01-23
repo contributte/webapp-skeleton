@@ -25,8 +25,10 @@
 		"contributte/neonizer": "^0.4.0",
 		"contributte/mailing": "^0.3.1",
 
+		"nettrine/annotations": "^0.6.0",
 		"nettrine/orm": "^0.5.0",
-		"nettrine/dbal": "^0.5.0",
+		"nettrine/dbal": "^0.6.0",
+		"nettrine/cache": "^0.1.0",
 		"nettrine/migrations": "^0.7.0",
 		"nettrine/fixtures": "^0.5.0"
 	},
