@@ -3723,12 +3723,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/migrations.git",
-                "reference": "f632685fa601dd71f863d72362b500b00e5ea5e9"
+                "reference": "04bcca7d3a81d9fdd276b22b9b5b6d41728c8d5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/migrations/zipball/f632685fa601dd71f863d72362b500b00e5ea5e9",
-                "reference": "f632685fa601dd71f863d72362b500b00e5ea5e9",
+                "url": "https://api.github.com/repos/nettrine/migrations/zipball/04bcca7d3a81d9fdd276b22b9b5b6d41728c8d5f",
+                "reference": "04bcca7d3a81d9fdd276b22b9b5b6d41728c8d5f",
                 "shasum": ""
             },
             "require": {
@@ -3780,7 +3780,7 @@
                 "migrations",
                 "nette"
             ],
-            "time": "2020-01-06T15:49:45+00:00"
+            "time": "2020-01-30T08:35:29+00:00"
         },
         {
             "name": "nettrine/orm",
@@ -5796,16 +5796,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.8",
+            "version": "0.12.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "62a552602b7586d82826231f2fd4cbfe39fe0b1d"
+                "reference": "297cb2458a96ea96d5e9d6ef38f1b7305c071f32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/62a552602b7586d82826231f2fd4cbfe39fe0b1d",
-                "reference": "62a552602b7586d82826231f2fd4cbfe39fe0b1d",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/297cb2458a96ea96d5e9d6ef38f1b7305c071f32",
+                "reference": "297cb2458a96ea96d5e9d6ef38f1b7305c071f32",
                 "shasum": ""
             },
             "require": {
@@ -5831,7 +5831,7 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2020-01-26T23:36:48+00:00"
+            "time": "2020-02-04T22:30:27+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
