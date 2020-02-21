@@ -50,7 +50,6 @@ final class UserAuthenticator implements IAuthenticator
 
 	protected function createIdentity(User $user): IIdentity
 	{
-		$user->changeLoggedAt();
 		$this->em->flush();
 
 		return $user->toIdentity();
