@@ -5950,16 +5950,16 @@
         },
         {
             "name": "phpstan/phpstan-nette",
-            "version": "0.12.3",
+            "version": "0.12.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-nette.git",
-                "reference": "2777e1c1185f2ccc330aee90615cbd0df175c818"
+                "reference": "edc43c41ac29c14929f2312f499f90b01b47de5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-nette/zipball/2777e1c1185f2ccc330aee90615cbd0df175c818",
-                "reference": "2777e1c1185f2ccc330aee90615cbd0df175c818",
+                "url": "https://api.github.com/repos/phpstan/phpstan-nette/zipball/edc43c41ac29c14929f2312f499f90b01b47de5b",
+                "reference": "edc43c41ac29c14929f2312f499f90b01b47de5b",
                 "shasum": ""
             },
             "require": {
@@ -6015,7 +6015,7 @@
                 "MIT"
             ],
             "description": "Nette Framework class reflection extension for PHPStan",
-            "time": "2020-01-13T10:50:37+00:00"
+            "time": "2020-03-05T15:58:47+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
