@@ -16,7 +16,7 @@
     <code>composer create-project -s dev planette/nutella-project acme</code>
 </p>
 <p align=center>
-    Take a look at demo <a href="https://examples.planette.io/planette/nutella-project/">examples.planette.io/planette/nutella-project/</a>
+    Take a look at demo <a href="https://examples.contributte.org/planette/nutella-project/">examples.contributte.org/planette/nutella-project/</a>
 </p>
 
 <p align=center>
