@@ -14,7 +14,7 @@
 		"contributte/mail": "^0.5.0",
 		"contributte/security": "^0.3.0",
 		"contributte/utils": "^0.4.1",
-		"contributte/latte": "^0.4.0",
+		"contributte/latte": "^0.5.0",
 		"contributte/tracy": "^0.4.1",
 
 		"contributte/console": "^0.8.0",
@@ -23,7 +23,7 @@
 		"contributte/event-dispatcher-extra": "^0.7.1",
 		"contributte/monolog": "^0.5.0",
 		"contributte/neonizer": "^0.4.0",
-		"contributte/mailing": "^0.3.1",
+		"contributte/mailing": "^0.4.0",
 
 		"nettrine/annotations": "^0.6.0",
 		"nettrine/orm": "^0.5.0",
@@ -38,12 +38,10 @@
 		"contributte/dev": "^0.2.0",
 		"mockery/mockery": "^1.3.0",
 		"nelmio/alice": "^3.5.8",
-		"phpunit/phpunit": "^9.0.1",
 		"phpstan/phpstan": "^0.12.0",
 		"phpstan/phpstan-doctrine": "^0.12.0",
 		"phpstan/phpstan-deprecation-rules": "^0.12.0",
 		"phpstan/phpstan-nette": "^0.12.0",
-		"phpstan/phpstan-phpunit": "^0.12.0",
 		"phpstan/phpstan-strict-rules": "^0.12.0"
 	},
 	"autoload": {
