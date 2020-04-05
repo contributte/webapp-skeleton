@@ -45,7 +45,7 @@ Focused on:
 
 https://examples.planette.io/planette/nutella-project/
 
-## Install
+## Install with [docker](https://github.com/docker/docker/)
 
 1) At first, use composer to install this project.
 
@@ -93,6 +93,38 @@ https://examples.planette.io/planette/nutella-project/
     Take a look at:
     - http://localhost:8000.
     - http://localhost:8000/admin (admin@admin.cz / admin)
+
+## Install with [docker-compose](https://https://github.com/docker/compose/)
+
+1) At first, use composer to install this project.
+
+    ```
+    composer create-project planette/forest-project
+    ```
+
+2) Modify `app/config/config.local.neon` and set host to `database`
+
+    Default configuration should look like this:
+
+    ```yaml
+    # Host Config
+    parameters:
+
+        # Database
+        database:
+            host: database
+            dbname: nutella
+            user: nutella
+            password: nutella
+    ```
+
+3) Run `docker-compose up`
+
+4) Open http://localhost and enjoy!
+
+    Take a look at:
+    - http://localhost.
+    - http://localhost/admin (admin@admin.cz / admin)
 
 ## Features
 
