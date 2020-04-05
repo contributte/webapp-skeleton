@@ -22,8 +22,9 @@ tests-coverage:
 #####################
 
 build:
-	NETTE_DEBUG=1 bin/console migrations:migrate
-	NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append
+	NETTE_DEBUG=1 bin/console orm:schema-tool:drop --force --full-database
+	NETTE_DEBUG=1 bin/console migrations:migrate --no-interaction
+	NETTE_DEBUG=1 bin/console doctrine:fixtures:load --no-interaction --append
 
 loc-web:
 	NETTE_DEBUG=1 NETTE_ENV=dev php -S 0.0.0.0:8000 -t www
