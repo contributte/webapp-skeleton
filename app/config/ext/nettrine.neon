@@ -35,6 +35,8 @@ nettrine.orm:
 		autoGenerateProxyClasses: %debugMode%
 
 nettrine.orm.annotations:
+	namespaces:
+		- App\Model\Database\Entity
 	paths:
 		- %appDir%/model/Database/Entity
 

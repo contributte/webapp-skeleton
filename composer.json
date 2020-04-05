@@ -1,5 +1,16 @@
 {
 	"name": "planette/nutella-project",
+	"description": "Nutella project is full featured web app kit based on Nette Framework + Contributte and many useful packages by @f3l1x.",
+	"keywords": [
+    "php",
+    "nette",
+    "planette",
+    "contributte",
+    "apitte",
+    "sandbox",
+    "project",
+    "api"
+  ],
 	"license": "MIT",
 	"type": "project",
 	"require": {
@@ -27,10 +38,10 @@
 
 		"nettrine/annotations": "^0.6.0",
 		"nettrine/orm": "^0.5.0",
-		"nettrine/dbal": "^0.6.0",
+		"nettrine/dbal": "^0.6.2",
 		"nettrine/cache": "^0.1.0",
 		"nettrine/migrations": "^0.7.0",
-		"nettrine/fixtures": "^0.5.0"
+		"nettrine/fixtures": "^0.5.1"
 	},
 	"require-dev": {
 		"ninjify/qa": "^0.10.0",
