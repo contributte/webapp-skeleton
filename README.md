@@ -43,7 +43,7 @@ Focused on:
 
 ## Demo
 
-https://examples.planette.io/planette/nutella-project/
+https://examples.contributte.org/planette/nutella-project/
 
 ## Install with [docker](https://github.com/docker/docker/)
 
