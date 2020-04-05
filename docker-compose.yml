@@ -1,0 +1,49 @@
+version: '3.4'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./.docker/nginx/Dockerfile
+    volumes:
+      - ./:/var/www/html/
+      - ./.docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./.docker/nginx/sites/:/etc/nginx/sites-available
+      - ./.docker/nginx/conf.d/:/etc/nginx/conf.d
+    depends_on:
+      - php
+    ports:
+      - "80:80"
+      - "443:443"
+  php:
+    build:
+      context: .
+      dockerfile: ./.docker/php/Dockerfile
+    volumes:
+          - ./:/var/www/html/
+    depends_on:
+          - database
+    environment:
+      NETTE_DEBUG: 1
+      PHP_EXTENSION_XDEBUG: 1
+      PHP_EXTENSION_PGSQL: 1
+      PHP_EXTENSION_PDO_PGSQL: 1
+      PHP_EXTENSION_MYSQLI: 0
+      STARTUP_COMMAND_1: composer install
+      STARTUP_COMMAND_2: NETTE_DEBUG=1 php bin/console migrations:migrate --no-interaction
+      STARTUP_COMMAND_3: NETTE_DEBUG=1 php bin/console doctrine:fixtures:load --no-interaction
+  database:
+    image: dockette/postgres:10
+    environment:
+      - POSTGRES_PASSWORD=nutella
+      - POSTGRES_USER=nutella
+      - POSTGRES_DB=nutella
+    volumes:
+          - database-volume:/var/lib/mysql
+  adminer:
+    image: dockette/adminer:dg
+    ports:
+      - 8080:80
+
+volumes:
+  database-volume:
