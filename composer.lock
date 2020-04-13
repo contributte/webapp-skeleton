@@ -3592,16 +3592,16 @@
         },
         {
             "name": "nettrine/dbal",
-            "version": "v0.6.2",
+            "version": "v0.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/dbal.git",
-                "reference": "fd9052bd873cfbd4c10af703bf4b5c4725dd8486"
+                "reference": "d2c430ad2b8a4359a4f1863f01a84f812f2d483a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/dbal/zipball/fd9052bd873cfbd4c10af703bf4b5c4725dd8486",
-                "reference": "fd9052bd873cfbd4c10af703bf4b5c4725dd8486",
+                "url": "https://api.github.com/repos/nettrine/dbal/zipball/d2c430ad2b8a4359a4f1863f01a84f812f2d483a",
+                "reference": "d2c430ad2b8a4359a4f1863f01a84f812f2d483a",
                 "shasum": ""
             },
             "require": {
@@ -3655,7 +3655,7 @@
                 "postgres",
                 "sqlite"
             ],
-            "time": "2020-01-16T16:19:43+00:00"
+            "time": "2020-04-04T18:38:48+00:00"
         },
         {
             "name": "nettrine/fixtures",
