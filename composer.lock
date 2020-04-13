@@ -3468,22 +3468,22 @@
         },
         {
             "name": "nettrine/annotations",
-            "version": "v0.6.0",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/annotations.git",
-                "reference": "b2efb797902de5bc1dcc3d858ee26cc50ed70fa8"
+                "reference": "146a18330589b9afd177d2aa6c32ff5d86178af5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/annotations/zipball/b2efb797902de5bc1dcc3d858ee26cc50ed70fa8",
-                "reference": "b2efb797902de5bc1dcc3d858ee26cc50ed70fa8",
+                "url": "https://api.github.com/repos/nettrine/annotations/zipball/146a18330589b9afd177d2aa6c32ff5d86178af5",
+                "reference": "146a18330589b9afd177d2aa6c32ff5d86178af5",
                 "shasum": ""
             },
             "require": {
-                "contributte/di": "^0.4.0",
+                "contributte/di": "^0.4.2",
                 "doctrine/annotations": "^1.6.1",
-                "doctrine/cache": "^1.8.0",
+                "nettrine/cache": "^0.1.0",
                 "php": "^7.2"
             },
             "require-dev": {
@@ -3499,7 +3499,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.6.x-dev"
+                    "dev-master": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -3529,7 +3529,7 @@
                 "nette",
                 "nettrine"
             ],
-            "time": "2019-11-26T17:18:26+00:00"
+            "time": "2020-01-29T20:17:24+00:00"
         },
         {
             "name": "nettrine/cache",
