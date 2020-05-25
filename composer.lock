@@ -8,20 +8,20 @@
     "packages": [
         {
             "name": "contributte/application",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/application.git",
-                "reference": "3e93c7862c0356753b629306a17ed057e7283089"
+                "reference": "401975416fbc87b13acc66d17882c5941b3e303b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/application/zipball/3e93c7862c0356753b629306a17ed057e7283089",
-                "reference": "3e93c7862c0356753b629306a17ed057e7283089",
+                "url": "https://api.github.com/repos/contributte/application/zipball/401975416fbc87b13acc66d17882c5941b3e303b",
+                "reference": "401975416fbc87b13acc66d17882c5941b3e303b",
                 "shasum": ""
             },
             "require": {
-                "nette/application": "~3.0.0",
+                "nette/application": "^3.0.0",
                 "php": "^7.2"
             },
             "require-dev": {
@@ -39,7 +39,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-next": "0.5.x-dev"
+                    "dev-master": "0.5.x-dev"
                 }
             },
             "autoload": {
@@ -66,7 +66,7 @@
                 "nette",
                 "presenter"
             ],
-            "time": "2019-06-17T19:30:31+00:00"
+            "time": "2020-04-01T17:34:21+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -675,16 +675,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/latte.git",
-                "reference": "444aab73da2c5bc88ed26736f3ad9c0093ba8381"
+                "reference": "9b0efb2a6adfc78f3bb0f332e589879446c40ce0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/latte/zipball/444aab73da2c5bc88ed26736f3ad9c0093ba8381",
-                "reference": "444aab73da2c5bc88ed26736f3ad9c0093ba8381",
+                "url": "https://api.github.com/repos/contributte/latte/zipball/9b0efb2a6adfc78f3bb0f332e589879446c40ce0",
+                "reference": "9b0efb2a6adfc78f3bb0f332e589879446c40ce0",
                 "shasum": ""
             },
             "require": {
-                "latte/latte": "~2.5.1|~2.6.0|~2.7.0",
+                "latte/latte": "^2.5.1",
                 "php": "^7.2"
             },
             "conflict": {
@@ -732,7 +732,7 @@
                 "latte",
                 "nette"
             ],
-            "time": "2020-03-18T17:01:24+00:00"
+            "time": "2020-05-18T11:54:55+00:00"
         },
         {
             "name": "contributte/mail",
@@ -803,16 +803,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/mailing.git",
-                "reference": "a52cfe9b4abb82c28483fda187c54376d3105013"
+                "reference": "aabbab76da1e12de57ba958a14dc7b93c9dc78f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/mailing/zipball/a52cfe9b4abb82c28483fda187c54376d3105013",
-                "reference": "a52cfe9b4abb82c28483fda187c54376d3105013",
+                "url": "https://api.github.com/repos/contributte/mailing/zipball/aabbab76da1e12de57ba958a14dc7b93c9dc78f0",
+                "reference": "aabbab76da1e12de57ba958a14dc7b93c9dc78f0",
                 "shasum": ""
             },
             "require": {
-                "latte/latte": "~2.5.1|~2.6.0|~2.7.0",
+                "latte/latte": "^2.5.1",
                 "nette/application": "~3.0.0",
                 "nette/di": "~3.0.0",
                 "nette/mail": "~3.0.1|~3.1.0",
@@ -859,7 +859,7 @@
                 "mailing",
                 "nette"
             ],
-            "time": "2020-03-13T16:32:31+00:00"
+            "time": "2020-05-18T11:50:45+00:00"
         },
         {
             "name": "contributte/monolog",
@@ -2392,16 +2392,16 @@
         },
         {
             "name": "nette/application",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/application.git",
-                "reference": "da24ae52e65fe52fa6d26f2181a56ec48958ccb0"
+                "reference": "2974fbfdaa06ca78b8f9f2c71bf16f91ce13f7a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/application/zipball/da24ae52e65fe52fa6d26f2181a56ec48958ccb0",
-                "reference": "da24ae52e65fe52fa6d26f2181a56ec48958ccb0",
+                "url": "https://api.github.com/repos/nette/application/zipball/2974fbfdaa06ca78b8f9f2c71bf16f91ce13f7a2",
+                "reference": "2974fbfdaa06ca78b8f9f2c71bf16f91ce13f7a2",
                 "shasum": ""
             },
             "require": {
@@ -2418,7 +2418,7 @@
                 "tracy/tracy": "<2.5"
             },
             "require-dev": {
-                "latte/latte": "^2.6",
+                "latte/latte": "^2.6.2",
                 "mockery/mockery": "^1.0",
                 "nette/di": "^v3.0",
                 "nette/forms": "^3.0",
@@ -2473,7 +2473,7 @@
                 "routing",
                 "seo"
             ],
-            "time": "2020-01-22T21:39:02+00:00"
+            "time": "2020-04-20T21:43:19+00:00"
         },
         {
             "name": "nette/bootstrap",
@@ -2619,28 +2619,25 @@
         },
         {
             "name": "nette/component-model",
-            "version": "v3.0.0",
+            "version": "v3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/component-model.git",
-                "reference": "3153441f3d64bbdac300e75b8e5dde36590f7e01"
+                "reference": "66409cf5507c77edb46ffa88cf6a92ff58395601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/component-model/zipball/3153441f3d64bbdac300e75b8e5dde36590f7e01",
-                "reference": "3153441f3d64bbdac300e75b8e5dde36590f7e01",
+                "url": "https://api.github.com/repos/nette/component-model/zipball/66409cf5507c77edb46ffa88cf6a92ff58395601",
+                "reference": "66409cf5507c77edb46ffa88cf6a92ff58395601",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^2.5 || ^3.0",
                 "php": ">=7.1"
             },
-            "conflict": {
-                "nette/application": "<2.4",
-                "nette/nette": "<2.2"
-            },
             "require-dev": {
                 "nette/tester": "^2.0",
+                "phpstan/phpstan": "^0.12",
                 "tracy/tracy": "^2.3"
             },
             "type": "library",
@@ -2657,8 +2654,8 @@
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
+                "GPL-2.0-only",
+                "GPL-3.0-only"
             ],
             "authors": [
                 {
@@ -2676,7 +2673,7 @@
                 "components",
                 "nette"
             ],
-            "time": "2019-02-20T07:13:15+00:00"
+            "time": "2020-04-21T13:48:20+00:00"
         },
         {
             "name": "nette/di",
@@ -4738,12 +4735,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/dev.git",
-                "reference": "e758c323c3dad2c460e3e25b1193b8d72e269542"
+                "reference": "221848fda1ddc3d682b335ee53c74345e26f7732"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/dev/zipball/e758c323c3dad2c460e3e25b1193b8d72e269542",
-                "reference": "e758c323c3dad2c460e3e25b1193b8d72e269542",
+                "url": "https://api.github.com/repos/contributte/dev/zipball/221848fda1ddc3d682b335ee53c74345e26f7732",
+                "reference": "221848fda1ddc3d682b335ee53c74345e26f7732",
                 "shasum": ""
             },
             "require": {
@@ -4771,7 +4768,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -4782,7 +4779,7 @@
                 "nette",
                 "shortcuts"
             ],
-            "time": "2019-07-09T13:39:29+00:00"
+            "time": "2020-05-14T17:59:39+00:00"
         },
         {
             "name": "fzaninotto/faker",
