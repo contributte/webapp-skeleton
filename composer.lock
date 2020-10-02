@@ -2554,16 +2554,16 @@
         },
         {
             "name": "nette/application",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/application.git",
-                "reference": "2974fbfdaa06ca78b8f9f2c71bf16f91ce13f7a2"
+                "reference": "783ad6fc6444f63314175131885c04b3dd0291dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/application/zipball/2974fbfdaa06ca78b8f9f2c71bf16f91ce13f7a2",
-                "reference": "2974fbfdaa06ca78b8f9f2c71bf16f91ce13f7a2",
+                "url": "https://api.github.com/repos/nette/application/zipball/783ad6fc6444f63314175131885c04b3dd0291dd",
+                "reference": "783ad6fc6444f63314175131885c04b3dd0291dd",
                 "shasum": ""
             },
             "require": {
@@ -2635,7 +2635,7 @@
                 "routing",
                 "seo"
             ],
-            "time": "2020-04-20T21:43:19+00:00"
+            "time": "2020-08-25T01:52:08+00:00"
         },
         {
             "name": "nette/bootstrap",
