@@ -31,9 +31,9 @@ abstract class AbstractRepository extends EntityRepository
 
 		foreach ($criteria as $k => $v) {
 			if (is_array($v)) {
-				$qb->andWhere(sprintf('e.%s IN(:%s)', $key, $key))->setParameter($key, array_values($v));
+				$qb->andWhere(sprintf('e.%s IN(:%s)', $k, $k))->setParameter($k, array_values($v));
 			} else {
-				$qb->andWhere(sprintf('e.%s = :%s', $key, $key))->setParameter($key, $v);
+				$qb->andWhere(sprintf('e.%s = :%s', $k, $k))->setParameter($k, $v);
 			}
 		}
 
