@@ -3894,12 +3894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/migrations.git",
-                "reference": "aaa09b80b329a021c750aa061d4702ffa4d5f72e"
+                "reference": "1b26fc4bfd48cfbbafa347e6252460d2c95c33f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/migrations/zipball/aaa09b80b329a021c750aa061d4702ffa4d5f72e",
-                "reference": "aaa09b80b329a021c750aa061d4702ffa4d5f72e",
+                "url": "https://api.github.com/repos/nettrine/migrations/zipball/1b26fc4bfd48cfbbafa347e6252460d2c95c33f7",
+                "reference": "1b26fc4bfd48cfbbafa347e6252460d2c95c33f7",
                 "shasum": ""
             },
             "require": {
@@ -3951,7 +3951,7 @@
                 "migrations",
                 "nette"
             ],
-            "time": "2020-06-18T11:35:01+00:00"
+            "time": "2020-10-28T16:56:33+00:00"
         },
         {
             "name": "nettrine/orm",
@@ -5555,6 +5555,7 @@
                 "faker",
                 "fixtures"
             ],
+            "abandoned": true,
             "time": "2019-12-12T13:22:17+00:00"
         },
         {
@@ -6150,16 +6151,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.50",
+            "version": "0.12.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "b8248f9c81265af75d6d969ca3252aaf3e998f3a"
+                "reference": "dbbdb0d7c2434ecd5289f6114d16473e694caa67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/b8248f9c81265af75d6d969ca3252aaf3e998f3a",
-                "reference": "b8248f9c81265af75d6d969ca3252aaf3e998f3a",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/dbbdb0d7c2434ecd5289f6114d16473e694caa67",
+                "reference": "dbbdb0d7c2434ecd5289f6114d16473e694caa67",
                 "shasum": ""
             },
             "require": {
@@ -6202,7 +6203,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-16T12:22:23+00:00"
+            "time": "2020-11-01T14:51:50+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
