@@ -28,6 +28,7 @@ nettrine.dbal:
 		user: %database.user%
 		password: %database.password%
 		dbname: %database.dbname%
+		port: %database.port%
 
 nettrine.orm:
 	entityManagerDecoratorClass: App\Model\Database\EntityManager
