@@ -36,12 +36,19 @@ services:
 	# Domain =================
 	- App\Domain\User\CreateUserFacade
 	- App\Domain\Order\OrderLogSubscriber
-	- App\Domain\Http\RequestLoggerSubscriber
+#	- App\Domain\Http\RequestLoggerSubscriber
 
 
 	# Console ================
 	- {class: App\Model\Console\HelloCommand, tags: {console.command: hello}}
 
+	- App\Modules\Front\Test\IUserGridFactory
+	- App\Modules\Front\Test\IUserDetailFactory
+	component.creator:
+		class: App\Modules\Front\Test\ComponentCreator
+		setup:
+			- add(usergrid, @App\Modules\Front\Test\IUserGridFactory)
+			- add(userdetail, @App\Modules\Front\Test\IUserDetailFactory)
 
 
 latte:
