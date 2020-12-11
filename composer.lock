@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb51b7788bc660af9876896cbf22397b",
+    "content-hash": "c9d94cf2aacbbf797b6f1e9828f4cc45",
     "packages": [
         {
             "name": "contributte/application",
@@ -395,28 +395,28 @@
         },
         {
             "name": "contributte/event-dispatcher",
-            "version": "v0.7.0",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/event-dispatcher.git",
-                "reference": "0c6678feb059b112ed642155c3f08b77b92f36a8"
+                "reference": "97d0f73a12e3cd9024f696c990396ac7b0604ed6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/event-dispatcher/zipball/0c6678feb059b112ed642155c3f08b77b92f36a8",
-                "reference": "0c6678feb059b112ed642155c3f08b77b92f36a8",
+                "url": "https://api.github.com/repos/contributte/event-dispatcher/zipball/97d0f73a12e3cd9024f696c990396ac7b0604ed6",
+                "reference": "97d0f73a12e3cd9024f696c990396ac7b0604ed6",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "^3.0.0",
-                "php": "^7.2",
+                "php": ">=7.2",
                 "symfony/event-dispatcher": "^4.3.1|^5.0.0"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
-                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/nunjuck": "^0.4.0",
                 "ninjify/qa": "^0.8.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11",
@@ -427,7 +427,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.7.x-dev"
+                    "dev-master": "0.9.x-dev"
                 }
             },
             "autoload": {
@@ -454,7 +454,7 @@
                 "nette",
                 "symfony"
             ],
-            "time": "2020-01-03T18:12:50+00:00"
+            "time": "2020-12-10T14:46:48+00:00"
         },
         {
             "name": "contributte/event-dispatcher-extra",
@@ -2841,16 +2841,16 @@
         },
         {
             "name": "nette/di",
-            "version": "v3.0.4",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/di.git",
-                "reference": "34d3e47ebe96229b7671664893a3b1128c102213"
+                "reference": "e639ccfbc0230e022ca08bf59c6b07df7caf2007"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/di/zipball/34d3e47ebe96229b7671664893a3b1128c102213",
-                "reference": "34d3e47ebe96229b7671664893a3b1128c102213",
+                "url": "https://api.github.com/repos/nette/di/zipball/e639ccfbc0230e022ca08bf59c6b07df7caf2007",
+                "reference": "e639ccfbc0230e022ca08bf59c6b07df7caf2007",
                 "shasum": ""
             },
             "require": {
@@ -2859,8 +2859,8 @@
                 "nette/php-generator": "^3.3.3",
                 "nette/robot-loader": "^3.2",
                 "nette/schema": "^1.0",
-                "nette/utils": "^3.1",
-                "php": ">=7.1"
+                "nette/utils": "^3.1.4",
+                "php": ">=7.1 <8.1"
             },
             "conflict": {
                 "nette/bootstrap": "<3.0"
@@ -2908,7 +2908,7 @@
                 "nette",
                 "static"
             ],
-            "time": "2020-05-14T10:29:59+00:00"
+            "time": "2020-11-25T22:42:55+00:00"
         },
         {
             "name": "nette/finder",
@@ -3251,21 +3251,20 @@
         },
         {
             "name": "nette/php-generator",
-            "version": "v3.4.0",
+            "version": "v3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "ea2c8e8d6439f0a4e3cd3431c572b51a8131539b"
+                "reference": "fe54415cd22d01bee1307a608058bf131978610a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/ea2c8e8d6439f0a4e3cd3431c572b51a8131539b",
-                "reference": "ea2c8e8d6439f0a4e3cd3431c572b51a8131539b",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/fe54415cd22d01bee1307a608058bf131978610a",
+                "reference": "fe54415cd22d01bee1307a608058bf131978610a",
                 "shasum": ""
             },
             "require": {
-                "ext-tokenizer": "*",
-                "nette/utils": "^2.4.2 || ^3.0",
+                "nette/utils": "^3.1.2",
                 "php": ">=7.1"
             },
             "require-dev": {
@@ -3280,7 +3279,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "3.5-dev"
                 }
             },
             "autoload": {
@@ -3312,20 +3311,20 @@
                 "php",
                 "scaffolding"
             ],
-            "time": "2020-05-26T16:32:45+00:00"
+            "time": "2020-11-04T11:26:26+00:00"
         },
         {
             "name": "nette/robot-loader",
-            "version": "v3.2.3",
+            "version": "v3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/robot-loader.git",
-                "reference": "726c462e73e739e965ec654a667407074cfe83c0"
+                "reference": "15c1ecd0e6e69e8d908dfc4cca7b14f3b850a96b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/robot-loader/zipball/726c462e73e739e965ec654a667407074cfe83c0",
-                "reference": "726c462e73e739e965ec654a667407074cfe83c0",
+                "url": "https://api.github.com/repos/nette/robot-loader/zipball/15c1ecd0e6e69e8d908dfc4cca7b14f3b850a96b",
+                "reference": "15c1ecd0e6e69e8d908dfc4cca7b14f3b850a96b",
                 "shasum": ""
             },
             "require": {
@@ -3342,7 +3341,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -3375,7 +3374,7 @@
                 "nette",
                 "trait"
             ],
-            "time": "2020-02-28T13:10:07+00:00"
+            "time": "2020-09-15T15:14:17+00:00"
         },
         {
             "name": "nette/routing",
@@ -3437,21 +3436,21 @@
         },
         {
             "name": "nette/schema",
-            "version": "v1.0.2",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "febf71fb4052c824046f5a33f4f769a6e7fa0cb4"
+                "reference": "34baf9eca75eccdad3d04306c5d6bec0f6b252ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/febf71fb4052c824046f5a33f4f769a6e7fa0cb4",
-                "reference": "febf71fb4052c824046f5a33f4f769a6e7fa0cb4",
+                "url": "https://api.github.com/repos/nette/schema/zipball/34baf9eca75eccdad3d04306c5d6bec0f6b252ad",
+                "reference": "34baf9eca75eccdad3d04306c5d6bec0f6b252ad",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "^3.1",
-                "php": ">=7.1"
+                "nette/utils": "^3.1.4",
+                "php": ">=7.1 <8.1"
             },
             "require-dev": {
                 "nette/tester": "^2.2",
@@ -3460,7 +3459,9 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": []
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
             },
             "autoload": {
                 "classmap": [
@@ -3470,8 +3471,8 @@
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
+                "GPL-2.0-only",
+                "GPL-3.0-only"
             ],
             "authors": [
                 {
@@ -3489,7 +3490,7 @@
                 "config",
                 "nette"
             ],
-            "time": "2020-01-06T22:52:48+00:00"
+            "time": "2020-11-25T21:54:59+00:00"
         },
         {
             "name": "nette/security",
@@ -4452,16 +4453,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v5.1.2",
+            "version": "v5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "cc0d059e2e997e79ca34125a52f3e33de4424ac7"
+                "reference": "aa13a09811e6d2ad43f8fb336bebdb7691d85d3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/cc0d059e2e997e79ca34125a52f3e33de4424ac7",
-                "reference": "cc0d059e2e997e79ca34125a52f3e33de4424ac7",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/aa13a09811e6d2ad43f8fb336bebdb7691d85d3c",
+                "reference": "aa13a09811e6d2ad43f8fb336bebdb7691d85d3c",
                 "shasum": ""
             },
             "require": {
@@ -4481,6 +4482,7 @@
                 "psr/log": "~1.0",
                 "symfony/config": "^4.4|^5.0",
                 "symfony/dependency-injection": "^4.4|^5.0",
+                "symfony/error-handler": "^4.4|^5.0",
                 "symfony/expression-language": "^4.4|^5.0",
                 "symfony/http-foundation": "^4.4|^5.0",
                 "symfony/service-contracts": "^1.1|^2",
@@ -4491,11 +4493,6 @@
                 "symfony/http-kernel": ""
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.1-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\EventDispatcher\\": ""
@@ -4534,20 +4531,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-20T17:43:50+00:00"
+            "time": "2020-11-01T16:14:45+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
-            "version": "v2.1.2",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher-contracts.git",
-                "reference": "405952c4e90941a17e52ef7489a2bd94870bb290"
+                "reference": "0ba7d54483095a198fa51781bc608d17e84dffa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/405952c4e90941a17e52ef7489a2bd94870bb290",
-                "reference": "405952c4e90941a17e52ef7489a2bd94870bb290",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/0ba7d54483095a198fa51781bc608d17e84dffa2",
+                "reference": "0ba7d54483095a198fa51781bc608d17e84dffa2",
                 "shasum": ""
             },
             "require": {
@@ -4560,7 +4557,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -4606,7 +4607,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-20T17:43:50+00:00"
+            "time": "2020-09-07T11:33:47+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
