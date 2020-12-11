@@ -2,19 +2,9 @@
 
 <p align=center>
     <strong>Nutella project</strong> is full featured web app kit based on Nette Framework + Contributte and many useful packages by <a href="https://github.com/f3l1x">@f3l1x</a>.
-</p>
-
-<p align=center>
     Why <strong>nutella</strong>? Because it's all mixed into 1 awesome piece.
 </p>
 
-<p align=center>
-🕹 <a href="https://f3l1x.io">f3l1x.io</a> | 💻 <a href="https://github.com/f3l1x">f3l1x</a> | 🐦 <a href="https://twitter.com/xf3l1x">@xf3l1x</a>
-</p>
-
-<p align=center>
-    <code>composer create-project -s dev planette/nutella-project acme</code>
-</p>
 <p align=center>
     Take a look at demo <a href="https://examples.contributte.org/planette/nutella-project/">examples.contributte.org/planette/nutella-project/</a>
 </p>
@@ -23,8 +13,18 @@
     <img src="https://raw.githubusercontent.com/planette/nutella-project/master/.docs/assets/screenshot1.png">
 </p>
 
-[![Build Status](https://img.shields.io/travis/planette/nutella-project.svg?style=flat-square)](https://travis-ci.org/planette/nutella-project)
-[![Join the chat](https://img.shields.io/gitter/room/contributte/contributte.svg?style=flat-square)](http://bit.ly/ctteg)
+<p align=center>
+  <a href="https://github.com/planette/nutella-project/actions"><img src="https://badgen.net/github/checks/planette/nutella-project/master?cache=300"></a>
+  <a href="https://packagist.org/packages/planette/nutella-project"><img src="https://badgen.net/packagist/php/planette/nutella-project"></a>
+  <a href="https://github.com/planette/nutella-project"><img src="https://badgen.net/github/license/planette/nutella-project"></a>
+  <a href="https://bit.ly/ctteg"><img src="https://badgen.net/badge/support/gitter/cyan"></a>
+  <a href="https://bit.ly/cttfo"><img src="https://badgen.net/badge/support/forum/yellow"></a>
+  <a href="https://contributte.org/partners.html"><img src="https://badgen.net/badge/sponsor/donations/F96854"></a>
+</p>
+
+<p align=center>
+Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
+</p>
 
 -----
 
@@ -34,6 +34,7 @@ Main goal is to provide best prepared starter-kit project for Nette developers.
 
 Focused on:
 
+- latest PHP 7.4 & 8.0
 - `nette/*` packages
 - Doctrine ORM via `nettrine/*`
 - Symfony components via `contributte/*`
@@ -45,12 +46,20 @@ Focused on:
 
 https://examples.contributte.org/planette/nutella-project/
 
-## Install with [docker](https://github.com/docker/docker/)
+## Installation
+
+To install latest version of `planette/nutella-project` use [Composer](https://getcomposer.com).
+
+```
+composer create-project -s dev planette/nutella-project acme
+```
+
+### Install using [docker](https://github.com/docker/docker/)
 
 1) At first, use composer to install this project.
 
     ```
-    composer create-project planette/nutella-project
+    composer create-project -s dev planette/nutella-project
     ```
 
 2) After that, you have to setup Postgres >= 10 database. You can start it manually or use docker image `postgres:10`.
@@ -94,12 +103,12 @@ https://examples.contributte.org/planette/nutella-project/
     - http://localhost:8000.
     - http://localhost:8000/admin (admin@admin.cz / admin)
 
-## Install with [docker-compose](https://https://github.com/docker/compose/)
+### Install using [docker-compose](https://https://github.com/docker/compose/)
 
 1) At first, use composer to install this project.
 
     ```
-    composer create-project planette/forest-project
+    composer create-project -s dev planette/forest-project
     ```
 
 2) Modify `app/config/config.local.neon` and set host to `database`
@@ -130,6 +139,7 @@ https://examples.contributte.org/planette/nutella-project/
 
 Here is a list of all features you can find in this project.
 
+- PHP 7.4+
 - :package: Packages
     - Nette 3.0
     - Contributte
@@ -177,6 +187,7 @@ Take a detailed look :eyes: at each single package.
 - [contributte/utils](https://contributte.org/packages/contributte/utils.html)
 - [contributte/tracy](https://contributte.org/packages/contributte/tracy.html)
 - [contributte/console](https://contributte.org/packages/contributte/console.html)
+- [planette/nutella-project](https://contributte.org/packages/planette/nutella-project.html)
 - [contributte/event-dispatcher](https://contributte.org/packages/contributte/event-dispatcher.html)
 - [contributte/event-dispatcher-extra](https://contributte.org/packages/contributte/event-dispatcher-extra.html)
 - [contributte/neonizer](https://contributte.org/packages/contributte/neonizer.html)
@@ -187,15 +198,20 @@ Take a detailed look :eyes: at each single package.
 
 - [nettrine/orm](https://contributte.org/packages/nettrine/orm.html)
 - [nettrine/dbal](https://contributte.org/packages/nettrine/dbal.html)
+- [nettrine/annotations](https://contributte.org/packages/nettrine/annotations.html)
+- [nettrine/cache](https://contributte.org/packages/nettrine/cache.html)
 - [nettrine/migrations](https://contributte.org/packages/nettrine/migrations.html)
 - [nettrine/fixtures](https://contributte.org/packages/nettrine/fixtures.html)
 - [nettrine/extensions](https://contributte.org/packages/nettrine/extensions.html)
 
-**Nette**
+**Dev**
 
-- [nette/finder](https://github.com/nette/finder)
-- [nette/safe-stream](https://github.com/nette/safe-stream)
-- [nette/robot-loader](https://github.com/nette/robot-loader)
+- [contributte/dev](https://contributte.org/packages/contributte/dev.html)
+- [ninjify/qa](https://contributte.org/packages/ninjify/qa.html)
+- [ninjify/nunjuck](https://contributte.org/packages/ninjify/nunjuck.html)
+- [phpstan/phpstan](https://github.com/phpstan/phpstan)
+- [mockery/mockery](https://github.com/mockery/mockery)
+- [nelmio/alice](https://github.com/nelmio/alice)
 
 ## Demo
 
