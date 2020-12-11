@@ -22,5 +22,6 @@ test(function () use ($container): void {
 			Assert::fail($fail);
 		}
 	}
+
 	Assert::count(0, $validations);
 });
