@@ -11,7 +11,7 @@ on:
 env:
   extensions: "json"
   cacheVersion: "1"
-  composerVersion: "v1"
+  composerVersion: "v2"
   composerInstall: "composer install"
 
 jobs:
@@ -136,7 +136,7 @@ jobs:
 
     strategy:
       matrix:
-        php-versions: ["7.3", "7.4", "8.0"]
+        php-versions: ["7.4", "8.0"]
         operating-system: ["ubuntu-latest"]
       fail-fast: false
 
