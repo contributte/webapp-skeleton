@@ -30,7 +30,3 @@ contributte.monolog:
 				- Monolog\Processor\IntrospectionProcessor()
 				- Monolog\Processor\MemoryPeakUsageProcessor()
 				- Monolog\Processor\ProcessIdProcessor()
-
-contributte.post:
-	debug: false
-	mailer: Nette\Mail\SmtpMailer(%smtp%)

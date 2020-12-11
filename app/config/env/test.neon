@@ -5,7 +5,6 @@ includes:
 
 # Post/Mailing ===============
 contributte.post:
-	mailer: Contributte\Mail\Mailer\FileMailer(%appDir%/../tests/tmp/mails)
 
 # Nettrine ===================
 nettrine.orm:
@@ -18,9 +17,9 @@ nettrine.cache:
 
 # Services ===================
 services:
-	security.userStorage:
-		class: Tests\Toolkit\Nette\DummyUserStorage
+	security.userStorage: Tests\Toolkit\Nette\DummyUserStorage
 
+	mail.mailer: Contributte\Mail\Mailer\FileMailer(%appDir%/../tests/tmp/mails)
 
 # Parameters =================
 parameters:
