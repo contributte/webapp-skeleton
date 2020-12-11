@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9d94cf2aacbbf797b6f1e9828f4cc45",
+    "content-hash": "7f54aab9662e12676d041adf60370ef8",
     "packages": [
         {
             "name": "contributte/application",
@@ -458,21 +458,21 @@
         },
         {
             "name": "contributte/event-dispatcher-extra",
-            "version": "v0.7.1",
+            "version": "v0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/event-dispatcher-extra.git",
-                "reference": "fc73be816546dc984625d756d82e7942cadb44af"
+                "reference": "f7372fdb903f4ab5dbeb551222f91b2eefbcd09e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/event-dispatcher-extra/zipball/fc73be816546dc984625d756d82e7942cadb44af",
-                "reference": "fc73be816546dc984625d756d82e7942cadb44af",
+                "url": "https://api.github.com/repos/contributte/event-dispatcher-extra/zipball/f7372fdb903f4ab5dbeb551222f91b2eefbcd09e",
+                "reference": "f7372fdb903f4ab5dbeb551222f91b2eefbcd09e",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "~3.0.0",
-                "php": "^7.2",
+                "php": ">=7.2",
                 "symfony/event-dispatcher": "^4.3.1|^5.0.0"
             },
             "conflict": {
@@ -484,7 +484,7 @@
                 "nette/application": "~3.0.0",
                 "nette/http": "~3.0.1",
                 "nette/security": "~3.0.0",
-                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/nunjuck": "^0.4.0",
                 "ninjify/qa": "^0.8.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11",
@@ -495,7 +495,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.8.x-dev"
+                    "dev-master": "0.9.x-dev"
                 }
             },
             "autoload": {
@@ -526,7 +526,7 @@
                 "security",
                 "template"
             ],
-            "time": "2020-01-05T13:14:47+00:00"
+            "time": "2020-12-10T14:53:05+00:00"
         },
         {
             "name": "contributte/forms",
