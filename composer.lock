@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b3f2ebe2cda597184dd087afcd2de2b",
+    "content-hash": "d2269a4c64c9fb22ed6bf31d9e2819c7",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -597,35 +597,34 @@
         },
         {
             "name": "contributte/forms",
-            "version": "v0.4.0",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms.git",
-                "reference": "c58723613f866ac28fbffe1f4c90530beec7d105"
+                "reference": "995d5349b3b6233808a4abc9e4324d78192e3779"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms/zipball/c58723613f866ac28fbffe1f4c90530beec7d105",
-                "reference": "c58723613f866ac28fbffe1f4c90530beec7d105",
+                "url": "https://api.github.com/repos/contributte/forms/zipball/995d5349b3b6233808a4abc9e4324d78192e3779",
+                "reference": "995d5349b3b6233808a4abc9e4324d78192e3779",
                 "shasum": ""
             },
             "require": {
-                "nette/forms": "~3.0.0",
-                "php": "^7.2"
+                "nette/forms": "^3.0.0",
+                "php": ">=7.2"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
-                "nette/application": "~3.0.0",
-                "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "nette/application": "^3.0.0",
+                "nette/di": "^3.0.0",
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "suggest": {
                 "nette/di": "to use FormFactoryExtension[CompilerExtension]"
@@ -633,7 +632,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5.x-dev"
+                    "dev-master": "0.6.x-dev"
                 }
             },
             "autoload": {
@@ -649,10 +648,6 @@
                 {
                     "name": "Milan Felix Šulc",
                     "homepage": "https://f3l1x.io"
-                },
-                {
-                    "name": "Marek Bartoš",
-                    "homepage": "https://marek-bartos.cz"
                 }
             ],
             "description": "Extra contrib to nette/forms",
@@ -666,7 +661,7 @@
                 "rules",
                 "validation"
             ],
-            "time": "2019-06-16T13:58:26+00:00"
+            "time": "2020-12-14T17:46:11+00:00"
         },
         {
             "name": "contributte/http",
