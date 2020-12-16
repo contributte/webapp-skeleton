@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2269a4c64c9fb22ed6bf31d9e2819c7",
+    "content-hash": "546e25ca349ccebc080d0587dcf22cfb",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1049,30 +1049,29 @@
         },
         {
             "name": "contributte/security",
-            "version": "v0.3.0",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/security.git",
-                "reference": "30f8a6f9b5dbcc7a8facda4bbd2688eec715b8e5"
+                "reference": "4ca84fbf22a8cbd0a292fba6e661a896c1a1a4d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/security/zipball/30f8a6f9b5dbcc7a8facda4bbd2688eec715b8e5",
-                "reference": "30f8a6f9b5dbcc7a8facda4bbd2688eec715b8e5",
+                "url": "https://api.github.com/repos/contributte/security/zipball/4ca84fbf22a8cbd0a292fba6e661a896c1a1a4d4",
+                "reference": "4ca84fbf22a8cbd0a292fba6e661a896c1a1a4d4",
                 "shasum": ""
             },
             "require": {
-                "nette/security": "~3.0.0",
-                "php": "^7.2"
+                "nette/security": "^3.0.0",
+                "php": ">=7.2"
             },
             "require-dev": {
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "suggest": {
                 "nette/di": "to use SecurityExtension [CompilerExtension]"
@@ -1080,7 +1079,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4-dev"
+                    "dev-master": "0.5.x-dev"
                 }
             },
             "autoload": {
@@ -1094,7 +1093,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -1108,7 +1107,7 @@
                 "privilege",
                 "security"
             ],
-            "time": "2019-06-16T14:03:07+00:00"
+            "time": "2020-12-15T16:22:12+00:00"
         },
         {
             "name": "contributte/tracy",

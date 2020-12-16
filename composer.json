@@ -22,7 +22,7 @@
 		"contributte/http": "^0.3.0",
 		"contributte/forms": "^0.5.0",
 		"contributte/mail": "^0.6.0",
-		"contributte/security": "^0.3.0",
+		"contributte/security": "^0.4.0",
 		"contributte/utils": "^0.5.0",
 		"contributte/latte": "^0.5.0",
 		"contributte/tracy": "^0.4.1",
