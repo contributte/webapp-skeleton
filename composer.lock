@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2269a4c64c9fb22ed6bf31d9e2819c7",
+    "content-hash": "c15c98582bf55d1e1c262a6c63dede10",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1112,20 +1112,20 @@
         },
         {
             "name": "contributte/tracy",
-            "version": "v0.4.1",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tracy.git",
-                "reference": "791113ffb6c75e7603e7edc121c193e57282f447"
+                "reference": "c20a4dbc81d55226d5c53e3c4a3a46b1c9bb0e3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tracy/zipball/791113ffb6c75e7603e7edc121c193e57282f447",
-                "reference": "791113ffb6c75e7603e7edc121c193e57282f447",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/c20a4dbc81d55226d5c53e3c4a3a46b1c9bb0e3a",
+                "reference": "c20a4dbc81d55226d5c53e3c4a3a46b1c9bb0e3a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2",
+                "php": ">=7.2",
                 "tracy/tracy": "~2.7.0"
             },
             "conflict": {
@@ -1135,13 +1135,12 @@
                 "nette/application": "~3.0.0",
                 "nette/di": "~3.0.0",
                 "nette/http": "~3.0.1",
-                "ninjify/nunjuck": "^0.3.0",
-                "ninjify/qa": "^0.10.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "type": "library",
             "extra": {
@@ -1178,7 +1177,7 @@
                 "profile",
                 "tracy"
             ],
-            "time": "2019-10-08T14:13:20+00:00"
+            "time": "2020-12-15T16:31:41+00:00"
         },
         {
             "name": "contributte/utils",
