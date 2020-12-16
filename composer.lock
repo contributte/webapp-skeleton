@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f54f7ad17cdcaf18eb0fc5a742e36e3d",
+    "content-hash": "c5ec9fb3e6975e288d35fe4db718df2d",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -202,35 +202,34 @@
         },
         {
             "name": "contributte/cache",
-            "version": "v0.5.0",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/cache.git",
-                "reference": "c54d4c4448f16b6cfbfa34607990904c19b5759e"
+                "reference": "21b975609e58b074cd281dc2344b6d93ca5951bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/cache/zipball/c54d4c4448f16b6cfbfa34607990904c19b5759e",
-                "reference": "c54d4c4448f16b6cfbfa34607990904c19b5759e",
+                "url": "https://api.github.com/repos/contributte/cache/zipball/21b975609e58b074cd281dc2344b6d93ca5951bb",
+                "reference": "21b975609e58b074cd281dc2344b6d93ca5951bb",
                 "shasum": ""
             },
             "require": {
-                "nette/caching": "~3.0.0",
-                "php": "^7.2"
+                "nette/caching": "^3.0.0",
+                "php": ">=7.2"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
-                "tracy/tracy": "~2.6.0"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
+                "tracy/tracy": "^2.6.0"
             },
             "suggest": {
                 "nette/di": "to use CacheFactoryExtension and DebugStorageExtension"
@@ -238,7 +237,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5.x-dev"
+                    "dev-master": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -263,7 +262,7 @@
                 "nette",
                 "provider"
             ],
-            "time": "2019-07-15T07:52:35+00:00"
+            "time": "2020-12-14T17:38:03+00:00"
         },
         {
             "name": "contributte/console",
