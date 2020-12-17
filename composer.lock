@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f54f7ad17cdcaf18eb0fc5a742e36e3d",
+    "content-hash": "ca13a88bcf67948819c3e48a63c23622",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -59,6 +59,10 @@
                 }
             ],
             "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "support": {
+                "issues": "https://github.com/composer/package-versions-deprecated/issues",
+                "source": "https://github.com/composer/package-versions-deprecated/tree/1.11.99.1"
+            },
             "funding": [
                 {
                     "url": "https://packagist.com",
@@ -135,40 +139,43 @@
                 "nette",
                 "presenter"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/application/issues",
+                "source": "https://github.com/contributte/application/tree/v0.5.0"
+            },
             "time": "2020-12-07T17:13:05+00:00"
         },
         {
             "name": "contributte/bootstrap",
-            "version": "dev-master",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/bootstrap.git",
-                "reference": "7cb2ae4a8f88466e10eda17fa8cc7d41cac94f9a"
+                "reference": "55c2358ef001b922896f9a8faaa0282e67a64d09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/bootstrap/zipball/7cb2ae4a8f88466e10eda17fa8cc7d41cac94f9a",
-                "reference": "7cb2ae4a8f88466e10eda17fa8cc7d41cac94f9a",
+                "url": "https://api.github.com/repos/contributte/bootstrap/zipball/55c2358ef001b922896f9a8faaa0282e67a64d09",
+                "reference": "55c2358ef001b922896f9a8faaa0282e67a64d09",
                 "shasum": ""
             },
             "require": {
-                "nette/bootstrap": "^3.0.0",
-                "nette/utils": "^3.0.0",
+                "nette/bootstrap": "^3.0.2",
+                "nette/utils": "^3.1.5",
                 "php": ">=7.2"
             },
             "require-dev": {
-                "ninjify/nunjuck": "^0.4.0",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5-dev"
+                    "dev-master": "0.6-dev"
                 }
             },
             "autoload": {
@@ -196,41 +203,40 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/bootstrap/issues",
-                "source": "https://github.com/contributte/bootstrap/tree/master"
+                "source": "https://github.com/contributte/bootstrap/tree/v0.5.0"
             },
-            "time": "2020-11-30T16:33:03+00:00"
+            "time": "2020-12-13T19:07:20+00:00"
         },
         {
             "name": "contributte/cache",
-            "version": "v0.5.0",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/cache.git",
-                "reference": "c54d4c4448f16b6cfbfa34607990904c19b5759e"
+                "reference": "21b975609e58b074cd281dc2344b6d93ca5951bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/cache/zipball/c54d4c4448f16b6cfbfa34607990904c19b5759e",
-                "reference": "c54d4c4448f16b6cfbfa34607990904c19b5759e",
+                "url": "https://api.github.com/repos/contributte/cache/zipball/21b975609e58b074cd281dc2344b6d93ca5951bb",
+                "reference": "21b975609e58b074cd281dc2344b6d93ca5951bb",
                 "shasum": ""
             },
             "require": {
-                "nette/caching": "~3.0.0",
-                "php": "^7.2"
+                "nette/caching": "^3.0.0",
+                "php": ">=7.2"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
-                "tracy/tracy": "~2.6.0"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
+                "tracy/tracy": "^2.6.0"
             },
             "suggest": {
                 "nette/di": "to use CacheFactoryExtension and DebugStorageExtension"
@@ -238,7 +244,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5.x-dev"
+                    "dev-master": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -263,7 +269,11 @@
                 "nette",
                 "provider"
             ],
-            "time": "2019-07-15T07:52:35+00:00"
+            "support": {
+                "issues": "https://github.com/contributte/cache/issues",
+                "source": "https://github.com/contributte/cache/tree/v0.6.0"
+            },
+            "time": "2020-12-14T17:38:03+00:00"
         },
         {
             "name": "contributte/console",
@@ -322,6 +332,10 @@
                 "nette",
                 "symfony"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/console/issues",
+                "source": "https://github.com/contributte/console/tree/v0.9.0"
+            },
             "time": "2020-12-11T13:00:07+00:00"
         },
         {
@@ -391,6 +405,10 @@
                 "nette",
                 "symfony"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/console-extra/issues",
+                "source": "https://github.com/contributte/console-extra/tree/v0.6.0"
+            },
             "time": "2020-12-11T12:39:23+00:00"
         },
         {
@@ -458,6 +476,10 @@
                 "inject",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/di/issues",
+                "source": "https://github.com/contributte/di/tree/v0.5.0"
+            },
             "time": "2020-12-06T15:10:07+00:00"
         },
         {
@@ -521,6 +543,10 @@
                 "nette",
                 "symfony"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/event-dispatcher/issues",
+                "source": "https://github.com/contributte/event-dispatcher/tree/v0.8.0"
+            },
             "time": "2020-12-10T14:46:48+00:00"
         },
         {
@@ -593,6 +619,10 @@
                 "security",
                 "template"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/event-dispatcher-extra/issues",
+                "source": "https://github.com/contributte/event-dispatcher-extra/tree/v0.8.0"
+            },
             "time": "2020-12-10T14:53:05+00:00"
         },
         {
@@ -661,6 +691,10 @@
                 "rules",
                 "validation"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/forms/issues",
+                "source": "https://github.com/contributte/forms/tree/v0.5.0"
+            },
             "time": "2020-12-14T17:46:11+00:00"
         },
         {
@@ -728,20 +762,24 @@
                 "request",
                 "response"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/http/issues",
+                "source": "https://github.com/contributte/http/tree/v0.4.0"
+            },
             "time": "2020-12-15T15:52:06+00:00"
         },
         {
             "name": "contributte/latte",
-            "version": "dev-master",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/latte.git",
-                "reference": "4d46bc059c9c3b317dbb95d00448001e74cf5bb7"
+                "reference": "f9ed277ddc6d8f0559375aae82bf08e5fc419519"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/latte/zipball/4d46bc059c9c3b317dbb95d00448001e74cf5bb7",
-                "reference": "4d46bc059c9c3b317dbb95d00448001e74cf5bb7",
+                "url": "https://api.github.com/repos/contributte/latte/zipball/f9ed277ddc6d8f0559375aae82bf08e5fc419519",
+                "reference": "f9ed277ddc6d8f0559375aae82bf08e5fc419519",
                 "shasum": ""
             },
             "require": {
@@ -754,13 +792,12 @@
             "require-dev": {
                 "nette/application": "~3.0.0",
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.4.0",
-                "ninjify/qa": "^0.10.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "suggest": {
                 "nette/di": "to use VersionExtension[CompilerExtension]"
@@ -768,7 +805,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5.x-dev"
+                    "dev-master": "0.6.x-dev"
                 }
             },
             "autoload": {
@@ -793,7 +830,11 @@
                 "latte",
                 "nette"
             ],
-            "time": "2020-11-18T23:08:40+00:00"
+            "support": {
+                "issues": "https://github.com/contributte/latte/issues",
+                "source": "https://github.com/contributte/latte/tree/v0.5.0"
+            },
+            "time": "2020-12-14T11:24:50+00:00"
         },
         {
             "name": "contributte/mail",
@@ -828,6 +869,7 @@
             "suggest": {
                 "contributte/di": "to use MailerExtension[CompilerExtension]"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -856,6 +898,10 @@
                 "mail",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/mail/issues",
+                "source": "https://github.com/contributte/mail/tree/master"
+            },
             "time": "2020-11-30T16:23:33+00:00"
         },
         {
@@ -920,6 +966,10 @@
                 "mailing",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/mailing/issues",
+                "source": "https://github.com/contributte/mailing/tree/master"
+            },
             "time": "2020-07-16T15:29:01+00:00"
         },
         {
@@ -983,6 +1033,10 @@
                 "monolog",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/monolog/issues",
+                "source": "https://github.com/contributte/monolog/tree/v0.5.0"
+            },
             "time": "2020-12-10T14:31:08+00:00"
         },
         {
@@ -1014,6 +1068,7 @@
                 "phpstan/phpstan-shim": "^0.11",
                 "phpstan/phpstan-strict-rules": "^0.11"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1044,34 +1099,37 @@
                 "nette",
                 "parameters"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/neonizer/issues",
+                "source": "https://github.com/contributte/neonizer/tree/master"
+            },
             "time": "2020-11-22T16:56:13+00:00"
         },
         {
             "name": "contributte/security",
-            "version": "v0.3.0",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/security.git",
-                "reference": "30f8a6f9b5dbcc7a8facda4bbd2688eec715b8e5"
+                "reference": "4ca84fbf22a8cbd0a292fba6e661a896c1a1a4d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/security/zipball/30f8a6f9b5dbcc7a8facda4bbd2688eec715b8e5",
-                "reference": "30f8a6f9b5dbcc7a8facda4bbd2688eec715b8e5",
+                "url": "https://api.github.com/repos/contributte/security/zipball/4ca84fbf22a8cbd0a292fba6e661a896c1a1a4d4",
+                "reference": "4ca84fbf22a8cbd0a292fba6e661a896c1a1a4d4",
                 "shasum": ""
             },
             "require": {
-                "nette/security": "~3.0.0",
-                "php": "^7.2"
+                "nette/security": "^3.0.0",
+                "php": ">=7.2"
             },
             "require-dev": {
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "suggest": {
                 "nette/di": "to use SecurityExtension [CompilerExtension]"
@@ -1079,7 +1137,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4-dev"
+                    "dev-master": "0.5.x-dev"
                 }
             },
             "autoload": {
@@ -1093,7 +1151,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -1107,24 +1165,28 @@
                 "privilege",
                 "security"
             ],
-            "time": "2019-06-16T14:03:07+00:00"
+            "support": {
+                "issues": "https://github.com/contributte/security/issues",
+                "source": "https://github.com/contributte/security/tree/v0.4.0"
+            },
+            "time": "2020-12-15T16:22:12+00:00"
         },
         {
             "name": "contributte/tracy",
-            "version": "v0.4.1",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tracy.git",
-                "reference": "791113ffb6c75e7603e7edc121c193e57282f447"
+                "reference": "c20a4dbc81d55226d5c53e3c4a3a46b1c9bb0e3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tracy/zipball/791113ffb6c75e7603e7edc121c193e57282f447",
-                "reference": "791113ffb6c75e7603e7edc121c193e57282f447",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/c20a4dbc81d55226d5c53e3c4a3a46b1c9bb0e3a",
+                "reference": "c20a4dbc81d55226d5c53e3c4a3a46b1c9bb0e3a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2",
+                "php": ">=7.2",
                 "tracy/tracy": "~2.7.0"
             },
             "conflict": {
@@ -1134,13 +1196,12 @@
                 "nette/application": "~3.0.0",
                 "nette/di": "~3.0.0",
                 "nette/http": "~3.0.1",
-                "ninjify/nunjuck": "^0.3.0",
-                "ninjify/qa": "^0.10.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "type": "library",
             "extra": {
@@ -1177,7 +1238,11 @@
                 "profile",
                 "tracy"
             ],
-            "time": "2019-10-08T14:13:20+00:00"
+            "support": {
+                "issues": "https://github.com/contributte/tracy/issues",
+                "source": "https://github.com/contributte/tracy/tree/v0.5.0"
+            },
+            "time": "2020-12-15T16:31:41+00:00"
         },
         {
             "name": "contributte/utils",
@@ -1243,6 +1308,10 @@
                 "strings",
                 "utils"
             ],
+            "support": {
+                "issues": "https://github.com/contributte/utils/issues",
+                "source": "https://github.com/contributte/utils/tree/v0.5.0"
+            },
             "time": "2020-12-11T11:13:16+00:00"
         },
         {
@@ -1314,6 +1383,10 @@
                 "docblock",
                 "parser"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/annotations/issues",
+                "source": "https://github.com/doctrine/annotations/tree/1.11.1"
+            },
             "time": "2020-10-26T10:28:16+00:00"
         },
         {
@@ -1396,6 +1469,10 @@
                 "redis",
                 "xcache"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/cache/issues",
+                "source": "https://github.com/doctrine/cache/tree/1.10.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -1475,6 +1552,10 @@
                 "iterators",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/collections/issues",
+                "source": "https://github.com/doctrine/collections/tree/1.6.7"
+            },
             "time": "2020-07-27T17:53:49+00:00"
         },
         {
@@ -1558,6 +1639,10 @@
                 "doctrine",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/common/issues",
+                "source": "https://github.com/doctrine/common/tree/2.13.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -1635,6 +1720,10 @@
             "keywords": [
                 "database"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/data-fixtures/issues",
+                "source": "https://github.com/doctrine/data-fixtures/tree/1.4.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -1742,6 +1831,10 @@
                 "sqlserver",
                 "sqlsrv"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/dbal/issues",
+                "source": "https://github.com/doctrine/dbal/tree/2.12.1"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -1832,6 +1925,10 @@
                 "event system",
                 "events"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/event-manager/issues",
+                "source": "https://github.com/doctrine/event-manager/tree/1.1.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -1924,6 +2021,10 @@
                 "uppercase",
                 "words"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/inflector/issues",
+                "source": "https://github.com/doctrine/inflector/tree/1.4.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -1989,6 +2090,10 @@
                 "constructor",
                 "instantiate"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/instantiator/issues",
+                "source": "https://github.com/doctrine/instantiator/tree/1.4.0"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -2065,6 +2170,10 @@
                 "parser",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/lexer/issues",
+                "source": "https://github.com/doctrine/lexer/tree/1.2.1"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -2161,6 +2270,10 @@
                 "migrations",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/migrations/issues",
+                "source": "https://github.com/doctrine/migrations/tree/2.3.1"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -2263,6 +2376,10 @@
                 "database",
                 "orm"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/orm/issues",
+                "source": "https://github.com/doctrine/orm/tree/2.7.5"
+            },
             "time": "2020-12-03T08:52:14+00:00"
         },
         {
@@ -2347,6 +2464,10 @@
                 "orm",
                 "persistence"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/persistence/issues",
+                "source": "https://github.com/doctrine/persistence/tree/1.3.x"
+            },
             "funding": [
                 {
                     "url": "https://www.doctrine-project.org/sponsorship.html",
@@ -2439,6 +2560,10 @@
                 "reflection",
                 "static"
             ],
+            "support": {
+                "issues": "https://github.com/doctrine/reflection/issues",
+                "source": "https://github.com/doctrine/reflection/tree/1.2.2"
+            },
             "abandoned": "roave/better-reflection",
             "time": "2020-10-27T21:46:55+00:00"
         },
@@ -2494,6 +2619,14 @@
                 "code",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-code/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-code/issues",
+                "rss": "https://github.com/laminas/laminas-code/releases.atom",
+                "source": "https://github.com/laminas/laminas-code"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -2558,6 +2691,14 @@
                 "events",
                 "laminas"
             ],
+            "support": {
+                "chat": "https://laminas.dev/chat",
+                "docs": "https://docs.laminas.dev/laminas-eventmanager/",
+                "forum": "https://discourse.laminas.dev",
+                "issues": "https://github.com/laminas/laminas-eventmanager/issues",
+                "rss": "https://github.com/laminas/laminas-eventmanager/releases.atom",
+                "source": "https://github.com/laminas/laminas-eventmanager"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -2612,6 +2753,12 @@
                 "laminas",
                 "zf"
             ],
+            "support": {
+                "forum": "https://discourse.laminas.dev/",
+                "issues": "https://github.com/laminas/laminas-zendframework-bridge/issues",
+                "rss": "https://github.com/laminas/laminas-zendframework-bridge/releases.atom",
+                "source": "https://github.com/laminas/laminas-zendframework-bridge"
+            },
             "funding": [
                 {
                     "url": "https://funding.communitybridge.org/projects/laminas-project",
@@ -2622,16 +2769,16 @@
         },
         {
             "name": "latte/latte",
-            "version": "v2.9.1",
+            "version": "v2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "fa7bc18569d716d1efffde14ac4ff65ddf1dc132"
+                "reference": "f66806cb6dff34ae536348524bb20965f74766fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/fa7bc18569d716d1efffde14ac4ff65ddf1dc132",
-                "reference": "fa7bc18569d716d1efffde14ac4ff65ddf1dc132",
+                "url": "https://api.github.com/repos/nette/latte/zipball/f66806cb6dff34ae536348524bb20965f74766fe",
+                "reference": "f66806cb6dff34ae536348524bb20965f74766fe",
                 "shasum": ""
             },
             "require": {
@@ -2695,20 +2842,24 @@
                 "template",
                 "twig"
             ],
-            "time": "2020-11-24T00:57:37+00:00"
+            "support": {
+                "issues": "https://github.com/nette/latte/issues",
+                "source": "https://github.com/nette/latte/tree/v2.9.2"
+            },
+            "time": "2020-12-16T23:52:58+00:00"
         },
         {
             "name": "monolog/monolog",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "f9eee5cec93dfb313a38b6b288741e84e53f02d5"
+                "reference": "1cb1cde8e8dd0f70cc0fe51354a59acad9302084"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f9eee5cec93dfb313a38b6b288741e84e53f02d5",
-                "reference": "f9eee5cec93dfb313a38b6b288741e84e53f02d5",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1cb1cde8e8dd0f70cc0fe51354a59acad9302084",
+                "reference": "1cb1cde8e8dd0f70cc0fe51354a59acad9302084",
                 "shasum": ""
             },
             "require": {
@@ -2721,16 +2872,17 @@
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
                 "doctrine/couchdb": "~1.0@dev",
-                "elasticsearch/elasticsearch": "^6.0",
+                "elasticsearch/elasticsearch": "^7",
                 "graylog2/gelf-php": "^1.4.2",
+                "mongodb/mongodb": "^1.8",
                 "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
-                "php-parallel-lint/php-parallel-lint": "^1.0",
                 "phpspec/prophecy": "^1.6.1",
+                "phpstan/phpstan": "^0.12.59",
                 "phpunit/phpunit": "^8.5",
                 "predis/predis": "^1.1",
                 "rollbar/rollbar": "^1.3",
-                "ruflin/elastica": ">=0.90 <3.0",
+                "ruflin/elastica": ">=0.90 <7.0.1",
                 "swiftmailer/swiftmailer": "^5.3|^6.0"
             },
             "suggest": {
@@ -2750,7 +2902,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.x-dev"
+                    "dev-main": "2.x-dev"
                 }
             },
             "autoload": {
@@ -2766,16 +2918,20 @@
                 {
                     "name": "Jordi Boggiano",
                     "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
+                    "homepage": "https://seld.be"
                 }
             ],
             "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-            "homepage": "http://github.com/Seldaek/monolog",
+            "homepage": "https://github.com/Seldaek/monolog",
             "keywords": [
                 "log",
                 "logging",
                 "psr-3"
             ],
+            "support": {
+                "issues": "https://github.com/Seldaek/monolog/issues",
+                "source": "https://github.com/Seldaek/monolog/tree/2.2.0"
+            },
             "funding": [
                 {
                     "url": "https://github.com/Seldaek",
@@ -2786,7 +2942,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-23T08:41:23+00:00"
+            "time": "2020-12-14T13:15:25+00:00"
         },
         {
             "name": "nette/application",
@@ -2871,6 +3027,10 @@
                 "routing",
                 "seo"
             ],
+            "support": {
+                "issues": "https://github.com/nette/application/issues",
+                "source": "https://github.com/nette/application/tree/v3.0.7"
+            },
             "time": "2020-11-02T13:42:35+00:00"
         },
         {
@@ -2948,6 +3108,10 @@
                 "configurator",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nette/bootstrap/issues",
+                "source": "https://github.com/nette/bootstrap/tree/master"
+            },
             "time": "2020-05-26T08:46:23+00:00"
         },
         {
@@ -3015,6 +3179,10 @@
                 "nette",
                 "sqlite"
             ],
+            "support": {
+                "issues": "https://github.com/nette/caching/issues",
+                "source": "https://github.com/nette/caching/tree/v3.0.2"
+            },
             "time": "2020-11-16T01:37:04+00:00"
         },
         {
@@ -3073,6 +3241,10 @@
                 "components",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nette/component-model/issues",
+                "source": "https://github.com/nette/component-model/tree/v3.0.1"
+            },
             "time": "2020-04-21T13:48:20+00:00"
         },
         {
@@ -3144,6 +3316,10 @@
                 "nette",
                 "static"
             ],
+            "support": {
+                "issues": "https://github.com/nette/di/issues",
+                "source": "https://github.com/nette/di/tree/v3.0.6"
+            },
             "time": "2020-11-25T22:42:55+00:00"
         },
         {
@@ -3207,6 +3383,10 @@
                 "iterator",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nette/finder/issues",
+                "source": "https://github.com/nette/finder/tree/v2.5.2"
+            },
             "time": "2020-01-03T20:35:40+00:00"
         },
         {
@@ -3277,6 +3457,10 @@
                 "nette",
                 "validation"
             ],
+            "support": {
+                "issues": "https://github.com/nette/forms/issues",
+                "source": "https://github.com/nette/forms/tree/v3.0.7"
+            },
             "time": "2020-11-02T15:52:20+00:00"
         },
         {
@@ -3351,6 +3535,10 @@
                 "session",
                 "url"
             ],
+            "support": {
+                "issues": "https://github.com/nette/http/issues",
+                "source": "https://github.com/nette/http/tree/v3.0.5"
+            },
             "time": "2020-11-02T15:42:36+00:00"
         },
         {
@@ -3421,6 +3609,10 @@
                 "nette",
                 "smtp"
             ],
+            "support": {
+                "issues": "https://github.com/nette/mail/issues",
+                "source": "https://github.com/nette/mail/tree/v3.1.5"
+            },
             "time": "2020-11-02T16:08:27+00:00"
         },
         {
@@ -3483,6 +3675,10 @@
                 "nette",
                 "yaml"
             ],
+            "support": {
+                "issues": "https://github.com/nette/neon/issues",
+                "source": "https://github.com/nette/neon/tree/master"
+            },
             "time": "2020-07-31T12:28:05+00:00"
         },
         {
@@ -3547,6 +3743,10 @@
                 "php",
                 "scaffolding"
             ],
+            "support": {
+                "issues": "https://github.com/nette/php-generator/issues",
+                "source": "https://github.com/nette/php-generator/tree/v3.5.1"
+            },
             "time": "2020-11-04T11:26:26+00:00"
         },
         {
@@ -3610,6 +3810,10 @@
                 "nette",
                 "trait"
             ],
+            "support": {
+                "issues": "https://github.com/nette/robot-loader/issues",
+                "source": "https://github.com/nette/robot-loader/tree/v3.3.1"
+            },
             "time": "2020-09-15T15:14:17+00:00"
         },
         {
@@ -3668,6 +3872,10 @@
             "keywords": [
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nette/routing/issues",
+                "source": "https://github.com/nette/routing/tree/v3.0.1"
+            },
             "time": "2020-11-02T15:13:26+00:00"
         },
         {
@@ -3726,6 +3934,10 @@
                 "config",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nette/schema/issues",
+                "source": "https://github.com/nette/schema/tree/v1.0.3"
+            },
             "time": "2020-11-25T21:54:59+00:00"
         },
         {
@@ -3791,6 +4003,10 @@
                 "authorization",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nette/security/issues",
+                "source": "https://github.com/nette/security/tree/v3.0.5"
+            },
             "time": "2020-11-02T16:53:12+00:00"
         },
         {
@@ -3872,6 +4088,10 @@
                 "utility",
                 "validation"
             ],
+            "support": {
+                "issues": "https://github.com/nette/utils/issues",
+                "source": "https://github.com/nette/utils/tree/v3.2.0"
+            },
             "time": "2020-11-25T23:47:50+00:00"
         },
         {
@@ -3936,6 +4156,10 @@
                 "nette",
                 "nettrine"
             ],
+            "support": {
+                "issues": "https://github.com/nettrine/annotations/issues",
+                "source": "https://github.com/nettrine/annotations/tree/v0.7.0"
+            },
             "time": "2020-12-10T18:01:50+00:00"
         },
         {
@@ -3995,6 +4219,10 @@
                 "nette",
                 "nettrine"
             ],
+            "support": {
+                "issues": "https://github.com/nettrine/cache/issues",
+                "source": "https://github.com/nettrine/cache/tree/v0.3.0"
+            },
             "time": "2020-12-10T17:56:32+00:00"
         },
         {
@@ -4061,6 +4289,10 @@
                 "postgres",
                 "sqlite"
             ],
+            "support": {
+                "issues": "https://github.com/nettrine/dbal/issues",
+                "source": "https://github.com/nettrine/dbal/tree/v0.7.0"
+            },
             "time": "2020-12-11T15:36:41+00:00"
         },
         {
@@ -4125,6 +4357,10 @@
                 "fixtures",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nettrine/fixtures/issues",
+                "source": "https://github.com/nettrine/fixtures/tree/v0.6.0"
+            },
             "time": "2020-12-11T13:43:34+00:00"
         },
         {
@@ -4189,6 +4425,10 @@
                 "migrations",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nettrine/migrations/issues",
+                "source": "https://github.com/nettrine/migrations/tree/v0.7.0"
+            },
             "time": "2020-12-11T13:57:37+00:00"
         },
         {
@@ -4253,6 +4493,10 @@
                 "nette",
                 "orm"
             ],
+            "support": {
+                "issues": "https://github.com/nettrine/orm/issues",
+                "source": "https://github.com/nettrine/orm/tree/v0.8.0"
+            },
             "funding": [
                 {
                     "url": "https://contributte.org/partners.html",
@@ -4338,6 +4582,10 @@
                 "proxy pattern",
                 "service proxies"
             ],
+            "support": {
+                "issues": "https://github.com/Ocramius/ProxyManager/issues",
+                "source": "https://github.com/Ocramius/ProxyManager/tree/2.7.1"
+            },
             "funding": [
                 {
                     "url": "https://github.com/Ocramius",
@@ -4397,6 +4645,10 @@
                 "container-interop",
                 "psr"
             ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/master"
+            },
             "time": "2017-02-14T16:28:37+00:00"
         },
         {
@@ -4443,6 +4695,10 @@
                 "psr",
                 "psr-14"
             ],
+            "support": {
+                "issues": "https://github.com/php-fig/event-dispatcher/issues",
+                "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
+            },
             "time": "2019-01-08T18:20:26+00:00"
         },
         {
@@ -4490,6 +4746,9 @@
                 "psr",
                 "psr-3"
             ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.3"
+            },
             "time": "2020-03-23T09:12:05+00:00"
         },
         {
@@ -4570,6 +4829,9 @@
                 "console",
                 "terminal"
             ],
+            "support": {
+                "source": "https://github.com/symfony/console/tree/v5.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -4634,6 +4896,9 @@
             ],
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/deprecation-contracts/tree/master"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -4716,6 +4981,9 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/event-dispatcher/tree/v5.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -4792,6 +5060,9 @@
                 "interoperability",
                 "standards"
             ],
+            "support": {
+                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v2.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -4868,6 +5139,9 @@
                 "polyfill",
                 "portable"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -4946,6 +5220,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -5027,6 +5304,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -5104,6 +5384,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -5180,6 +5463,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -5260,6 +5546,9 @@
                 "portable",
                 "shim"
             ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.20.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -5336,6 +5625,9 @@
                 "interoperability",
                 "standards"
             ],
+            "support": {
+                "source": "https://github.com/symfony/service-contracts/tree/master"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -5395,6 +5687,9 @@
             ],
             "description": "Symfony Stopwatch Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/stopwatch/tree/v5.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -5475,6 +5770,9 @@
                 "utf-8",
                 "utf8"
             ],
+            "support": {
+                "source": "https://github.com/symfony/string/tree/v5.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -5493,16 +5791,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.7.6",
+            "version": "v2.7.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "7e7e73d52c7e9ff0fd29dbd5b1cfdc03f3947942"
+                "reference": "100e72717b2c199fd3e1d1724d576edc07b252eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/7e7e73d52c7e9ff0fd29dbd5b1cfdc03f3947942",
-                "reference": "7e7e73d52c7e9ff0fd29dbd5b1cfdc03f3947942",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/100e72717b2c199fd3e1d1724d576edc07b252eb",
+                "reference": "100e72717b2c199fd3e1d1724d576edc07b252eb",
                 "shasum": ""
             },
             "require": {
@@ -5553,7 +5851,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "😎 Tracy: the addictive tool to ease debugging PHP code for cool developers. Friendly design, logging, profiler, advanced features like debugging AJAX calls or CLI support. You will love it.",
+            "description": "😎  Tracy: the addictive tool to ease debugging PHP code for cool developers. Friendly design, logging, profiler, advanced features like debugging AJAX calls or CLI support. You will love it.",
             "homepage": "https://tracy.nette.org",
             "keywords": [
                 "Xdebug",
@@ -5562,7 +5860,11 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2020-11-02T17:06:27+00:00"
+            "support": {
+                "issues": "https://github.com/nette/tracy/issues",
+                "source": "https://github.com/nette/tracy/tree/v2.7.7"
+            },
+            "time": "2020-12-16T23:36:16+00:00"
         },
         {
             "name": "webimpress/safe-writer",
@@ -5611,6 +5913,10 @@
                 "safe writer",
                 "webimpress"
             ],
+            "support": {
+                "issues": "https://github.com/webimpress/safe-writer/issues",
+                "source": "https://github.com/webimpress/safe-writer/tree/master"
+            },
             "funding": [
                 {
                     "url": "https://github.com/michalbundyra",
@@ -5623,34 +5929,33 @@
     "packages-dev": [
         {
             "name": "contributte/dev",
-            "version": "dev-master",
+            "version": "v0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/dev.git",
-                "reference": "221848fda1ddc3d682b335ee53c74345e26f7732"
+                "reference": "2f583ab44c082d4fd09db57db3906cb0c48706e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/dev/zipball/221848fda1ddc3d682b335ee53c74345e26f7732",
-                "reference": "221848fda1ddc3d682b335ee53c74345e26f7732",
+                "url": "https://api.github.com/repos/contributte/dev/zipball/2f583ab44c082d4fd09db57db3906cb0c48706e4",
+                "reference": "2f583ab44c082d4fd09db57db3906cb0c48706e4",
                 "shasum": ""
             },
             "require": {
-                "php": ">= 5.6"
+                "php": ">=7.2"
             },
             "require-dev": {
-                "ninjify/nunjuck": "^0.1.4",
-                "ninjify/qa": "^0.4.0"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
                 "files": [
-                    "src/functions.php",
                     "src/shortcuts.php"
                 ]
             },
@@ -5673,9 +5978,9 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/dev/issues",
-                "source": "https://github.com/contributte/dev/tree/master"
+                "source": "https://github.com/contributte/dev/tree/v0.3"
             },
-            "time": "2020-05-14T17:59:39+00:00"
+            "time": "2020-12-13T18:46:03+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
@@ -5741,6 +6046,10 @@
                 "stylecheck",
                 "tests"
             ],
+            "support": {
+                "issues": "https://github.com/dealerdirect/phpcodesniffer-composer-installer/issues",
+                "source": "https://github.com/dealerdirect/phpcodesniffer-composer-installer"
+            },
             "time": "2020-12-07T18:04:37+00:00"
         },
         {
@@ -5789,6 +6098,10 @@
                 "faker",
                 "fixtures"
             ],
+            "support": {
+                "issues": "https://github.com/FakerPHP/Faker/issues",
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.12.1"
+            },
             "time": "2020-12-11T10:39:41+00:00"
         },
         {
@@ -5836,6 +6149,10 @@
             "keywords": [
                 "test"
             ],
+            "support": {
+                "issues": "https://github.com/hamcrest/hamcrest-php/issues",
+                "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
+            },
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
@@ -5904,6 +6221,10 @@
                 "test double",
                 "testing"
             ],
+            "support": {
+                "issues": "https://github.com/mockery/mockery/issues",
+                "source": "https://github.com/mockery/mockery/tree/master"
+            },
             "time": "2020-08-11T18:10:13+00:00"
         },
         {
@@ -5952,6 +6273,10 @@
                 "object",
                 "object graph"
             ],
+            "support": {
+                "issues": "https://github.com/myclabs/DeepCopy/issues",
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.10.2"
+            },
             "funding": [
                 {
                     "url": "https://tidelift.com/funding/github/packagist/myclabs/deep-copy",
@@ -6038,6 +6363,10 @@
                 "faker",
                 "test"
             ],
+            "support": {
+                "issues": "https://github.com/nelmio/alice/issues",
+                "source": "https://github.com/nelmio/alice/tree/3.7.4"
+            },
             "funding": [
                 {
                     "url": "https://github.com/theofidry",
@@ -6111,6 +6440,10 @@
                 "testing",
                 "unit"
             ],
+            "support": {
+                "issues": "https://github.com/nette/tester/issues",
+                "source": "https://github.com/nette/tester/tree/v2.3.4"
+            },
             "time": "2020-11-02T17:30:29+00:00"
         },
         {
@@ -6156,6 +6489,10 @@
                 "ninjify",
                 "php"
             ],
+            "support": {
+                "issues": "https://github.com/ninjify/coding-standard/issues",
+                "source": "https://github.com/ninjify/coding-standard/tree/v0.11.1"
+            },
             "funding": [
                 {
                     "url": "https://contributte.org/partners.html",
@@ -6198,6 +6535,7 @@
                 "mockery/mockery": "to use BaseMockeryTestCase",
                 "nette/di": "to use BaseContainerTestCase"
             },
+            "default-branch": true,
             "bin": [
                 "bin/nunjuck",
                 "bin/nunjuck-setup"
@@ -6233,6 +6571,10 @@
                 "php",
                 "tester"
             ],
+            "support": {
+                "issues": "https://github.com/ninjify/nunjuck/issues",
+                "source": "https://github.com/ninjify/nunjuck/tree/master"
+            },
             "time": "2020-11-17T20:46:37+00:00"
         },
         {
@@ -6285,6 +6627,10 @@
                 "php",
                 "quality"
             ],
+            "support": {
+                "issues": "https://github.com/ninjify/qa/issues",
+                "source": "https://github.com/ninjify/qa/tree/v0.12"
+            },
             "funding": [
                 {
                     "url": "https://contributte.org/partners.html",
@@ -6348,6 +6694,10 @@
             ],
             "description": "This tool check syntax of PHP files about 20x faster than serial check.",
             "homepage": "https://github.com/php-parallel-lint/PHP-Parallel-Lint",
+            "support": {
+                "issues": "https://github.com/php-parallel-lint/PHP-Parallel-Lint/issues",
+                "source": "https://github.com/php-parallel-lint/PHP-Parallel-Lint/tree/master"
+            },
             "time": "2020-04-04T12:18:32+00:00"
         },
         {
@@ -6397,6 +6747,10 @@
                 "MIT"
             ],
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
+            "support": {
+                "issues": "https://github.com/phpstan/phpdoc-parser/issues",
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/master"
+            },
             "time": "2020-08-03T20:32:43+00:00"
         },
         {
@@ -6439,6 +6793,10 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan/issues",
+                "source": "https://github.com/phpstan/phpstan/tree/0.12.63"
+            },
             "funding": [
                 {
                     "url": "https://github.com/ondrejmirtes",
@@ -6500,6 +6858,10 @@
                 "MIT"
             ],
             "description": "PHPStan rules for detecting usage of deprecated classes, methods, properties, constants and traits.",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan-deprecation-rules/issues",
+                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/0.12.6"
+            },
             "time": "2020-12-13T10:20:54+00:00"
         },
         {
@@ -6563,6 +6925,10 @@
                 "MIT"
             ],
             "description": "Doctrine extensions for PHPStan",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan-doctrine/issues",
+                "source": "https://github.com/phpstan/phpstan-doctrine/tree/0.12.26"
+            },
             "time": "2020-12-13T11:58:47+00:00"
         },
         {
@@ -6623,6 +6989,10 @@
                 "MIT"
             ],
             "description": "Nette Framework class reflection extension for PHPStan",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan-nette/issues",
+                "source": "https://github.com/phpstan/phpstan-nette/tree/0.12.12"
+            },
             "time": "2020-12-12T20:45:51+00:00"
         },
         {
@@ -6670,6 +7040,10 @@
                 "MIT"
             ],
             "description": "Extra strict and opinionated rules for PHPStan",
+            "support": {
+                "issues": "https://github.com/phpstan/phpstan-strict-rules/issues",
+                "source": "https://github.com/phpstan/phpstan-strict-rules/tree/0.12.7"
+            },
             "time": "2020-12-13T13:27:14+00:00"
         },
         {
@@ -6734,6 +7108,10 @@
                 "compare",
                 "equality"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/comparator/issues",
+                "source": "https://github.com/sebastianbergmann/comparator/tree/4.0.6"
+            },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
@@ -6796,6 +7174,10 @@
                 "unidiff",
                 "unified diff"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/diff/issues",
+                "source": "https://github.com/sebastianbergmann/diff/tree/4.0.4"
+            },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
@@ -6869,6 +7251,10 @@
                 "export",
                 "exporter"
             ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/exporter/issues",
+                "source": "https://github.com/sebastianbergmann/exporter/tree/4.0.3"
+            },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
@@ -6928,6 +7314,10 @@
             ],
             "description": "Provides functionality to recursively process PHP variables",
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/4.0.4"
+            },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
@@ -6981,6 +7371,10 @@
                 "MIT"
             ],
             "description": "Slevomat Coding Standard for PHP_CodeSniffer complements Consistence Coding Standard by providing sniffs with additional checks.",
+            "support": {
+                "issues": "https://github.com/slevomat/coding-standard/issues",
+                "source": "https://github.com/slevomat/coding-standard/tree/6.4.1"
+            },
             "funding": [
                 {
                     "url": "https://github.com/kukulich",
@@ -7042,6 +7436,11 @@
                 "phpcs",
                 "standards"
             ],
+            "support": {
+                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
+                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
+                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+            },
             "time": "2020-10-23T02:01:07+00:00"
         },
         {
@@ -7106,6 +7505,9 @@
                 "property path",
                 "reflection"
             ],
+            "support": {
+                "source": "https://github.com/symfony/property-access/tree/v5.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -7193,6 +7595,9 @@
                 "type",
                 "validator"
             ],
+            "support": {
+                "source": "https://github.com/symfony/property-info/tree/v5.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -7265,6 +7670,9 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/yaml/tree/v5.2.0"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -7294,5 +7702,5 @@
     "platform-overrides": {
         "php": "7.4"
     },
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
