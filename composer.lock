@@ -6440,16 +6440,16 @@
         },
         {
             "name": "ninjify/coding-standard",
-            "version": "v0.11.1",
+            "version": "v0.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ninjify/coding-standard.git",
-                "reference": "d08713c0e7aaf50622f468303499292b42516e1a"
+                "reference": "3c5b41ff1f96b7d8f10407f236f9ffc1e8010df9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ninjify/coding-standard/zipball/d08713c0e7aaf50622f468303499292b42516e1a",
-                "reference": "d08713c0e7aaf50622f468303499292b42516e1a",
+                "url": "https://api.github.com/repos/ninjify/coding-standard/zipball/3c5b41ff1f96b7d8f10407f236f9ffc1e8010df9",
+                "reference": "3c5b41ff1f96b7d8f10407f236f9ffc1e8010df9",
                 "shasum": ""
             },
             "require": {
@@ -6483,7 +6483,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ninjify/coding-standard/issues",
-                "source": "https://github.com/ninjify/coding-standard/tree/v0.11.1"
+                "source": "https://github.com/ninjify/coding-standard/tree/v0.11.2"
             },
             "funding": [
                 {
@@ -6495,7 +6495,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-08T09:06:18+00:00"
+            "time": "2020-12-22T18:40:31+00:00"
         },
         {
             "name": "ninjify/nunjuck",
@@ -6571,21 +6571,21 @@
         },
         {
             "name": "ninjify/qa",
-            "version": "v0.12",
+            "version": "v0.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ninjify/qa.git",
-                "reference": "7637d7dcf671511aba6596e3f38b37e5474e0314"
+                "reference": "a43584b9286d8f274f099baf9302bf54e11474d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ninjify/qa/zipball/7637d7dcf671511aba6596e3f38b37e5474e0314",
-                "reference": "7637d7dcf671511aba6596e3f38b37e5474e0314",
+                "url": "https://api.github.com/repos/ninjify/qa/zipball/a43584b9286d8f274f099baf9302bf54e11474d9",
+                "reference": "a43584b9286d8f274f099baf9302bf54e11474d9",
                 "shasum": ""
             },
             "require": {
                 "ninjify/coding-standard": "^0.11.0",
-                "php": ">=7.1",
+                "php": ">=7.2",
                 "php-parallel-lint/php-parallel-lint": "^1.2.0"
             },
             "bin": [
@@ -6596,7 +6596,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.12.x-dev"
+                    "dev-master": "0.13.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -6621,7 +6621,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ninjify/qa/issues",
-                "source": "https://github.com/ninjify/qa/tree/v0.12"
+                "source": "https://github.com/ninjify/qa/tree/v0.12.1"
             },
             "funding": [
                 {
@@ -6633,7 +6633,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-06T14:34:48+00:00"
+            "time": "2021-01-01T14:13:38+00:00"
         },
         {
             "name": "php-parallel-lint/php-parallel-lint",
