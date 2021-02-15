@@ -3,7 +3,7 @@
 namespace App\Model\Database;
 
 use App\Model\Database\Repository\AbstractRepository;
-use Doctrine\Common\Persistence\ObjectRepository;
+use Doctrine\Persistence\ObjectRepository;
 use Nettrine\ORM\EntityManagerDecorator;
 
 class EntityManager extends EntityManagerDecorator
