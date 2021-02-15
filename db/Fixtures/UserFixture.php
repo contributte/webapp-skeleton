@@ -4,7 +4,7 @@ namespace Database\Fixtures;
 
 use App\Model\Database\Entity\User;
 use App\Model\Security\Passwords;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\Persistence\ObjectManager;
 
 class UserFixture extends AbstractFixture
 {
