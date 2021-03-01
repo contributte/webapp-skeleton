@@ -6169,16 +6169,16 @@
         },
         {
             "name": "nelmio/alice",
-            "version": "v3.8.1",
+            "version": "v3.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/alice.git",
-                "reference": "183961dba8726fe5115238c15b177ab2c74a67a0"
+                "reference": "b57f4c6f039baa72e2bd5b75fd8de77e1b9228e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/alice/zipball/183961dba8726fe5115238c15b177ab2c74a67a0",
-                "reference": "183961dba8726fe5115238c15b177ab2c74a67a0",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/b57f4c6f039baa72e2bd5b75fd8de77e1b9228e3",
+                "reference": "b57f4c6f039baa72e2bd5b75fd8de77e1b9228e3",
                 "shasum": ""
             },
             "require": {
@@ -6247,7 +6247,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nelmio/alice/issues",
-                "source": "https://github.com/nelmio/alice/tree/v3.8.1"
+                "source": "https://github.com/nelmio/alice/tree/v3.8.2"
             },
             "funding": [
                 {
@@ -6255,7 +6255,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-23T20:58:35+00:00"
+            "time": "2021-02-27T19:13:09+00:00"
         },
         {
             "name": "nette/tester",
