@@ -50,7 +50,7 @@ https://examples.contributte.org/planette/nutella-project/
 
 To install latest version of `planette/nutella-project` use [Composer](https://getcomposer.com).
 
-```
+```bash
 composer create-project -s dev planette/nutella-project acme
 ```
 
