@@ -74,17 +74,16 @@ composer create-project -s dev planette/nutella-project acme
 
     Default configuration should look like:
 
-    ```yaml
-    # Host Config
-    parameters:
-
-        # Database
-        database:
-            host: localhost
-            dbname: nutella
-            user: nutella
-            password: nutella
-    ```
+	```neon
+	# Host Config
+	parameters:
+		# Database
+		database:
+			host: localhost
+			dbname: nutella
+			user: nutella
+			password: nutella
+	```
 
 4) Ok database is now running and application is configured to connect to it. Let's create initial data.
 
@@ -115,17 +114,16 @@ composer create-project -s dev planette/nutella-project acme
 
     Default configuration should look like this:
 
-    ```yaml
-    # Host Config
-    parameters:
-
-        # Database
-        database:
-            host: database
-            dbname: nutella
-            user: nutella
-            password: nutella
-    ```
+	```neon
+	# Host Config
+	parameters:
+		# Database
+		database:
+			host: database
+			dbname: nutella
+			user: nutella
+			password: nutella
+	```
 
 3) Run `docker-compose up`
 
