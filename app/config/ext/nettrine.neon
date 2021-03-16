@@ -59,4 +59,4 @@ decorator:
 		tags: [nettrine.subscriber]
 
 services:
-	- Nettrine\Migrations\Events\FixPostgreSQLDefaultSchemaSubscriber
+	- Nettrine\Migrations\Subscriber\FixPostgreSQLDefaultSchemaSubscriber
