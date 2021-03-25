@@ -4,9 +4,9 @@ parameters:
 	# Database
 	database:
 		host: localhost
-		dbname: nutella
-		user: nutella
-		password: nutella
+		dbname: webapp
+		user: webapp
+		password: webapp
 
 # For 0.0.0.0 instead of localhost
 # php -S 0.0.0.0 -t www

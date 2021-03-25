@@ -19,7 +19,7 @@ services:
 	# Security ================
 	nette.userStorage:
 		setup:
-			- setNamespace("Nutella")
+			- setNamespace("Webapp")
 
 	security.passwords: App\Model\Security\Passwords
 	security.user: App\Model\Security\SecurityUser

@@ -5,7 +5,7 @@ parameters:
 	# System
 	system:
 		error:
-			email: dev@contributte.org
+			email: dev@dev.dev
 			presenter: Front:Error
 
 	# Database
@@ -23,8 +23,8 @@ parameters:
 
 	# Mailing
 	mailing:
-		from: nutella@localhost
-		from_name: Nutella
+		from: webapp@localhost
+		from_name: Webapp
 
 	# STMP
 	smtp:
