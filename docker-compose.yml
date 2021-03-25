@@ -35,9 +35,9 @@ services:
   database:
     image: dockette/postgres:10
     environment:
-      - POSTGRES_PASSWORD=nutella
-      - POSTGRES_USER=nutella
-      - POSTGRES_DB=nutella
+      - POSTGRES_PASSWORD=webapp
+      - POSTGRES_USER=webapp
+      - POSTGRES_DB=webapp
     volumes:
       - database-volume:/var/lib/postgresql/data
   adminer:

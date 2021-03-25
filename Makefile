@@ -33,15 +33,15 @@ loc-web-prod:
 	NETTE_ENV=prod php -S 0.0.0.0:8000 -t www
 
 loc-postgres: loc-postgres-stop
-	docker run -it -d -p 5432:5432 --name nutella_postgres -e POSTGRES_PASSWORD=nutella -e POSTGRES_USER=nutella postgres:10
+	docker run -it -d -p 5432:5432 --name webapp_postgres -e POSTGRES_PASSWORD=webapp -e POSTGRES_USER=webapp postgres:10
 
 loc-postgres-stop:
-	docker stop nutella_postgres || true
-	docker rm nutella_postgres || true
+	docker stop webapp_postgres || true
+	docker rm webapp_postgres || true
 
 loc-adminer: loc-adminer-stop
-	docker run -it -d -p 9999:80 --name nutella_adminer dockette/adminer:dg
+	docker run -it -d -p 9999:80 --name webapp_adminer dockette/adminer:dg
 
 loc-adminer-stop:
-	docker stop nutella_adminer || true
-	docker rm nutella_adminer || true
+	docker stop webapp_adminer || true
+	docker rm webapp_adminer || true

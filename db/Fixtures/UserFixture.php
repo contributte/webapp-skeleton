@@ -37,7 +37,7 @@ class UserFixture extends AbstractFixture
 	 */
 	protected function getUsers(): iterable
 	{
-		yield ['email' => 'admin@admin.cz', 'name' => 'Nutella', 'surname' => 'Admin', 'username' => 'nutella', 'role' => User::ROLE_ADMIN];
+		yield ['email' => 'admin@admin.cz', 'name' => 'Contributte', 'surname' => 'Admin', 'username' => 'contributte', 'role' => User::ROLE_ADMIN];
 	}
 
 }

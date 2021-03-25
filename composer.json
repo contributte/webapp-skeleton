@@ -1,15 +1,14 @@
 {
-	"name": "planette/nutella-project",
-	"description": "Nutella project is full featured web app kit based on Nette Framework + Contributte and many useful packages by @f3l1x.",
+	"name": "contributte/webapp-skeleton",
+	"description": "Webapp skeleton is full featured web app kit based on Nette Framework + Contributte and many useful packages by @f3l1x.",
 	"keywords": [
-    "php",
-    "nette",
-    "planette",
-    "contributte",
-    "apitte",
-    "sandbox",
-    "project"
-  ],
+		"php",
+		"nette",
+		"contributte",
+		"sandbox",
+		"project",
+		"skeleton"
+	],
 	"license": "MIT",
 	"type": "project",
 	"require": {
