@@ -164,6 +164,10 @@ Here is a list of all features you can find in this project.
 - :exclamation: Tracy
 	- Cool error 500 page
 
+### Notable changes
+
+- `$user` variable in templates [is renamed](https://github.com/contributte/webapp-skeleton/blob/master/app/model/Latte/TemplateFactory.php) to `$_user`
+
 ### Composer packages
 
 Take a detailed look :eyes: at each single package.
