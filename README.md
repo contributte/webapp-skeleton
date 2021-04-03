@@ -19,7 +19,7 @@ Website ğŸš€ <a href="https://contributte.org">contributte.org</a> | Contact ğŸ‘
 </p>
 
 <p align=center>
-	<img src="https://raw.githubusercontent.com/contributte/webapp-skeleton/master/.docs/assets/screenshot1.png">
+	<img src="https://api.microlink.io?url=https%3A%2F%2Fexamples.contributte.org%2Fwebapp-skeleton%2F&overlay.browser=light&screenshot=true&meta=false&embed=screenshot.url"></img>
 </p>
 
 -----
