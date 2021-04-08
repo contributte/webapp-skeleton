@@ -28,8 +28,8 @@ class UserFixture extends AbstractFixture
 			$entity->setRole($user['role']);
 
 			$manager->persist($entity);
-			$manager->flush();
 		}
+		$manager->flush();
 	}
 
 	/**
