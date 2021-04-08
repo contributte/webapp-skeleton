@@ -36,5 +36,5 @@ if (getenv('NETTE_ENV', true) === 'dev') {
 }
 
 $configurator->addConfig(__DIR__ . '/config/config.local.neon');
-
+$configurator->addServices(['configurator' => $configurator]);
 return $configurator->createContainer();

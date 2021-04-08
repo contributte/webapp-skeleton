@@ -13,6 +13,23 @@ contributte.console:
 	url: http://localhost/
 	lazy: true
 
+contributte.console.extra:
+	advancedCache:
+		generators:
+			latte: Contributte\Console\Extra\Cache\Generators\LatteTemplatesCacheGenerator(
+				@Nette\Application\UI\ITemplateFactory,
+				[%appDir%],
+				[],
+				::realpath(%appDir%/..)
+			)
+			di: Contributte\Console\Extra\Cache\Generators\DiContainersCacheGenerator(
+				[
+					debug: [debugMode: true, consoleMode: false],
+					production: [debugMode: false, consoleMode: false],
+					console: [debugMode: true, consoleMode: true]
+				]
+			)
+
 contributte.mailing:
 	template:
 		config:

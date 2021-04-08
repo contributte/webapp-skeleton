@@ -43,7 +43,9 @@ services:
 	# Console ================
 	- {class: App\Model\Console\HelloCommand, tags: {console.command: hello}}
 
-
+	configurator:
+		type: Nette\Configurator
+		imported: true
 
 latte:
 	macros:
