@@ -2,7 +2,7 @@
 
 namespace App\Model\Security;
 
-use Nette\Security\Identity as NetteIdentity;
+use Nette\Security\SimpleIdentity as NetteIdentity;
 
 class Identity extends NetteIdentity
 {
