@@ -1,21 +1,22 @@
 .PHONY: qa cs cfx phpstan tests build
 
-qa: cs phpstan
+qa:
+	composer qa
 
 cs:
-	vendor/bin/codesniffer app tests
+	composer cs
 
 cfx:
-	vendor/bin/codefixer app tests
+	composer cfx
 
 phpstan:
-	vendor/bin/phpstan analyse -l max -c phpstan.neon --memory-limit=512M app tests/toolkit
+	composer phpstan
 
 tests:
-	vendor/bin/tester -s -p php --colors 1 -C tests
+	composer tests
 
 tests-coverage:
-	vendor/bin/tester -s -p phpdbg --colors 1 -C --coverage ./coverage.xml --coverage-src ./app tests
+	composer tests-coverage
 
 #####################
 # LOCAL DEVELOPMENT #

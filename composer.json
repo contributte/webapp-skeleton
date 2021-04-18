@@ -76,6 +76,25 @@
 		],
 		"post-update-cmd": [
 			"Contributte\\Neonizer\\NeonizerExtension::process"
+		],
+		"qa": [
+			"composer cs",
+			"composer phpstan"
+		],
+		"cs": [
+			"vendor/bin/codesniffer app tests"
+		],
+		"cfx": [
+			"vendor/bin/codefixer app tests"
+		],
+		"tests": [
+			"vendor/bin/tester -s -p php --colors 1 -C tests"
+		],
+		"tests-coverage": [
+			"vendor/bin/tester -s -p phpdbg --colors 1 -C --coverage ./coverage.xml --coverage-src ./app tests"
+		],
+		"phpstan": [
+			"vendor/bin/phpstan analyse -l max -c phpstan.neon --memory-limit=512M app tests/toolkit"
 		]
 	},
 	"extra": {
