@@ -2,59 +2,32 @@
 
 namespace Tests\Toolkit\Nette;
 
-use DateTimeInterface;
 use Nette\Security\IIdentity;
-use Nette\Security\IUserStorage;
+use Nette\Security\UserStorage;
 
-final class DummyUserStorage implements IUserStorage
+final class DummyUserStorage implements UserStorage
 {
-
-	/** @var bool */
-	private $authenticated = false;
 
 	/** @var IIdentity|NULL */
 	private $identity;
 
-	/**
-	 * @param bool $state
-	 * @return static
-	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
-	 */
-	public function setAuthenticated($state)
-	{
-		$this->authenticated = $state;
-
-		return $this;
-	}
-
-	public function isAuthenticated(): bool
-	{
-		return $this->authenticated;
-	}
-
-	public function setIdentity(?IIdentity $identity): self
+	public function saveAuthentication(IIdentity $identity): void
 	{
 		$this->identity = $identity;
-		return $this;
 	}
 
-	public function getIdentity(): ?IIdentity
+	public function clearAuthentication(bool $clearIdentity): void
 	{
-		return $this->identity;
+		$this->identity = null;
 	}
 
-	/**
-	 * @param string|int|DateTimeInterface $time
-	 * @return static
-	 */
-	public function setExpiration($time, int $flags = 0)
+	public function getState(): array
 	{
-		return $this;
+		return [$this->identity !== null, $this->identity, null];
 	}
 
-	public function getLogoutReason(): ?int
+	public function setExpiration(?string $expire, bool $clearIdentity): void
 	{
-		return null;
 	}
 
 	public function setNamespace(string $namespace): self
