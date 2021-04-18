@@ -6,10 +6,10 @@ use App\Model\Database\Entity\User;
 use App\Model\Database\EntityManager;
 use App\Model\Exception\Runtime\AuthenticationException;
 use App\Model\Security\Passwords;
-use Nette\Security\IAuthenticator;
+use Nette\Security\Authenticator;
 use Nette\Security\IIdentity;
 
-final class UserAuthenticator implements IAuthenticator
+final class UserAuthenticator implements Authenticator
 {
 
 	/** @var EntityManager */
@@ -25,13 +25,12 @@ final class UserAuthenticator implements IAuthenticator
 	}
 
 	/**
-	 * @param string[] $credentials
+	 * @param string $username
+	 * @param string $password
 	 * @throws AuthenticationException
 	 */
-	public function authenticate(array $credentials): IIdentity
+	public function authenticate(string $username, string $password): IIdentity
 	{
-		[$username, $password] = $credentials;
-
 		$user = $this->em->getUserRepository()->findOneBy(['email' => $username]);
 
 		if (!$user) {
