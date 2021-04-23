@@ -20,7 +20,7 @@ trait TModuleUtils
 
 		// Validate presenter has a proper name
 		if ($name === null) {
-			throw new InvalidStateException('Presenter don\'t have a name');
+			throw new InvalidStateException('Presenter doesn\'t have a name');
 		}
 
 		$parts = explode(':', $name);
