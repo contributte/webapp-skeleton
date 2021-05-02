@@ -102,7 +102,7 @@ composer create-project -s dev contributte/webapp-skeleton acme
 1) At first, use composer to install this project.
 
    ```
-   composer create-project -s dev planette/webapp-project
+   composer create-project -s dev contributte/webapp-project
    ```
 
 2) Modify `app/config/config.local.neon` and set host to `database`
