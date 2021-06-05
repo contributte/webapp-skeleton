@@ -1,26 +1,16 @@
 # EditorConfig is awesome: http://EditorConfig.org
 
-# Top-most EditorConfig file
 root = true
 
-# Unix-style newlines with a newline ending every file
 [*]
 charset = utf-8
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
-
-# Major extensions
-[*.{js, vue, php, phpt, phtml, latte, md, neon}]
 indent_style = tab
-indent_size = 4
+indent_size = tab
+tab_width = 4
 
-# YAML
-[*.yml]
+[{*.json, *.yaml, *.yml, *.md}]
 indent_style = space
-indent_size = 2
-
-# JSON
-[*.json]
-indent_style = tab
 indent_size = 2
