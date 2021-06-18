@@ -6465,9 +6465,13 @@
             "require-dev": {
                 "janmarek/mockista": "^1.1.0",
                 "mockery/mockery": "^1.2.2",
-                "nette/di": "~2.4.15",
-                "nette/robot-loader": "~3.2.0",
-                "ninjify/qa": "^0.10"
+                "nette/di": "~3.0.0",
+                "nette/robot-loader": "~3.2",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "suggest": {
                 "janmarek/mockista": "to use BaseMockistaTestCase",

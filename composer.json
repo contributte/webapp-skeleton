@@ -13,6 +13,7 @@
   "type": "project",
   "require": {
     "php": ">=7.4",
+
     "contributte/bootstrap": "^0.5.0",
     "contributte/application": "^0.5.0",
     "contributte/di": "^0.5.0",
@@ -31,6 +32,7 @@
     "contributte/monolog": "^0.5.0",
     "contributte/neonizer": "^0.5.0",
     "contributte/mailing": "^0.5.0",
+
     "nettrine/annotations": "^0.7.0",
     "nettrine/orm": "^0.8.0",
     "nettrine/dbal": "^0.7.0",
