@@ -30,7 +30,7 @@ Main goal is to provide best prepared starter-kit project for Nette developers.
 
 Focused on:
 
-- latest PHP 7.4 & 8.0
+- latest PHP 8.0
 - `nette/*` packages
 - Doctrine ORM via `nettrine/*`
 - Symfony components via `contributte/*`
@@ -132,7 +132,7 @@ composer create-project -s dev contributte/webapp-skeleton acme
 
 Here is a list of all features you can find in this project.
 
-- PHP 7.4+
+- PHP 8.0+
 - :package: Packages
 	- Nette 3.0
 	- Contributte
