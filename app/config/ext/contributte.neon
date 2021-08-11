@@ -2,7 +2,7 @@
 #
 extensions:
 	contributte.console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
-	contributte.console.extra: Contributte\Console\Extra\DI\ConsoleBridgesExtension
+	contributte.console.extra: Contributte\Console\Extra\DI\ConsoleBridgesExtension(%consoleMode%)
 	contributte.events: Contributte\EventDispatcher\DI\EventDispatcherExtension
 	contributte.events2nette: Contributte\Events\Extra\DI\EventBridgesExtension
 	contributte.monolog: Contributte\Monolog\DI\MonologExtension
