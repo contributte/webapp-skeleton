@@ -16,8 +16,9 @@ class EntityManager extends EntityManagerDecorator
 	 * @return AbstractRepository<T>|ObjectRepository<T>
 	 * @internal
 	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
-	 * @phpstan-template T
+	 * @phpstan-template T of object
 	 * @phpstan-param class-string<T> $entityName
+	 * @phpstan-return ObjectRepository<T>
 	 */
 	public function getRepository($entityName): ObjectRepository
 	{

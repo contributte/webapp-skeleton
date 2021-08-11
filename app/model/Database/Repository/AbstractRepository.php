@@ -5,8 +5,8 @@ namespace App\Model\Database\Repository;
 use Doctrine\ORM\EntityRepository;
 
 /**
- * @template TEntityClass
- * @extends EntityRepository<TEntityClass>
+ * @phpstan-template TEntityClass of object
+ * @phpstan-extends EntityRepository<TEntityClass>
  */
 abstract class AbstractRepository extends EntityRepository
 {
