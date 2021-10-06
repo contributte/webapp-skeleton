@@ -13,6 +13,7 @@ use Nette\Http\IResponse;
 use Psr\Log\LogLevel;
 use Throwable;
 use Tracy\Debugger;
+use Tracy\ILogger;
 
 abstract class BaseErrorPresenter extends SecuredPresenter
 {
@@ -41,6 +42,10 @@ abstract class BaseErrorPresenter extends SecuredPresenter
 			[$module, , $sep] = Helpers::splitName($request->getPresenterName());
 
 			return new ForwardResponse($request->setPresenterName($module . $sep . 'Error4xx'));
+		}
+		
+		if ($e instanceof \Throwable) {
+			Debugger::log($e, ILogger::EXCEPTION);
 		}
 
 		return new CallbackResponse(function (IRequest $httpRequest, IResponse $httpResponse): void {
