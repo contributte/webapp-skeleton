@@ -13,6 +13,7 @@ use Nette\Http\IResponse;
 use Psr\Log\LogLevel;
 use Throwable;
 use Tracy\Debugger;
+use Tracy\ILogger;
 
 abstract class BaseErrorPresenter extends SecuredPresenter
 {
@@ -35,6 +36,8 @@ abstract class BaseErrorPresenter extends SecuredPresenter
 				$e->getFile(),
 				$e->getLine()
 			), $level);
+
+			Debugger::log($e, ILogger::EXCEPTION);
 		}
 
 		if ($e instanceof BadRequestException) {
