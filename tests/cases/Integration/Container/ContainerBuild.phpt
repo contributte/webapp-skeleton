@@ -27,7 +27,7 @@ test(function () use ($parameters): void {
 	$configurator = new Configurator();
 	$configurator->setTempDirectory(TEMP_DIR);
 
-	$configurator->addConfig($parameters['rootDir'] . '/app/config/env/prod.neon');
+	$configurator->addConfig($parameters['rootDir'] . '/config/env/prod.neon');
 	$configurator->addParameters($parameters);
 
 	try {
@@ -44,7 +44,7 @@ test(function () use ($parameters): void {
 	$configurator = new Configurator();
 	$configurator->setTempDirectory(TEMP_DIR);
 
-	$configurator->addConfig($parameters['rootDir'] . '/app/config/env/dev.neon');
+	$configurator->addConfig($parameters['rootDir'] . '/config/env/dev.neon');
 	$configurator->addParameters($parameters);
 	try {
 		$configurator->setDebugMode(false);

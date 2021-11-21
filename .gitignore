@@ -1,5 +1,5 @@
 # Nette
-/app/config/config.local.neon
+/config/local.neon
 
 # Composer
 /vendor

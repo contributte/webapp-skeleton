@@ -66,7 +66,7 @@ composer create-project -s dev contributte/webapp-skeleton acme
 
    Or use make task, `make loc-postgres`.
 
-3) Custom configuration file is located at `app/config/config.local.neon`. Edit it if you want.
+3) Custom configuration file is located at `config/local.neon`. Edit it if you want.
 
    Default configuration should look like:
 
@@ -105,7 +105,7 @@ composer create-project -s dev contributte/webapp-skeleton acme
    composer create-project -s dev contributte/webapp-project
    ```
 
-2) Modify `app/config/config.local.neon` and set host to `database`
+2) Modify `config/local.neon` and set host to `database`
 
    Default configuration should look like this:
 
@@ -143,8 +143,8 @@ Here is a list of all features you can find in this project.
 			- `env` - prod/dev/test environments
 			- `app` - application configs
 			- `ext` - extensions configs
-			- `config.local.neon` - local runtime config
-			- `config.local.neon.dist` - template for local config
+			- `local.neon` - local runtime config
+			- `local.neon.dist` - template for local config
 		- `domain` - business logic and domain specific classes
 		- `model` - application backbone
 		- `modules` - Front/Admin module, presenters and components
