@@ -81,7 +81,7 @@
     "neonizer": {
       "files": [
         {
-          "dist-file": "app/config/config.local.neon.dist"
+          "dist-file": "config/local.neon.dist"
         }
       ]
     }

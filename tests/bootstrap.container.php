@@ -11,8 +11,8 @@ require_once __DIR__ . '/bootstrap.php';
 $configurator = new Configurator();
 $configurator->setTempDirectory(TEMP_DIR);
 
-$configurator->addConfig($rootDir . '/app/config/env/test.neon');
-$configurator->addConfig($rootDir . '/app/config/config.local.neon');
+$configurator->addConfig($rootDir . '/config/env/test.neon');
+$configurator->addConfig($rootDir . '/config/local.neon');
 
 // Setup debugMode of course!
 $configurator->setDebugMode(true);
