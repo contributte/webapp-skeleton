@@ -18,6 +18,7 @@ abstract class BaseContainerTestCase extends BaseTestCase
 	protected function getService(string $class): object
 	{
 		if (strpos($class, '\\')) {
+			/** @phpstan-var class-string<mixed> $class */
 			return $this->container->getByType($class);
 		} else {
 			return $this->container->getService($class);

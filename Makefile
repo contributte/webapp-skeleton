@@ -9,7 +9,7 @@ cfx:
 	vendor/bin/codefixer app tests
 
 phpstan:
-	vendor/bin/phpstan analyse -l max -c phpstan.neon --memory-limit=512M app tests/toolkit
+	vendor/bin/phpstan analyse -l 8 -c phpstan.neon --memory-limit=512M app tests/toolkit
 
 tests:
 	vendor/bin/tester -s -p php --colors 1 -C tests
