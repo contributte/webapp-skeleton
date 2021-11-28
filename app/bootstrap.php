@@ -7,7 +7,7 @@ use Tracy\Debugger;
 require __DIR__ . '/../vendor/autoload.php';
 
 $configurator = new ExtraConfigurator();
-$configurator->setTempDirectory(__DIR__ . '/../temp');
+$configurator->setTempDirectory(__DIR__ . '/../var/tmp');
 
 $configurator->onCompile[] = function (ExtraConfigurator $configurator, Compiler $compiler): void {
 	// Add env variables to config structure
@@ -18,7 +18,7 @@ $configurator->onCompile[] = function (ExtraConfigurator $configurator, Compiler
 $configurator->setEnvDebugMode();
 
 // Enable tracy and configure it
-$configurator->enableTracy(__DIR__ . '/../log');
+$configurator->enableTracy(__DIR__ . '/../var/log');
 Debugger::$errorTemplate = __DIR__ . '/resources/tracy/500.phtml';
 
 // Provide some parameters

@@ -138,29 +138,30 @@ Here is a list of all features you can find in this project.
 	- Contributte
 	- Nettrine
 - :deciduous_tree: Structure
-	- `app`
-		- `config` - configuration files
-			- `env` - prod/dev/test environments
-			- `app` - application configs
-			- `ext` - extensions configs
-			- `local.neon` - local runtime config
-			- `local.neon.dist` - template for local config
-		- `domain` - business logic and domain specific classes
-		- `model` - application backbone
-		- `modules` - Front/Admin module, presenters and components
-		- `resources` - static content for mails and others
-		- `ui` - UI components and base classes
-		- `bootstrap.php` - Nette entrypoint
-	- `bin` - console entrypoint (`bin/console`)
-	- `db` - database files
-		- `fixtures` - PHP fixtures
-		- `migrations` - migrations files
-	- `docs` - documentation
-	- `log` - runtime and error logs
-	- `temp` - temp files and cache
-	- `tests` - test engine and unit/integration tests
-	- `vendor` - composer's folder
-	- `www` - public content
+    - `app`
+        - `config` - configuration files
+            - `env` - prod/dev/test environments
+            - `app` - application configs
+            - `ext` - extensions configs
+            - `local.neon` - local runtime config
+            - `local.neon.dist` - template for local config
+        - `domain` - business logic and domain specific classes
+        - `model` - application backbone
+        - `modules` - Front/Admin module, presenters and components
+        - `resources` - static content for mails and others
+        - `ui` - UI components and base classes
+        - `bootstrap.php` - Nette entrypoint
+    - `bin` - console entrypoint (`bin/console`)
+    - `db` - database files
+        - `fixtures` - PHP fixtures
+        - `migrations` - migrations files
+    - `docs` - documentation
+    - `var`
+      - `log` - runtime and error logs
+      - `tmp` - tmp files and cache
+    - `tests` - test engine and unit/integration tests
+    - `vendor` - composer's folder
+    - `www` - public content
 - :exclamation: Tracy
 	- Cool error 500 page
 
