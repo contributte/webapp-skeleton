@@ -12,6 +12,7 @@ final class RouterFactory
 	{
 		$router = new RouteList();
 
+		$this->buildMailing($router);
 		$this->buildAdmin($router);
 		$this->buildFront($router);
 
@@ -30,6 +31,14 @@ final class RouterFactory
 	{
 		$router[] = $list = new RouteList('Front');
 		$list[] = new Route('<presenter>/<action>[/<id>]', 'Home:default');
+
+		return $router;
+	}
+
+	protected function buildMailing(RouteList $router): RouteList
+	{
+		$router[] = $list = new RouteList('Mailing');
+		$list[] = new Route('mailing/<presenter>/<action>[/<id>]', 'Home:default');
 
 		return $router;
 	}
