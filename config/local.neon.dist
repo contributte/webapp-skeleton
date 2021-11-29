@@ -3,7 +3,7 @@ parameters:
 
 	# Database
 	database:
-		host: localhost
+		host: database
 		dbname: webapp
 		user: webapp
 		password: webapp
