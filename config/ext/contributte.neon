@@ -30,3 +30,9 @@ contributte.monolog:
 				- Monolog\Processor\IntrospectionProcessor()
 				- Monolog\Processor\MemoryPeakUsageProcessor()
 				- Monolog\Processor\ProcessIdProcessor()
+
+services:
+		-
+			factory: Contributte\PdfResponse\PdfResponse
+			setup:
+				- $mpdfConfig([tempDir: %tempDir%/mpdf])

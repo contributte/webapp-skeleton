@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>{$title}</title>
+</head>
+
+<body>
+<img src="https://heatbadger.now.sh/github/readme/contributte/pdf/">
+<h2>Lorem ipsum</h2>
+<p>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia
+    dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+    dolore magnam aliquam quaerat voluptatem. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam.
+    Etiam posuere lacus quis dolor. Aliquam ante. Sed vel lectus. Donec odio tempus molestie, porttitor ut,
+    iaculis quis, sem. Aliquam erat volutpat. Fusce wisi. Cum sociis natoque penatibus et magnis dis parturient
+    montes, nascetur ridiculus mus. Nullam eget nisl. Etiam bibendum elit eget erat.
+</p>
+<h1 id="readme">ReadMe</h1>
+<h2 id="usage">Usage</h2>
+<h3 id="how-to-prepare-pdf-from-template">How to prepare PDF from template</h3>
+<pre><code class="lang-php"><span class="hljs-comment">// in a Presenter</span>
+<span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span
+                    class="hljs-title">actionPdf</span><span class="hljs-params">()</span>
+</span>{
+    $template = <span class="hljs-keyword">$this</span>-&gt;createTemplate();
+    $template-&gt;setFile(<span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">"/path/to/template.latte"</span>);
+    $template-&gt;someValue = <span class="hljs-number">123</span>;
+    <span class="hljs-comment">// Tip: In template to make a new page use &lt;pagebreak&gt;</span>
+
+    $pdf = <span class="hljs-keyword">new</span> \Contributte\PdfResponse\PdfResponse($template);
+
+    <span class="hljs-comment">// optional</span>
+    $pdf-&gt;documentTitle = date(<span class="hljs-string">"Y-m-d"</span>) . <span class="hljs-string">" My super title"</span>; <span
+                class="hljs-comment">// creates filename 2012-06-30-my-super-title.pdf</span>
+    $pdf-&gt;pageFormat = <span class="hljs-string">"A4-L"</span>; <span class="hljs-comment">// wide format</span>
+    $pdf-&gt;getMPDF()-&gt;setFooter(<span class="hljs-string">"|© www.mysite.com|"</span>); <span class="hljs-comment">// footer</span>
+
+    <span class="hljs-comment">// do something with $pdf</span>
+    <span class="hljs-keyword">$this</span>-&gt;sendResponse($pdf);
+}
+</code></pre>
+<h3 id="save-file-to-server">Save file to server</h3>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span
+                    class="hljs-keyword">function</span> <span class="hljs-title">actionPdf</span><span
+                    class="hljs-params">()</span>
+</span>{
+    $template = <span class="hljs-keyword">$this</span>-&gt;createTemplate();
+    $template-&gt;setFile(<span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">"/path/to/template.latte"</span>);
+
+    $pdf = <span class="hljs-keyword">new</span> \Contributte\PdfResponse\PdfResponse($template);
+
+    $pdf-&gt;save(<span class="hljs-keyword">__DIR__</span> . <span
+                class="hljs-string">"/path/to/directory"</span>); <span class="hljs-comment">// as a filename $this-&gt;documentTitle will be used</span>
+    $pdf-&gt;save(<span class="hljs-keyword">__DIR__</span> . <span
+                class="hljs-string">"/path/to/directory"</span>, <span class="hljs-string">"filename"</span>); <span
+                class="hljs-comment">// OR use a custom name</span>
+}
+</code></pre>
+<h3 id="attach-file-to-an-email">Attach file to an email</h3>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span
+                    class="hljs-keyword">function</span> <span class="hljs-title">actionPdf</span><span
+                    class="hljs-params">()</span>
+</span>{
+    $template = <span class="hljs-keyword">$this</span>-&gt;createTemplate();
+    $template-&gt;setFile(<span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">"/path/to/template.latte"</span>);
+
+    $pdf = <span class="hljs-keyword">new</span> \Contributte\PdfResponse\PdfResponse($template);
+
+    $savedFile = $pdf-&gt;save(<span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">"/path/to/directory"</span>);
+    $mail = <span class="hljs-keyword">new</span> Nette\Mail\Message;
+    $mail-&gt;addTo(<span class="hljs-string">"john@doe.com"</span>);
+    $mail-&gt;addAttachment($savedFile);
+    $mailer = <span class="hljs-keyword">new</span> SendmailMailer();
+    $mailer-&gt;send($mail);
+}
+</code></pre>
+<h3 id="force-file-to-download">Force file to download</h3>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span
+                    class="hljs-keyword">function</span> <span class="hljs-title">actionPdf</span><span
+                    class="hljs-params">()</span>
+</span>{
+    $template = <span class="hljs-keyword">$this</span>-&gt;createTemplate();
+    $template-&gt;setFile(<span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">"/path/to/template.latte"</span>);
+
+    $pdf = <span class="hljs-keyword">new</span> \Contributte\PdfResponse\PdfResponse($template);
+    $pdf-&gt;setSaveMode(PdfResponse::DOWNLOAD); <span class="hljs-comment">//default behavior</span>
+    <span class="hljs-keyword">$this</span>-&gt;sendResponse($pdf);
+}
+</code></pre>
+<h3 id="force-file-to-display-in-a-browser">Force file to display in a browser</h3>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span
+                    class="hljs-keyword">function</span> <span class="hljs-title">actionPdf</span><span
+                    class="hljs-params">()</span>
+</span>{
+    $template = <span class="hljs-keyword">$this</span>-&gt;createTemplate();
+    $template-&gt;setFile(<span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">"/path/to/template.latte"</span>);
+
+    $pdf = <span class="hljs-keyword">new</span> \Contributte\PdfResponse\PdfResponse($template);
+    $pdf-&gt;setSaveMode(PdfResponse::INLINE);
+    <span class="hljs-keyword">$this</span>-&gt;sendResponse($pdf);
+}
+</code></pre>
+<h3 id="set-a-pdf-background-easily">Set a pdf background easily</h3>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span
+                    class="hljs-keyword">function</span> <span class="hljs-title">actionPdf</span><span
+                    class="hljs-params">()</span>
+</span>{
+    $pdf = <span class="hljs-keyword">new</span> \Contributte\PdfResponse\PdfResponse(<span
+                class="hljs-string">''</span>);
+    $pdf-&gt;setBackgroundTemplate(<span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">"/path/to/an/existing/file.pdf"</span>);
+
+    <span class="hljs-comment">// to write into an existing document use the following statements</span>
+    $mpdf = $pdf-&gt;getMPDF();
+    $mpdf-&gt;WriteFixedPosHTML(<span class="hljs-string">'hello world'</span>, <span
+                class="hljs-number">1</span>, <span class="hljs-number">10</span>, <span class="hljs-number">10</span>, <span
+                class="hljs-number">10</span>);
+
+    <span class="hljs-comment">// to write to another page</span>
+    $mpdf-&gt;AddPage();
+
+    <span class="hljs-comment">// to move to exact page, use</span>
+    $mpdf-&gt;page = <span class="hljs-number">3</span>; <span class="hljs-comment">// = move to 3rd page</span>
+
+    <span class="hljs-keyword">$this</span>-&gt;sendResponse($pdf);
+}
+</code></pre>
+<h3 id="create-pdf-with-latte-only">Create pdf with latte only</h3>
+<pre><code class="lang-php"><span class="hljs-keyword">public</span> <span class="hljs-function"><span
+                    class="hljs-keyword">function</span> <span class="hljs-title">actionPdf</span><span
+                    class="hljs-params">()</span>
+</span>{
+    $latte = <span class="hljs-keyword">new</span> Latte\Engine;
+    $latte-&gt;setTempDirectory(<span class="hljs-string">'/path/to/cache'</span>);
+    $latte-&gt;addFilter(<span class="hljs-string">'money'</span>, <span class="hljs-function"><span
+                    class="hljs-keyword">function</span><span class="hljs-params">($val)</span> </span>{ <span
+                class="hljs-keyword">return</span> ...; }); <span
+                class="hljs-comment">// formerly registerHelper()</span>
+
+    $latte-&gt;onCompile[] = <span class="hljs-function"><span class="hljs-keyword">function</span><span
+                    class="hljs-params">($latte)</span> </span>{
+        $latte-&gt;addMacro(...); <span class="hljs-comment">// when you want add some own macros, see http://goo.gl/d5A1u2</span>
+    };
+
+    $template = $latte-&gt;renderToString(<span class="hljs-keyword">__DIR__</span> . <span class="hljs-string">"/path/to/template.latte"</span>);
+
+    $pdf = <span class="hljs-keyword">new</span> \Contributte\PdfResponse\PdfResponse($template);
+    <span class="hljs-keyword">$this</span>-&gt;sendResponse($pdf);
+}
+</code></pre>
+<h3 id="configuration-of-custom-temp-dir-for-mpdf-in-pdfresponse">
+    Configuration of custom temp dir for mPDF in PdfResponse
+</h3>
+<pre><code class="lang-yml">services:
+    -<span class="ruby"></span> factory: Contributte\PdfResponse\PdfResponse
+        setup:
+            -<span class="ruby"> $mpdfConfig([<span class="hljs-symbol">tempDir:</span> %tempDir<span
+                    class="hljs-string">%/mpdf])</span></span>
+</code></pre>
+<h2 id="see-also">See also</h2>
+<ul>
+    <li><a href="https://forum.nette.org/cs/3726-addon-pdfresponse-pdfresponse">Nette forum</a> (czech)</li>
+    <li><a href="https://componette.com/joseki/pdfresponse/">Componette</a></li>
+</ul>
+<hr>
+<p>Thanks for testing, reporting and contributing.</p>
+
+</body>
+</html>
