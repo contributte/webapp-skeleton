@@ -39,6 +39,7 @@ application:
 		Admin: [App\Modules\Admin, *, *\*Presenter]
 		Front: [App\Modules\Front, *, *\*Presenter]
 		Mailing: [App\Modules\Mailing, *, *\*Presenter]
+		Pdf: [App\Modules\Pdf, *, *\*Presenter]
 
 di:
 	debugger: true
