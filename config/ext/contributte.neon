@@ -21,6 +21,8 @@ contributte.mailing:
 contributte.monolog:
 	holder:
 		enabled: true
+	hook:
+		toTracy: false
 	channel:
 		default:
 			handlers:
