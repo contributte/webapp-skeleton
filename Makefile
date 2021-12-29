@@ -13,8 +13,8 @@ setup:
 	chmod +0777 var/tmp var/log
 
 clean:
-	find var/tmp -mindepth 1 ! -name '.gitignore' -type f -or -type d -exec rm -rf {} +
-	find var/log -mindepth 1 ! -name '.gitignore' -type f -or -type d -exec rm -rf {} +
+	find var/tmp -mindepth 1 ! -name '.gitignore' -type f,d -exec rm -rf {} +
+	find var/log -mindepth 1 ! -name '.gitignore' -type f,d -exec rm -rf {} +
 
 ############################################################
 # DEVELOPMENT ##############################################
