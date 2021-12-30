@@ -1371,16 +1371,16 @@
         },
         {
             "name": "contributte/utils",
-            "version": "v0.5.0",
+            "version": "v0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/utils.git",
-                "reference": "8cd55a7d560f65c671bf19bb1a60327170abcd76"
+                "reference": "188f745adb9dc72bfb775d383b8c308d62272ce4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/utils/zipball/8cd55a7d560f65c671bf19bb1a60327170abcd76",
-                "reference": "8cd55a7d560f65c671bf19bb1a60327170abcd76",
+                "url": "https://api.github.com/repos/contributte/utils/zipball/188f745adb9dc72bfb775d383b8c308d62272ce4",
+                "reference": "188f745adb9dc72bfb775d383b8c308d62272ce4",
                 "shasum": ""
             },
             "require": {
@@ -1392,13 +1392,12 @@
             },
             "require-dev": {
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.3.0",
-                "ninjify/qa": "^0.10.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "ninjify/nunjuck": "^0.4.0",
+                "ninjify/qa": "^0.12.0",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-nette": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0"
             },
             "suggest": {
                 "nette/di": "to use DateTimeExtension[CompilerExtension]"
@@ -1406,7 +1405,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5.x-dev"
+                    "dev-master": "0.6.x-dev"
                 }
             },
             "autoload": {
@@ -1435,9 +1434,19 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/utils/issues",
-                "source": "https://github.com/contributte/utils/tree/v0.5.0"
+                "source": "https://github.com/contributte/utils/tree/v0.5.1"
             },
-            "time": "2020-12-11T11:13:16+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-12-29T16:32:43+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -7963,5 +7972,5 @@
         "php": ">=8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }
