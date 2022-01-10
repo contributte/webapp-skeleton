@@ -42,7 +42,7 @@
     "contributte/pdf": "^6.1"
   },
   "require-dev": {
-    "ninjify/qa": "^0.12",
+    "ninjify/qa": "^0.13",
     "ninjify/nunjuck": "^0.4",
     "contributte/dev": "^0.3",
     "mockery/mockery": "^1.3.0",
