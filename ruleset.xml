@@ -20,13 +20,6 @@
 			</property>
 		</properties>
 	</rule>
-	<rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements">
-		<properties>
-			<property name="alwaysUsedPropertiesAnnotations" type="array" value="
-				@ORM\Column
-			"/>
-		</properties>
-	</rule>
 
 	<!-- Exclude folders -->
 	<exclude-pattern>/app/bootstrap.php</exclude-pattern>
