@@ -30,7 +30,7 @@ csf:
 	vendor/bin/codefixer app tests
 
 phpstan:
-	vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=512M app tests/toolkit
+	vendor/bin/phpstan analyse -c phpstan.neon -l 8 --memory-limit=512M app tests/toolkit
 
 tests:
 	vendor/bin/tester -s -p php --colors 1 -C tests
