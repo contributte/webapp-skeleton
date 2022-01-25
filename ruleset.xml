@@ -9,15 +9,14 @@
 	<!-- Specific rules -->
 	<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
 		<properties>
-			<property name="rootNamespaces" type="array" value="
-				app=>App,
-				app/domain=>App\Domain,
-				app/model=>App\Model,
-				app/modules=>App\Modules,
-				app/ui=>App\UI,
-				tests/cases=>Tests\Cases,
-				tests/toolkit=>Tests\Toolkit,
-			"/>
+			<property name="rootNamespaces" type="array">
+				<element key="app/domain" value="App\Domain"/>
+				<element key="app/model" value="App\Model"/>
+				<element key="app/modules" value="App\Modules"/>
+				<element key="app/ui" value="App\UI"/>
+				<element key="tests/toolkit" value="Tests\Toolkit"/>
+				<element key="tests/cases" value="Tests\Cases"/>
+			</property>
 			<property name="extensions" type="array" value="php,phpt"/>
 		</properties>
 	</rule>
