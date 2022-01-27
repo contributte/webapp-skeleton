@@ -1,4 +1,6 @@
 parameters:
+	level: 8
+
 	excludePaths:
 		- /tests/tmp/*
 		- /db/*
@@ -8,7 +10,6 @@ parameters:
 
 	ignoreErrors:
 		# App/Model/Database/TRepository
-		- '#Method App\\Model\\Database\\EntityManager::get[a-zA-Z]+Repository\(\) should return App\\Model\\Database\\Repository\\[a-zA-Z]+Repository but returns Doctrine\\ORM\\EntityRepository<App\\Model\\Database\\Entity\\[a-zA-Z]+>.#'
 		- '#Property App\\Model\\Database\\Entity\\.*::\$id \(int\) does not accept null.#'
 includes:
 	- vendor/phpstan/phpstan-nette/extension.neon

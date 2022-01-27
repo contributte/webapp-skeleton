@@ -1,28 +1,27 @@
 <?xml version="1.0"?>
 <ruleset name="Contributte">
-
-	<!-- Extending rulesets -->
-	<rule ref="./vendor/ninjify/coding-standard/ruleset.xml">
+	<!-- Contributte Coding Standard -->
+	<rule ref="./vendor/ninjify/coding-standard/contributte.xml">
+		<!-- Exclude some rules -->
 		<exclude name="Squiz.Commenting.FunctionComment.InvalidTypeHint"/>
-		<exclude name="SlevomatCodingStandard.ControlStructures.RequireTernaryOperator.TernaryOperatorNotUsed"/>
 	</rule>
 
 	<!-- Specific rules -->
 	<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
 		<properties>
 			<property name="rootNamespaces" type="array">
-				<element key="app/model" value="App\Model"/>
 				<element key="app/domain" value="App\Domain"/>
-				<element key="app/ui" value="App\UI"/>
+				<element key="app/model" value="App\Model"/>
 				<element key="app/modules" value="App\Modules"/>
+				<element key="app/ui" value="App\UI"/>
 				<element key="tests/toolkit" value="Tests\Toolkit"/>
 				<element key="tests/cases" value="Tests\Cases"/>
 			</property>
+			<property name="extensions" type="array" value="php,phpt"/>
 		</properties>
 	</rule>
 
 	<!-- Exclude folders -->
-	<exclude-pattern>/app/bootstrap.php</exclude-pattern>
 	<exclude-pattern>/tests/tmp</exclude-pattern>
 	<exclude-pattern>*.phtml</exclude-pattern>
 </ruleset>
