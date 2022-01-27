@@ -51,7 +51,11 @@ build:
 ############################################################
 .PHONY: deploy
 
-deploy: clean project build clean
+deploy:
+	$(MAKE) clean
+	$(MAKE) project
+	$(MAKE) build
+	$(MAKE) clean
 
 ############################################################
 # DOCKER ###################################################
