@@ -44,7 +44,7 @@ https://examples.contributte.org/webapp-skeleton/
 
 ## Installation
 
-To install latest version of `contributte/webapp-skeleton` use [Composer](https://getcomposer.com).
+To install latest version of `contributte/webapp-skeleton` use [Composer](https://getcomposer.org).
 
 ```
 composer create-project -s dev contributte/webapp-skeleton acme
