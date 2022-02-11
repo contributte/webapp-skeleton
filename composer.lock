@@ -4600,16 +4600,16 @@
         },
         {
             "name": "nettrine/orm",
-            "version": "v0.8.2",
+            "version": "v0.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/orm.git",
-                "reference": "fc84bccce8665255519266351bb6b746d1d58650"
+                "reference": "04bf4aca3897c12fcba3db3bc7aeb58e557de638"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/orm/zipball/fc84bccce8665255519266351bb6b746d1d58650",
-                "reference": "fc84bccce8665255519266351bb6b746d1d58650",
+                "url": "https://api.github.com/repos/nettrine/orm/zipball/04bf4aca3897c12fcba3db3bc7aeb58e557de638",
+                "reference": "04bf4aca3897c12fcba3db3bc7aeb58e557de638",
                 "shasum": ""
             },
             "require": {
@@ -4620,7 +4620,7 @@
                 "nettrine/cache": "^0.3.0 || ^0.4.0",
                 "nettrine/dbal": "^0.7.0 || ^0.8.0",
                 "php": ">=7.2",
-                "symfony/console": "^4.2.5|^5.0.0"
+                "symfony/console": "^4.2.5|^5.0.0|^6.0.0"
             },
             "conflict": {
                 "nette/di": "<3.0.6",
@@ -4630,10 +4630,10 @@
                 "mockery/mockery": "^1.3.1",
                 "ninjify/nunjuck": "^0.4",
                 "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12.64",
-                "phpstan/phpstan-deprecation-rules": "^0.12.2",
-                "phpstan/phpstan-nette": "^0.12.3",
-                "phpstan/phpstan-strict-rules": "^0.12.2"
+                "phpstan/phpstan": "^1.4.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0.0",
+                "phpstan/phpstan-nette": "^1.0.0",
+                "phpstan/phpstan-strict-rules": "^1.0.0"
             },
             "type": "library",
             "extra": {
@@ -4666,9 +4666,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nettrine/orm/issues",
-                "source": "https://github.com/nettrine/orm/tree/v0.8.2"
+                "source": "https://github.com/nettrine/orm/tree/v0.8.3"
             },
-            "time": "2021-08-13T12:31:10+00:00"
+            "time": "2022-02-10T15:54:23+00:00"
         },
         {
             "name": "paragonie/random_compat",
