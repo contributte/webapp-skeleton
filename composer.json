@@ -35,7 +35,7 @@
 
     "nettrine/annotations": "^0.7.0",
     "nettrine/orm": "^0.8.0",
-    "nettrine/dbal": "^0.7.0",
+    "nettrine/dbal": "^0.8.0",
     "nettrine/cache": "^0.3.0",
     "nettrine/migrations": "^0.8.0",
     "nettrine/fixtures": "^0.6.0",
