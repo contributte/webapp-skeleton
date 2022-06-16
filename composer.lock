@@ -753,16 +753,16 @@
         },
         {
             "name": "contributte/latte",
-            "version": "v0.5.0",
+            "version": "v0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/latte.git",
-                "reference": "f9ed277ddc6d8f0559375aae82bf08e5fc419519"
+                "reference": "04060e71302f923a2b6bf5d5f3f61537c41760b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/latte/zipball/f9ed277ddc6d8f0559375aae82bf08e5fc419519",
-                "reference": "f9ed277ddc6d8f0559375aae82bf08e5fc419519",
+                "url": "https://api.github.com/repos/contributte/latte/zipball/04060e71302f923a2b6bf5d5f3f61537c41760b2",
+                "reference": "04060e71302f923a2b6bf5d5f3f61537c41760b2",
                 "shasum": ""
             },
             "require": {
@@ -773,14 +773,14 @@
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
-                "nette/application": "~3.0.0",
+                "nette/application": "^3.0",
                 "nette/di": "~3.0.0",
                 "ninjify/nunjuck": "^0.4",
                 "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12"
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-nette": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0"
             },
             "suggest": {
                 "nette/di": "to use VersionExtension[CompilerExtension]"
@@ -815,9 +815,19 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/latte/issues",
-                "source": "https://github.com/contributte/latte/tree/v0.5.0"
+                "source": "https://github.com/contributte/latte/tree/v0.5.1"
             },
-            "time": "2020-12-14T11:24:50+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-01-29T11:40:35+00:00"
         },
         {
             "name": "contributte/mail",
@@ -2743,16 +2753,16 @@
         },
         {
             "name": "latte/latte",
-            "version": "v2.11.2",
+            "version": "v2.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "2e21dbadb2ceae296a51d59d2f336f722b52caf7"
+                "reference": "3a5ed09d92b3bb2c428814bb919c2f8637bc49b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/2e21dbadb2ceae296a51d59d2f336f722b52caf7",
-                "reference": "2e21dbadb2ceae296a51d59d2f336f722b52caf7",
+                "url": "https://api.github.com/repos/nette/latte/zipball/3a5ed09d92b3bb2c428814bb919c2f8637bc49b1",
+                "reference": "3a5ed09d92b3bb2c428814bb919c2f8637bc49b1",
                 "shasum": ""
             },
             "require": {
@@ -2821,9 +2831,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/latte/issues",
-                "source": "https://github.com/nette/latte/tree/v2.11.2"
+                "source": "https://github.com/nette/latte/tree/v2.11.4"
             },
-            "time": "2022-04-20T00:12:51+00:00"
+            "time": "2022-05-30T13:34:15+00:00"
         },
         {
             "name": "monolog/monolog",
