@@ -192,15 +192,14 @@ Take a detailed look :eyes: at each single package.
 - [contributte/mailing](https://contributte.org/packages/contributte/mailing.html)
 - [contributte/monolog](https://contributte.org/packages/contributte/monolog.html)
 
-**Nettrine**
+**Doctrine**
 
-- [nettrine/orm](https://contributte.org/packages/nettrine/orm.html)
-- [nettrine/dbal](https://contributte.org/packages/nettrine/dbal.html)
-- [nettrine/annotations](https://contributte.org/packages/nettrine/annotations.html)
-- [nettrine/cache](https://contributte.org/packages/nettrine/cache.html)
-- [nettrine/migrations](https://contributte.org/packages/nettrine/migrations.html)
-- [nettrine/fixtures](https://contributte.org/packages/nettrine/fixtures.html)
-- [nettrine/extensions](https://contributte.org/packages/nettrine/extensions.html)
+- [contributte/doctrine-orm](https://contributte.org/packages/contributte/doctrine-orm.html)
+- [contributte/doctrine-dbal](https://contributte.org/packages/contributte/doctrine-dbal.html)
+- [contributte/doctrine-annotations](https://contributte.org/packages/contributte/doctrine-annotations.html)
+- [contributte/doctrine-cache](https://contributte.org/packages/contributte/doctrine-cache.html)
+- [contributte/doctrine-migrations](https://contributte.org/packages/contributte/doctrine-migrations.html)
+- [contributte/doctrine-fixtures](https://contributte.org/packages/contributte/doctrine-fixtures.html)
 
 **Dev**
 
