@@ -1353,16 +1353,16 @@
         },
         {
             "name": "contributte/utils",
-            "version": "v0.5.1",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/utils.git",
-                "reference": "188f745adb9dc72bfb775d383b8c308d62272ce4"
+                "reference": "e2d9c380dbb179cf15a66555924ab2792b2c1769"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/utils/zipball/188f745adb9dc72bfb775d383b8c308d62272ce4",
-                "reference": "188f745adb9dc72bfb775d383b8c308d62272ce4",
+                "url": "https://api.github.com/repos/contributte/utils/zipball/e2d9c380dbb179cf15a66555924ab2792b2c1769",
+                "reference": "e2d9c380dbb179cf15a66555924ab2792b2c1769",
                 "shasum": ""
             },
             "require": {
@@ -1373,13 +1373,13 @@
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
-                "nette/di": "~3.0.0",
+                "nette/di": "^3.1.0",
                 "ninjify/nunjuck": "^0.4.0",
                 "ninjify/qa": "^0.12.0",
-                "phpstan/phpstan": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-nette": "^1.0",
-                "phpstan/phpstan-strict-rules": "^1.0"
+                "phpstan/phpstan": "^1.9.0",
+                "phpstan/phpstan-deprecation-rules": "^1.1.0",
+                "phpstan/phpstan-nette": "^1.2.0",
+                "phpstan/phpstan-strict-rules": "^1.4.0"
             },
             "suggest": {
                 "nette/di": "to use DateTimeExtension[CompilerExtension]"
@@ -1416,7 +1416,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/utils/issues",
-                "source": "https://github.com/contributte/utils/tree/v0.5.1"
+                "source": "https://github.com/contributte/utils/tree/v0.5.2"
             },
             "funding": [
                 {
@@ -1428,7 +1428,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-29T16:32:43+00:00"
+            "time": "2022-12-26T13:10:34+00:00"
         },
         {
             "name": "doctrine/annotations",
