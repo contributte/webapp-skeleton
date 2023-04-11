@@ -25,7 +25,7 @@
     "contributte/forms": "^0.5.0",
     "contributte/http": "^0.4.0",
     "contributte/latte": "^0.5.0",
-    "contributte/mail": "^0.6.0",
+    "contributte/mail": "^0.7.0",
     "contributte/mailing": "^0.5.0",
     "contributte/monolog": "^0.5.0",
     "contributte/neonizer": "^0.5.0",

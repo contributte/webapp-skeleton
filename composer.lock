@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "17dd8fb9202425b4108d43240c437682",
+    "content-hash": "da8d8bbd5c95dff67515d93a9edb6279",
     "packages": [
         {
             "name": "contributte/application",
@@ -851,32 +851,33 @@
         },
         {
             "name": "contributte/mail",
-            "version": "v0.6.0",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/mail.git",
-                "reference": "4865133bec55d6ed25a3050e63f35ecfa40bc52f"
+                "reference": "2338186929d609d84558f40038b06aa89fd278af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/mail/zipball/4865133bec55d6ed25a3050e63f35ecfa40bc52f",
-                "reference": "4865133bec55d6ed25a3050e63f35ecfa40bc52f",
+                "url": "https://api.github.com/repos/contributte/mail/zipball/2338186929d609d84558f40038b06aa89fd278af",
+                "reference": "2338186929d609d84558f40038b06aa89fd278af",
                 "shasum": ""
             },
             "require": {
                 "nette/mail": "^3.1.0",
-                "nette/utils": "^3.0.0",
-                "php": ">=7.2"
+                "nette/utils": "^3.2.9 || ^4.0.0",
+                "php": ">=8.0"
             },
             "require-dev": {
-                "nette/di": "^3.0.4",
-                "ninjify/nunjuck": "^0.4",
-                "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12.2",
-                "phpstan/phpstan-deprecation-rules": "^0.12.0",
-                "phpstan/phpstan-nette": "^0.12.0",
-                "phpstan/phpstan-strict-rules": "^0.12.0",
-                "tracy/tracy": "^2.6.2"
+                "contributte/qa": "^0.4.0",
+                "contributte/tester": "^0.2.0",
+                "mockery/mockery": "^1.5.1",
+                "nette/di": "^3.1.2",
+                "phpstan/phpstan": "^1.10.11",
+                "phpstan/phpstan-deprecation-rules": "^1.1.3",
+                "phpstan/phpstan-nette": "^1.2.4",
+                "phpstan/phpstan-strict-rules": "^1.5.1",
+                "tracy/tracy": "^2.10.2"
             },
             "suggest": {
                 "contributte/di": "to use MailerExtension[CompilerExtension]"
@@ -911,9 +912,19 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/mail/issues",
-                "source": "https://github.com/contributte/mail/tree/v0.6.0"
+                "source": "https://github.com/contributte/mail/tree/v0.7.0"
             },
-            "time": "2020-12-17T21:59:21+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-04-11T10:06:09+00:00"
         },
         {
             "name": "contributte/mailing",
@@ -3707,22 +3718,22 @@
         },
         {
             "name": "nette/mail",
-            "version": "v3.1.8",
+            "version": "v3.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/mail.git",
-                "reference": "69b43ae9a5c63ff68804531ef0113c372c676ce6"
+                "reference": "23380ff0220c7a595d21253ac9ea64e32a1869c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/mail/zipball/69b43ae9a5c63ff68804531ef0113c372c676ce6",
-                "reference": "69b43ae9a5c63ff68804531ef0113c372c676ce6",
+                "url": "https://api.github.com/repos/nette/mail/zipball/23380ff0220c7a595d21253ac9ea64e32a1869c7",
+                "reference": "23380ff0220c7a595d21253ac9ea64e32a1869c7",
                 "shasum": ""
             },
             "require": {
                 "ext-iconv": "*",
-                "nette/utils": "^3.1",
-                "php": ">=7.1 <8.2"
+                "nette/utils": "^3.1 || ~4.0.0",
+                "php": ">=7.1 <8.3"
             },
             "conflict": {
                 "nette/di": "<3.0-stable"
@@ -3775,9 +3786,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/mail/issues",
-                "source": "https://github.com/nette/mail/tree/v3.1.8"
+                "source": "https://github.com/nette/mail/tree/v3.1.10"
             },
-            "time": "2021-08-25T00:07:03+00:00"
+            "time": "2023-01-18T05:42:31+00:00"
         },
         {
             "name": "nette/neon",
