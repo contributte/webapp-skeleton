@@ -7184,16 +7184,16 @@
         },
         {
             "name": "phpstan/phpstan-nette",
-            "version": "1.2.6",
+            "version": "1.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-nette.git",
-                "reference": "157a41417929e2a512949a2cfb0621297b7ecd7d"
+                "reference": "0e3a6805917811d685e59bb83c2286315f2f6d78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-nette/zipball/157a41417929e2a512949a2cfb0621297b7ecd7d",
-                "reference": "157a41417929e2a512949a2cfb0621297b7ecd7d",
+                "url": "https://api.github.com/repos/phpstan/phpstan-nette/zipball/0e3a6805917811d685e59bb83c2286315f2f6d78",
+                "reference": "0e3a6805917811d685e59bb83c2286315f2f6d78",
                 "shasum": ""
             },
             "require": {
@@ -7240,9 +7240,9 @@
             "description": "Nette Framework class reflection extension for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-nette/issues",
-                "source": "https://github.com/phpstan/phpstan-nette/tree/1.2.6"
+                "source": "https://github.com/phpstan/phpstan-nette/tree/1.2.9"
             },
-            "time": "2023-04-11T16:20:16+00:00"
+            "time": "2023-04-12T14:11:53+00:00"
         },
         {
             "name": "phpstan/phpstan-strict-rules",
