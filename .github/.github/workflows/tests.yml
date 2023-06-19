@@ -1,0 +1,33 @@
+name: "Phpunit"
+
+on:
+  pull_request:
+
+  push:
+    branches: [ "*" ]
+
+  schedule:
+    - cron: "0 8 * * 1"
+
+jobs:
+  test82:
+    name: "Phpunit"
+    uses: contributte/.github/.github/workflows/phpunit.yml@v1
+    with:
+      php: "8.2"
+      make: "init tests"
+
+  test81:
+    name: "Phpunit"
+    uses: contributte/.github/.github/workflows/phpunit.yml@v1
+    with:
+      php: "8.1"
+      make: "init tests"
+
+  testlower:
+    name: "Phpunit"
+    uses: contributte/.github/.github/workflows/phpunit.yml@v1
+    with:
+      php: "8.1"
+      make: "init tests"
+      composer: "composer update --no-interaction --no-progress --prefer-dist --prefer-stable --prefer-lowest"
