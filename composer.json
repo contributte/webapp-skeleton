@@ -28,7 +28,6 @@
     "contributte/mail": "^0.7.0",
     "contributte/mailing": "^0.5.0",
     "contributte/monolog": "^0.5.0",
-    "contributte/neonizer": "^0.5.0",
     "contributte/security": "^0.4.0",
     "contributte/utils": "^0.5.0",
     "contributte/tracy": "^0.5.0",
@@ -42,51 +41,27 @@
     "contributte/pdf": "^6.1"
   },
   "require-dev": {
-    "ninjify/qa": "^0.13",
-    "ninjify/nunjuck": "^0.4",
+    "contributte/qa": "^0.1",
+    "contributte/tester": "^0.1",
+    "contributte/phpstan": "^0.1",
     "contributte/dev": "^0.3",
     "mockery/mockery": "^1.3.0",
     "nelmio/alice": "^3.5.8",
-    "phpstan/phpstan": "^1.0",
-    "phpstan/phpstan-doctrine": "^1.0",
-    "phpstan/phpstan-deprecation-rules": "^1.0",
-    "phpstan/phpstan-nette": "^1.0",
-    "phpstan/phpstan-strict-rules": "^1.0"
+    "phpstan/phpstan-doctrine": "^1.3.40"
   },
   "autoload": {
     "psr-4": {
-      "App\\Model\\": "app/model",
-      "App\\Domain\\": "app/domain",
-      "App\\UI\\": "app/ui",
-      "Database\\": "db",
-      "App\\Modules\\": "app/modules"
+      "App\\": "app",
+      "Database\\": "db"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tests\\Toolkit\\": "tests/toolkit",
-      "Tests\\Cases\\": "tests/cases"
+      "Tests\\": "tests"
     }
   },
   "prefer-stable": true,
   "minimum-stability": "dev",
-  "scripts": {
-    "post-install-cmd": [
-      "Contributte\\Neonizer\\NeonizerExtension::process"
-    ],
-    "post-update-cmd": [
-      "Contributte\\Neonizer\\NeonizerExtension::process"
-    ]
-  },
-  "extra": {
-    "neonizer": {
-      "files": [
-        {
-          "dist-file": "config/local.neon.dist"
-        }
-      ]
-    }
-  },
   "config": {
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true,

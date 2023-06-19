@@ -1,27 +1,17 @@
 <?xml version="1.0"?>
-<ruleset name="Contributte">
-	<!-- Contributte Coding Standard -->
-	<rule ref="./vendor/ninjify/coding-standard/contributte.xml">
-		<!-- Exclude some rules -->
-		<exclude name="Squiz.Commenting.FunctionComment.InvalidTypeHint"/>
-	</rule>
+<ruleset name="Contributte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd">
+	<description>Contributte</description>
+
+	<!-- Extending rulesets -->
+	<rule ref="./vendor/contributte/qa/ruleset.xml"/>
 
 	<!-- Specific rules -->
 	<rule ref="SlevomatCodingStandard.Files.TypeNameMatchesFileName">
 		<properties>
 			<property name="rootNamespaces" type="array">
-				<element key="app/domain" value="App\Domain"/>
-				<element key="app/model" value="App\Model"/>
-				<element key="app/modules" value="App\Modules"/>
-				<element key="app/ui" value="App\UI"/>
-				<element key="tests/toolkit" value="Tests\Toolkit"/>
-				<element key="tests/cases" value="Tests\Cases"/>
+				<element key="app" value="App"/>
+				<element key="tests" value="Tests"/>
 			</property>
-			<property name="extensions" type="array" value="php,phpt"/>
 		</properties>
 	</rule>
-
-	<!-- Exclude folders -->
-	<exclude-pattern>/tests/tmp</exclude-pattern>
-	<exclude-pattern>*.phtml</exclude-pattern>
 </ruleset>

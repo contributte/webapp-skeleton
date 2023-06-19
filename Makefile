@@ -1,17 +1,23 @@
 ############################################################
 # PROJECT ##################################################
 ############################################################
-.PHONY: project install setup clean
-
+.PHONY: project
 project: install setup
 
+.PHONY: init
+init:
+	cp config/local.neon.example config/local.neon
+
+.PHONY: install
 install:
 	composer install
 
+.PHONY: setup
 setup:
 	mkdir -p var/tmp var/log
 	chmod +0777 var/tmp var/log
 
+.PHONY: clean
 clean:
 	find var/tmp -mindepth 1 ! -name '.gitignore' -type f,d -exec rm -rf {} +
 	find var/log -mindepth 1 ! -name '.gitignore' -type f,d -exec rm -rf {} +
