@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php
 
-/** @var Nette\DI\Container $container */
-$container = require_once __DIR__ . '/../app/bootstrap.php';
+declare(strict_types = 1);
 
-// Run application.
-$container->getByType(Symfony\Component\Console\Application::class)->run();
+require __DIR__ . '/../vendor/autoload.php';
+
+App\Bootstrap::runCli();
