@@ -18,3 +18,4 @@ parameters:
 
 	doctrine:
 		objectManagerLoader: .build/phpstan-doctrine.php
+		ormRepositoryClass: App\Model\Database\Repository\AbstractRepository
