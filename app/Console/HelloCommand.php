@@ -1,17 +1,21 @@
 <?php declare(strict_types = 1);
 
-namespace App\Model\Console;
+namespace App\Console;
 
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
+#[AsCommand(name: self::NAME)]
 class HelloCommand extends Command
 {
 
+	public const NAME = 'hello';
+
 	protected function configure(): void
 	{
-		$this->setName('hello');
+		$this->setName(self::NAME);
 		$this->setDescription('Hello world!');
 	}
 
