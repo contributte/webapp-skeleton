@@ -25,28 +25,34 @@ clean:
 ############################################################
 # DEVELOPMENT ##############################################
 ############################################################
-.PHONY: qa dev cs csf phpstan tests coverage dev build
-
+.PHONY: qa
 qa: cs phpstan
 
+.PHONY: cs
 cs:
 	vendor/bin/codesniffer app tests
 
+.PHONY: csf
 csf:
 	vendor/bin/codefixer app tests
 
+.PHONY: phpstan
 phpstan:
-	vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=512M app tests/toolkit
+	vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=512M
 
+.PHONY: tests
 tests:
 	vendor/bin/tester -s -p php --colors 1 -C tests
 
+.PHONY: coverage
 coverage:
 	vendor/bin/tester -s -p phpdbg --colors 1 -C --coverage ./coverage.xml --coverage-src ./app tests
 
+.PHONY: dev
 dev:
 	NETTE_DEBUG=1 NETTE_ENV=dev php -S 0.0.0.0:8000 -t www
 
+.PHONY: build
 build:
 	NETTE_DEBUG=1 bin/console orm:schema-tool:drop --force --full-database
 	NETTE_DEBUG=1 bin/console migrations:migrate --no-interaction
@@ -56,7 +62,6 @@ build:
 # DEPLOYMENT ###############################################
 ############################################################
 .PHONY: deploy
-
 deploy:
 	$(MAKE) clean
 	$(MAKE) project
@@ -66,18 +71,18 @@ deploy:
 ############################################################
 # DOCKER ###################################################
 ############################################################
-.PHONY: docker-postgres docker-postgres-stop docker-adminer docker-adminer-stop
+.PHONY: docker-postgres
+docker-postgres:
+	docker run \
+		-it \
+		-p 5432:5432 \
+		-e POSTGRES_PASSWORD=contributte \
+		-e POSTGRES_USER=contributte \
+		dockette/postgres:12
 
-docker-postgres: docker-postgres-stop
-	docker run -it -d -p 5432:5432 --name webapp_postgres -e POSTGRES_PASSWORD=webapp -e POSTGRES_USER=webapp dockette/postgres:12
-
-docker-postgres-stop:
-	docker stop webapp_postgres || true
-	docker rm webapp_postgres || true
-
-docker-adminer: docker-adminer-stop
-	docker run -it -d -p 9999:80 --name webapp_adminer dockette/adminer:dg
-
-docker-adminer-stop:
-	docker stop webapp_adminer || true
-	docker rm webapp_adminer || true
+.PHONY: docker-adminer
+docker-adminer:
+	docker run \
+		-it \
+		-p 9999:80 \
+		dockette/adminer:dg
