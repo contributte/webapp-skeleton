@@ -26,7 +26,7 @@ contributte.monolog:
 	channel:
 		default:
 			handlers:
-				- Monolog\Handler\RotatingFileHandler(%appDir%/../log/syslog.log, 30, Monolog\Logger::WARNING)
+				- Monolog\Handler\RotatingFileHandler(%appDir%/../var/log/syslog.log, 30, Monolog\Logger::WARNING)
 			processors:
 				- Monolog\Processor\WebProcessor()
 				- Monolog\Processor\IntrospectionProcessor()

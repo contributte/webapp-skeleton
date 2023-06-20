@@ -36,10 +36,10 @@ application:
 	catchExceptions: %productionMode%
 	errorPresenter: %system.error.presenter%
 	mapping:
-		Admin: [App\Modules\Admin, *, *\*Presenter]
-		Front: [App\Modules\Front, *, *\*Presenter]
-		Mailing: [App\Modules\Mailing, *, *\*Presenter]
-		Pdf: [App\Modules\Pdf, *, *\*Presenter]
+		Admin: [App\UI\Modules\Admin, *, *\*Presenter]
+		Front: [App\UI\Modules\Front, *, *\*Presenter]
+		Mailing: [App\UI\Modules\Mailing, *, *\*Presenter]
+		Pdf: [App\UI\Modules\Pdf, *, *\*Presenter]
 
 di:
 	debugger: true

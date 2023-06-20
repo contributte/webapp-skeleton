@@ -28,20 +28,16 @@ nettrine.dbal:
 		password: %database.password%
 		dbname: %database.dbname%
 		port: %database.port%
+		serverVersion: 10.0
 
 nettrine.orm:
-	entityManagerDecoratorClass: App\Model\Database\EntityManager
+	entityManagerDecoratorClass: App\Model\Database\EntityManagerDecorator
 	configuration:
 		autoGenerateProxyClasses: %debugMode%
 
 nettrine.orm.annotations:
 	mapping:
-		App\Model\Database\Entity: %appDir%/model/Database/Entity
-
-nettrine.orm.cache:
-
-nettrine.cache:
-#	driver: Doctrine\Common\Cache\ApcuCache
+		App\Domain: %appDir%/Domain
 
 nettrine.migrations:
 	table: doctrine_migrations
@@ -53,10 +49,3 @@ nettrine.migrations:
 nettrine.fixtures:
 	paths:
 		- %rootDir%/db/Fixtures
-
-decorator:
-	Doctrine\Common\EventSubscriber:
-		tags: [nettrine.subscriber]
-
-services:
-	- Nettrine\Migrations\Subscriber\FixPostgreSQLDefaultSchemaSubscriber

@@ -3,10 +3,10 @@ parameters:
 
 	# Database
 	database:
-		host: database
-		dbname: webapp
-		user: webapp
-		password: webapp
+		host: 0.0.0.0
+		dbname: contributte
+		user: contributte
+		password: contributte
 
 # For 0.0.0.0 instead of localhost
 # php -S 0.0.0.0:8000 -t www
