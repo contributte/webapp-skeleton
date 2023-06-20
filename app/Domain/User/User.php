@@ -1,22 +1,27 @@
 <?php declare(strict_types = 1);
 
-namespace App\Model\Database\Entity;
+namespace App\Domain\User;
 
-use App\Model\Database\Entity\Attributes\TCreatedAt;
-use App\Model\Database\Entity\Attributes\TId;
-use App\Model\Database\Entity\Attributes\TUpdatedAt;
+use App\Model\Database\Entity\AbstractEntity;
+use App\Model\Database\Entity\TCreatedAt;
+use App\Model\Database\Entity\TId;
+use App\Model\Database\Entity\TUpdatedAt;
 use App\Model\Exception\Logic\InvalidArgumentException;
 use App\Model\Security\Identity;
-use App\Model\Utils\DateTime;
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Model\Database\Repository\UserRepository")
+ * @ORM\Entity(repositoryClass="App\Domain\User\UserRepository")
  * @ORM\Table(name="`user`")
  * @ORM\HasLifecycleCallbacks
  */
 class User extends AbstractEntity
 {
+
+	use TId;
+	use TCreatedAt;
+	use TUpdatedAt;
 
 	public const ROLE_ADMIN = 'admin';
 	public const ROLE_USER = 'user';
@@ -27,57 +32,32 @@ class User extends AbstractEntity
 
 	public const STATES = [self::STATE_FRESH, self::STATE_BLOCKED, self::STATE_ACTIVATED];
 
-	use TId;
-	use TCreatedAt;
-	use TUpdatedAt;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=false) */
+	private string $name;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE, unique=false)
-	 */
-	private $name;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=false) */
+	private string $surname;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE, unique=false)
-	 */
-	private $surname;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=TRUE) */
+	private string $email;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE, unique=TRUE)
-	 */
-	private $email;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE, unique=TRUE) */
+	private string $username;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE, unique=TRUE)
-	 */
-	private $username;
+	/** @ORM\Column(type="integer", length=10, nullable=FALSE) */
+	private int $state;
 
-	/**
-	 * @var int
-	 * @ORM\Column(type="integer", length=10, nullable=FALSE)
-	 */
-	private $state;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE) */
+	private string $password;
 
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE)
-	 */
-	private $password;
-
-	/**
-	 * @var string
-	 * @ORM\Column(type="string", length=255, nullable=FALSE)
-	 */
-	private $role;
+	/** @ORM\Column(type="string", length=255, nullable=FALSE) */
+	private string $role;
 
 	/**
 	 * @var DateTime|NULL
 	 * @ORM\Column(type="datetime", nullable=TRUE)
 	 */
-	private $lastLoggedAt;
+	private ?DateTime $lastLoggedAt = null;
 
 	public function __construct(string $name, string $surname, string $email, string $username, string $passwordHash)
 	{
@@ -179,7 +159,7 @@ class User extends AbstractEntity
 
 	public function setState(int $state): void
 	{
-		if (!in_array($state, self::STATES)) {
+		if (!in_array($state, self::STATES, true)) {
 			throw new InvalidArgumentException(sprintf('Unsupported state %s', $state));
 		}
 

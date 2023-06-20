@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace App\Model\Database\Repository;
+namespace App\Domain\User;
 
-use App\Model\Database\Entity\User;
+use App\Model\Database\Repository\AbstractRepository;
 
 /**
  * @method User|NULL find($id, ?int $lockMode = NULL, ?int $lockVersion = NULL)

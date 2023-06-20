@@ -1,0 +1,25 @@
+<?php declare(strict_types = 1);
+
+namespace App\Domain\Http;
+
+use Contributte\Events\Extra\Event\Application\RequestEvent;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Tracy\Debugger;
+
+class RequestLoggerSubscriber implements EventSubscriberInterface
+{
+
+	public function onRequest(RequestEvent $event): void
+	{
+		Debugger::barDump($event->getRequest());
+	}
+
+	/**
+	 * {@inheritdoc}
+	 */
+	public static function getSubscribedEvents(): array
+	{
+		return [RequestEvent::class => 'onRequest'];
+	}
+
+}
