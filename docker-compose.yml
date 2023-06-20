@@ -13,8 +13,9 @@ services:
     depends_on:
       - php
     ports:
-      - "80:80"
-      - "443:443"
+      - 8080:80
+      - 8443:443
+
   php:
     build:
       context: .
@@ -34,18 +35,17 @@ services:
       STARTUP_COMMAND_1: composer install
       STARTUP_COMMAND_2: NETTE_DEBUG=1 php bin/console migrations:migrate --no-interaction --allow-no-migration
       STARTUP_COMMAND_3: NETTE_DEBUG=1 php bin/console doctrine:fixtures:load --no-interaction
+
   database:
     image: dockette/postgres:10
     environment:
-      - POSTGRES_PASSWORD=webapp
-      - POSTGRES_USER=webapp
-      - POSTGRES_DB=webapp
+      - POSTGRES_PASSWORD=contributte
+      - POSTGRES_USER=contributte
+      - POSTGRES_DB=contributte
     volumes:
-      - database-volume:/var/lib/postgresql/data
+      - .docker/data/postgres:/var/lib/postgresql/data
+
   adminer:
     image: dockette/adminer:dg
     ports:
       - 8080:80
-
-volumes:
-  database-volume:
