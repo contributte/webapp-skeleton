@@ -1,20 +1,22 @@
 <?php declare(strict_types = 1);
 
-namespace Tests\Integration\Latte;
+namespace Tests\Cases\E2E\Latte;
 
+use App\Bootstrap;
 use App\Model\Latte\TemplateFactory;
+use Contributte\Tester\Toolkit;
 use Nette\Application\UI\ITemplateFactory;
 use Nette\Bridges\ApplicationLatte\Template;
-use Nette\DI\Container;
 use Nette\Utils\Finder;
 use SplFileInfo;
 use Tester\Assert;
 use Throwable;
 
-/** @var Container $container */
-$container = require_once __DIR__ . '/../../../bootstrap.container.php';
+require_once __DIR__ . '/../../../bootstrap.php';
 
-test(function () use ($container): void {
+Toolkit::test(function (): void {
+	$container = Bootstrap::boot()->createContainer();
+
 	/** @var ITemplateFactory $templateFactory */
 	$templateFactory = $container->getByType(ITemplateFactory::class);
 	Assert::type(TemplateFactory::class, $templateFactory);
@@ -29,6 +31,6 @@ test(function () use ($container): void {
 			$template->getLatte()->warmupCache($file->getRealPath());
 		}
 	} catch (Throwable $e) {
-		Assert::fail(sprintf('Template compilation failed ([%s] %s)', get_class($e), $e->getMessage()));
+		Assert::fail(sprintf('Template compilation failed ([%s] %s)', $e::class, $e->getMessage()));
 	}
 });
