@@ -1,29 +1,25 @@
 <?php declare(strict_types = 1);
 
-namespace App\Modules\Admin\Sign;
+namespace App\UI\Modules\Admin\Sign;
 
 use App\Model\App;
 use App\Model\Exception\Runtime\AuthenticationException;
-use App\Modules\Admin\BaseAdminPresenter;
 use App\UI\Form\BaseForm;
 use App\UI\Form\FormFactory;
-use Nette\Application\UI\ComponentReflection;
+use App\UI\Modules\Admin\BaseAdminPresenter;
 
 final class SignPresenter extends BaseAdminPresenter
 {
 
 	/** @var string @persistent */
-	public $backlink;
+	public string $backlink;
 
 	/** @var FormFactory @inject */
-	public $formFactory;
+	public FormFactory $formFactory;
 
-	/**
-	 * @param ComponentReflection|mixed $element
-	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
-	 */
-	public function checkRequirements($element): void
+	public function checkRequirements(mixed $element): void
 	{
+		// Disable auth
 	}
 
 	public function actionIn(): void
@@ -43,6 +39,20 @@ final class SignPresenter extends BaseAdminPresenter
 		$this->redirect(App::DESTINATION_AFTER_SIGN_OUT);
 	}
 
+	public function processLoginForm(BaseForm $form): void
+	{
+		try {
+			$this->user->setExpiration($form->values->remember ? '14 days' : '20 minutes');
+			$this->user->login($form->values->email, $form->values->password);
+		} catch (AuthenticationException $e) {
+			$form->addError('Invalid username or password');
+
+			return;
+		}
+
+		$this->redirect(App::DESTINATION_AFTER_SIGN_IN);
+	}
+
 	protected function createComponentLoginForm(): BaseForm
 	{
 		$form = $this->formFactory->forBackend();
@@ -56,20 +66,6 @@ final class SignPresenter extends BaseAdminPresenter
 		$form->onSuccess[] = [$this, 'processLoginForm'];
 
 		return $form;
-	}
-
-	public function processLoginForm(BaseForm $form): void
-	{
-		try {
-			$this->user->setExpiration($form->values->remember ? '14 days' : '20 minutes');
-			$this->user->login($form->values->email, $form->values->password);
-		} catch (AuthenticationException $e) {
-			$form->addError('Invalid username or password');
-
-			return;
-		}
-
-		$this->redirect(App::DESTINATION_AFTER_SIGN_IN);
 	}
 
 }

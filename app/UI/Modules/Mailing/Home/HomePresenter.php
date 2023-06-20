@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace App\Modules\Mailing\Home;
+namespace App\UI\Modules\Mailing\Home;
 
 use Contributte\Mailing\IMailBuilderFactory;
 use Nette\Application\UI\Presenter;
@@ -8,12 +8,12 @@ use Nette\Application\UI\Presenter;
 class HomePresenter extends Presenter
 {
 
-	/** @var IMailBuilderFactory */
-	private $mailBuilderFactory;
+	private IMailBuilderFactory $mailBuilderFactory;
 
 	public function __construct(IMailBuilderFactory $mailBuilderFactory)
 	{
 		parent::__construct();
+
 		$this->mailBuilderFactory = $mailBuilderFactory;
 	}
 

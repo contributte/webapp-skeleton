@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace App\Modules\Front\Home;
+namespace App\UI\Modules\Front\Home;
 
-use App\Modules\Front\BaseFrontPresenter;
+use App\UI\Modules\Front\BaseFrontPresenter;
 
 final class HomePresenter extends BaseFrontPresenter
 {

@@ -1,9 +1,9 @@
 <?php declare(strict_types = 1);
 
-namespace App\Modules\Admin\Home;
+namespace App\UI\Modules\Admin\Home;
 
 use App\Domain\Order\Event\OrderCreated;
-use App\Modules\Admin\BaseAdminPresenter;
+use App\UI\Modules\Admin\BaseAdminPresenter;
 use Nette\Application\UI\Form;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
@@ -11,7 +11,7 @@ final class HomePresenter extends BaseAdminPresenter
 {
 
 	/** @var EventDispatcherInterface @inject */
-	public $dispatcher;
+	public EventDispatcherInterface $dispatcher;
 
 	protected function createComponentOrderForm(): Form
 	{

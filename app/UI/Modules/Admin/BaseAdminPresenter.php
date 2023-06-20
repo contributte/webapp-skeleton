@@ -1,19 +1,14 @@
 <?php declare(strict_types = 1);
 
-namespace App\Modules\Admin;
+namespace App\UI\Modules\Admin;
 
 use App\Model\App;
-use App\Modules\Base\SecuredPresenter;
-use Nette\Application\UI\ComponentReflection;
+use App\UI\Modules\Base\SecuredPresenter;
 
 abstract class BaseAdminPresenter extends SecuredPresenter
 {
 
-	/**
-	 * @param ComponentReflection|mixed $element
-	 * @phpcsSuppress SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingParameterTypeHint
-	 */
-	public function checkRequirements($element): void
+	public function checkRequirements(mixed $element): void
 	{
 		parent::checkRequirements($element);
 

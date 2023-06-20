@@ -1,11 +1,11 @@
 <?php declare(strict_types = 1);
 
-namespace App\Modules\Base;
+namespace App\UI\Modules\Base;
 
 use Nette\Application\BadRequestException;
 use Nette\Application\Helpers;
-use Nette\Application\IResponse as AppResponse;
 use Nette\Application\Request;
+use Nette\Application\Response as AppResponse;
 use Nette\Application\Responses\CallbackResponse;
 use Nette\Application\Responses\ForwardResponse;
 use Nette\Http\IRequest;
@@ -48,7 +48,7 @@ abstract class BaseErrorPresenter extends SecuredPresenter
 
 		return new CallbackResponse(function (IRequest $httpRequest, IResponse $httpResponse): void {
 			$header = $httpResponse->getHeader('Content-Type');
-			if ($header !== null && preg_match('#^text/html(?:;|$)#', $header)) {
+			if ($header !== null && preg_match('#^text/html(?:;|$)#', $header) !== false) {
 				require __DIR__ . '/templates/500.phtml';
 			}
 		});

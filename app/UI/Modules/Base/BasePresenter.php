@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace App\Modules\Base;
+namespace App\UI\Modules\Base;
 
 use App\Model\Latte\TemplateProperty;
 use App\Model\Security\SecurityUser;

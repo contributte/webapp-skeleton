@@ -2,7 +2,7 @@
 
 namespace Database\Fixtures;
 
-use App\Model\Database\Entity\User;
+use App\Domain\User\User;
 use App\Model\Security\Passwords;
 use Doctrine\Persistence\ObjectManager;
 
