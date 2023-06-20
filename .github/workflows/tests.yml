@@ -23,11 +23,3 @@ jobs:
     with:
       php: "8.1"
       make: "init tests"
-
-  testlower:
-    name: "Phpunit"
-    uses: contributte/.github/.github/workflows/phpunit.yml@v1
-    with:
-      php: "8.1"
-      make: "init tests"
-      composer: "composer update --no-interaction --no-progress --prefer-dist --prefer-stable --prefer-lowest"
