@@ -30,13 +30,13 @@ Main goal is to provide best prepared starter-kit project for Nette developers.
 
 Focused on:
 
-- latest PHP 8.0
+- PHP 8.1+
 - `nette/*` packages
 - Doctrine ORM via `nettrine/*`
 - Symfony components via `contributte/*`
-- codestyle checking via **CodeSniffer** and `ninjify/*`
-- static analysing via **phpstan**
-- unit / integration tests via **Nette Tester** and `ninjify/*`
+- codestyle checking via **CodeSniffer** and `contributte/qa`
+- static analysing via **phpstan** and `contributte/phpstan`
+- unit / integration tests via **Nette Tester** and `contributte/tester`
 
 ## Demo
 
