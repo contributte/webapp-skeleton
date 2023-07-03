@@ -2,54 +2,50 @@
 
 namespace App\Model\Router;
 
-use Nette\Application\Routers\Route;
 use Nette\Application\Routers\RouteList;
 
 final class RouterFactory
 {
 
+	private RouteList $router;
+
+	public function __construct()
+	{
+		$this->router = new RouteList();
+	}
+
 	public function create(): RouteList
 	{
-		$router = new RouteList();
+		$this->buildMailing();
+		$this->buildPdf();
+		$this->buildAdmin();
+		$this->buildFront();
 
-		$this->buildMailing($router);
-		$this->buildPdf($router);
-		$this->buildAdmin($router);
-		$this->buildFront($router);
-
-		return $router;
+		return $this->router;
 	}
 
-	protected function buildAdmin(RouteList $router): RouteList
+	protected function buildAdmin(): void
 	{
-		$router[] = $list = new RouteList('Admin');
-		$list[] = new Route('admin/<presenter>/<action>[/<id>]', 'Home:default');
-
-		return $router;
+		$this->router[] = $list = new RouteList('Admin');
+		$list->addRoute('admin/<presenter>/<action>[/<id>]', 'Home:default');
 	}
 
-	protected function buildFront(RouteList $router): RouteList
+	protected function buildFront(): void
 	{
-		$router[] = $list = new RouteList('Front');
-		$list[] = new Route('<presenter>/<action>[/<id>]', 'Home:default');
-
-		return $router;
+		$this->router[] = $list = new RouteList('Front');
+		$list->addRoute('<presenter>/<action>[/<id>]', 'Home:default');
 	}
 
-	protected function buildMailing(RouteList $router): RouteList
+	protected function buildMailing(): void
 	{
-		$router[] = $list = new RouteList('Mailing');
-		$list[] = new Route('mailing/<presenter>/<action>[/<id>]', 'Home:default');
-
-		return $router;
+		$this->router[] = $list = new RouteList('Mailing');
+		$list->addRoute('mailing/<presenter>/<action>[/<id>]', 'Home:default');
 	}
 
-	protected function buildPdf(RouteList $router): RouteList
+	protected function buildPdf(): void
 	{
-		$router[] = $list = new RouteList('Pdf');
-		$list[] = new Route('pdf/<presenter>/<action>[/<id>]', 'Home:default');
-
-		return $router;
+		$this->router[] = $list = new RouteList('Pdf');
+		$list->addRoute('pdf/<presenter>/<action>[/<id>]', 'Home:default');
 	}
 
 }
