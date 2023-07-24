@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f93f2066a467ad200e9d2c47afb108f",
+    "content-hash": "7c09ace437fedd275bcfc1ae28994972",
     "packages": [
         {
             "name": "contributte/application",
@@ -1079,35 +1079,34 @@
         },
         {
             "name": "contributte/pdf",
-            "version": "v6.1.0",
+            "version": "v7.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/pdf.git",
-                "reference": "9c3feafefb970e92ffc3e98defbc3854733fb7eb"
+                "reference": "a84bf4294fabe5b435358f3d6d51da7751c0d81d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/pdf/zipball/9c3feafefb970e92ffc3e98defbc3854733fb7eb",
-                "reference": "9c3feafefb970e92ffc3e98defbc3854733fb7eb",
+                "url": "https://api.github.com/repos/contributte/pdf/zipball/a84bf4294fabe5b435358f3d6d51da7751c0d81d",
+                "reference": "a84bf4294fabe5b435358f3d6d51da7751c0d81d",
                 "shasum": ""
             },
             "require": {
-                "mpdf/mpdf": "^8.0",
-                "nette/application": "~3.0",
-                "nette/http": "~3.0",
-                "php": ">=7.1"
+                "mpdf/mpdf": "^8.1.0",
+                "nette/application": "^3.1.0",
+                "nette/http": "^3.2.0",
+                "php": ">=8.1"
+            },
+            "conflict": {
+                "masterminds/html5": "<2.8.0"
             },
             "require-dev": {
-                "latte/latte": "^2.10",
-                "nette/di": "^3.0.0",
-                "ninjify/nunjuck": "^0.3.0",
-                "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12",
-                "symfony/css-selector": "^4.4|^5.0",
-                "symfony/dom-crawler": "^4.4|^5.0"
+                "contributte/phpstan": "^0.1",
+                "contributte/qa": "^0.4",
+                "contributte/tester": "^0.3",
+                "nette/di": "^3.1.2",
+                "symfony/css-selector": "^6.3.0",
+                "symfony/dom-crawler": "^6.3.0"
             },
             "suggest": {
                 "nette/nette": "PHP framework to which this extension belongs to.",
@@ -1116,16 +1115,12 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.1-dev"
+                    "dev-master": "7.1.x-dev"
                 }
             },
             "autoload": {
-                "files": [
-                    "src/compatibility.php"
-                ],
                 "psr-4": {
-                    "Contributte\\PdfResponse\\": "src/",
-                    "Joseki\\Application\\Responses\\": "src-old/"
+                    "Contributte\\PdfResponse\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1154,21 +1149,29 @@
                 }
             ],
             "description": "Pdf response extension for Nette Framework",
+            "homepage": "https://github.com/contributte/pdf",
+            "keywords": [
+                "contributte",
+                "mpdf",
+                "nette",
+                "pdf",
+                "php"
+            ],
             "support": {
                 "issues": "https://github.com/contributte/pdf/issues",
-                "source": "https://github.com/contributte/pdf/tree/v6.1.0"
+                "source": "https://github.com/contributte/pdf/tree/v7.0.0"
             },
             "funding": [
                 {
-                    "url": "https://github.com/f3l1x",
-                    "type": "github"
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
                 },
                 {
-                    "url": "https://github.com/petrparolek",
+                    "url": "https://github.com/f3l1x",
                     "type": "github"
                 }
             ],
-            "time": "2021-02-28T18:30:39+00:00"
+            "time": "2023-07-24T10:06:15+00:00"
         },
         {
             "name": "contributte/security",
