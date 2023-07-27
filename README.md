@@ -19,7 +19,7 @@ Website ðŸš€ <a href="https://contributte.org">contributte.org</a> | Contact ðŸ‘
 </p>
 
 <p align=center>
-	<img src="https://api.microlink.io?url=https%3A%2F%2Fexamples.contributte.org%2Fwebapp-skeleton%2F&overlay.browser=light&screenshot=true&meta=false&embed=screenshot.url"></img>
+    <img src="https://api.microlink.io?url=https%3A%2F%2Fexamples.contributte.org%2Fwebapp-skeleton%2F&overlay.browser=light&screenshot=true&meta=false&embed=screenshot.url"></img>
 </p>
 
 -----
@@ -73,12 +73,12 @@ composer create-project -s dev contributte/webapp-skeleton acme
    ```neon
    # Host Config
    parameters:
-	   # Database
-	   database:
-		   host: localhost
-		   dbname: webapp
-		   user: webapp
-		   password: webapp
+       # Database
+       database:
+           host: localhost
+           dbname: webapp
+           user: webapp
+           password: webapp
    ```
 
 4) Ok database is now running and application is configured to connect to it. Let's create initial data.
@@ -94,8 +94,8 @@ composer create-project -s dev contributte/webapp-skeleton acme
 6) Open http://localhost and enjoy!
 
    Take a look at:
-	- http://localhost:8000.
-	- http://localhost:8000/admin (admin@admin.cz / admin)
+    - http://localhost:8000.
+    - http://localhost:8000/admin (admin@admin.cz / admin)
 
 ### Install using [docker-compose](https://https://github.com/docker/compose/)
 
@@ -112,12 +112,12 @@ composer create-project -s dev contributte/webapp-skeleton acme
    ```neon
    # Host Config
    parameters:
-	   # Database
-	   database:
-		   host: database
-		   dbname: webapp
-		   user: webapp
-		   password: webapp
+       # Database
+       database:
+           host: database
+           dbname: webapp
+           user: webapp
+           password: webapp
    ```
 
 3) Run `docker-compose up`
@@ -125,8 +125,8 @@ composer create-project -s dev contributte/webapp-skeleton acme
 4) Open http://localhost and enjoy!
 
    Take a look at:
-	- http://localhost.
-	- http://localhost/admin (admin@admin.cz / admin)
+    - http://localhost.
+    - http://localhost/admin (admin@admin.cz / admin)
 
 ## Features
 
@@ -134,9 +134,9 @@ Here is a list of all features you can find in this project.
 
 - PHP 8.0+
 - :package: Packages
-	- Nette 3+
-	- Contributte
-	- Nettrine
+    - Nette 3+
+    - Contributte
+    - Nettrine
 - :deciduous_tree: Structure
     - `app`
         - `config` - configuration files
@@ -157,13 +157,13 @@ Here is a list of all features you can find in this project.
         - `migrations` - migrations files
     - `docs` - documentation
     - `var`
-      - `log` - runtime and error logs
-      - `tmp` - tmp files and cache
+        - `log` - runtime and error logs
+        - `tmp` - tmp files and cache
     - `tests` - test engine and unit/integration tests
     - `vendor` - composer's folder
     - `www` - public content
 - :exclamation: Tracy
-	- Cool error 500 page
+    - Cool error 500 page
 
 ### Notable changes
 
@@ -227,7 +227,7 @@ See [how to contribute](https://contributte.org/contributing.html) to this packa
 This package is currently maintaining by these authors.
 
 <a href="https://github.com/f3l1x">
-	<img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
+    <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
 </a>
 
 -----
