@@ -9,17 +9,17 @@ use Tracy\Debugger;
 class RequestLoggerSubscriber implements EventSubscriberInterface
 {
 
-	public function onRequest(RequestEvent $event): void
-	{
-		Debugger::barDump($event->getRequest());
-	}
-
 	/**
 	 * {@inheritdoc}
 	 */
 	public static function getSubscribedEvents(): array
 	{
 		return [RequestEvent::class => 'onRequest'];
+	}
+
+	public function onRequest(RequestEvent $event): void
+	{
+		Debugger::barDump($event->getRequest());
 	}
 
 }

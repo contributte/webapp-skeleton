@@ -9,6 +9,20 @@ use Tracy\Debugger;
 class OrderLogSubscriber implements EventSubscriberInterface
 {
 
+	/**
+	 * {@inheritdoc}
+	 */
+	public static function getSubscribedEvents(): array
+	{
+		return [
+			OrderCreated::NAME => [
+				['onOrderCreatedBefore', 100],
+				['onOrderCreated', 0],
+				['onOrderCreatedAfter', -100],
+			],
+		];
+	}
+
 	public function onOrderCreatedBefore(OrderCreated $event): void
 	{
 		Debugger::barDump('BEFORE');
@@ -23,20 +37,6 @@ class OrderLogSubscriber implements EventSubscriberInterface
 	public function onOrderCreatedAfter(OrderCreated $event): void
 	{
 		Debugger::barDump('AFTER');
-	}
-
-	/**
-	 * {@inheritdoc}
-	 */
-	public static function getSubscribedEvents(): array
-	{
-		return [
-			OrderCreated::NAME => [
-				['onOrderCreatedBefore', 100],
-				['onOrderCreated', 0],
-				['onOrderCreatedAfter', -100],
-			],
-		];
 	}
 
 }
