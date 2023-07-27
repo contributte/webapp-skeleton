@@ -37,7 +37,7 @@
     "nettrine/orm": "^0.8.0",
     "nettrine/dbal": "^0.8.0",
     "nettrine/cache": "^0.3.0",
-    "nettrine/migrations": "^0.8.0",
+    "nettrine/migrations": "^0.9.1",
     "nettrine/fixtures": "^0.8.0"
   },
   "require-dev": {
