@@ -852,20 +852,20 @@
         },
         {
             "name": "contributte/mail",
-            "version": "v0.7.0",
+            "version": "v0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/mail.git",
-                "reference": "2338186929d609d84558f40038b06aa89fd278af"
+                "reference": "4eb695a91993a3ae29f67b9b645ec399fb51e3a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/mail/zipball/2338186929d609d84558f40038b06aa89fd278af",
-                "reference": "2338186929d609d84558f40038b06aa89fd278af",
+                "url": "https://api.github.com/repos/contributte/mail/zipball/4eb695a91993a3ae29f67b9b645ec399fb51e3a5",
+                "reference": "4eb695a91993a3ae29f67b9b645ec399fb51e3a5",
                 "shasum": ""
             },
             "require": {
-                "nette/mail": "^3.1.0",
+                "nette/mail": "^3.1.0 || ^4.0.0",
                 "nette/utils": "^3.2.9 || ^4.0.0",
                 "php": ">=8.0"
             },
@@ -913,7 +913,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/mail/issues",
-                "source": "https://github.com/contributte/mail/tree/v0.7.0"
+                "source": "https://github.com/contributte/mail/tree/v0.7.1"
             },
             "funding": [
                 {
@@ -925,7 +925,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-11T10:06:09+00:00"
+            "time": "2023-08-28T08:39:04+00:00"
         },
         {
             "name": "contributte/mailing",
@@ -4061,20 +4061,20 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.2.9",
+            "version": "v3.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "c91bac3470c34b2ecd5400f6e6fdf0b64a836a5c"
+                "reference": "a4175c62652f2300c8017fb7e640f9ccb11648d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/c91bac3470c34b2ecd5400f6e6fdf0b64a836a5c",
-                "reference": "c91bac3470c34b2ecd5400f6e6fdf0b64a836a5c",
+                "url": "https://api.github.com/repos/nette/utils/zipball/a4175c62652f2300c8017fb7e640f9ccb11648d2",
+                "reference": "a4175c62652f2300c8017fb7e640f9ccb11648d2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2 <8.3"
+                "php": ">=7.2 <8.4"
             },
             "conflict": {
                 "nette/di": "<3.0.6"
@@ -4141,9 +4141,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v3.2.9"
+                "source": "https://github.com/nette/utils/tree/v3.2.10"
             },
-            "time": "2023-01-18T03:26:20+00:00"
+            "time": "2023-07-30T15:38:18+00:00"
         },
         {
             "name": "nettrine/annotations",
