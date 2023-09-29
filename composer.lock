@@ -8,33 +8,32 @@
     "packages": [
         {
             "name": "contributte/application",
-            "version": "v0.5.1",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/application.git",
-                "reference": "2579ab2bc3b7c95ae32a2e664ac9a8cc038777f9"
+                "reference": "f5f8637bd54eacd1cc45792f23bb8831873ddb35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/application/zipball/2579ab2bc3b7c95ae32a2e664ac9a8cc038777f9",
-                "reference": "2579ab2bc3b7c95ae32a2e664ac9a8cc038777f9",
+                "url": "https://api.github.com/repos/contributte/application/zipball/f5f8637bd54eacd1cc45792f23bb8831873ddb35",
+                "reference": "f5f8637bd54eacd1cc45792f23bb8831873ddb35",
                 "shasum": ""
             },
             "require": {
-                "nette/application": "^3.0.0",
+                "nette/application": "^3.0.0 || ^4.0",
                 "php": ">=7.2"
             },
             "require-dev": {
-                "nette/http": "~2.4.8 || ~3.0.0",
+                "nette/http": "~2.4.8 || ^3.0.0",
                 "ninjify/nunjuck": "^0.3.0",
-                "ninjify/qa": "^0.9.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11.0",
-                "phpstan/phpstan-nette": "^0.11.1",
-                "phpstan/phpstan-shim": "^0.11.2",
-                "phpstan/phpstan-strict-rules": "^0.11.0",
+                "ninjify/qa": "^0.13.0",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-nette": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0",
                 "psr/http-message": "~1.0.1",
-                "tracy/tracy": "~2.6.1"
+                "tracy/tracy": "~2.9.1"
             },
             "type": "library",
             "extra": {
@@ -68,7 +67,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/application/issues",
-                "source": "https://github.com/contributte/application/tree/v0.5.1"
+                "source": "https://github.com/contributte/application/tree/v0.5.2"
             },
             "funding": [
                 {
@@ -80,7 +79,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-10T21:48:30+00:00"
+            "time": "2023-09-27T20:32:37+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -2990,16 +2989,16 @@
         },
         {
             "name": "nette/application",
-            "version": "v3.1.11",
+            "version": "v3.1.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/application.git",
-                "reference": "b03bd4971b03e3fa582ac40ea429446cd00788bb"
+                "reference": "83f5144840a1aa38eb7bae58ce58a9d0c5f10177"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/application/zipball/b03bd4971b03e3fa582ac40ea429446cd00788bb",
-                "reference": "b03bd4971b03e3fa582ac40ea429446cd00788bb",
+                "url": "https://api.github.com/repos/nette/application/zipball/83f5144840a1aa38eb7bae58ce58a9d0c5f10177",
+                "reference": "83f5144840a1aa38eb7bae58ce58a9d0c5f10177",
                 "shasum": ""
             },
             "require": {
@@ -3010,7 +3009,7 @@
                 "php": ">=7.2"
             },
             "conflict": {
-                "latte/latte": "<2.7.1 || >=3.0.0 <3.0.5 || >=3.1",
+                "latte/latte": "<2.7.1 || >=3.0.0 <3.0.8 || >=3.1",
                 "nette/caching": "<3.1",
                 "nette/di": "<3.0.7",
                 "nette/forms": "<3.0",
@@ -3076,9 +3075,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/application/issues",
-                "source": "https://github.com/nette/application/tree/v3.1.11"
+                "source": "https://github.com/nette/application/tree/v3.1.13"
             },
-            "time": "2023-04-28T10:09:21+00:00"
+            "time": "2023-08-27T10:38:40+00:00"
         },
         {
             "name": "nette/bootstrap",
