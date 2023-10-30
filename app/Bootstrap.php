@@ -16,7 +16,6 @@ final class Bootstrap
 		$configurator = new ExtraConfigurator();
 		$configurator->setTempDirectory(__DIR__ . '/../var/tmp');
 
-		// @phpstan-ignore-next-line
 		$configurator->onCompile[] = function (ExtraConfigurator $configurator, Compiler $compiler): void {
 			// Add env variables to config structure
 			$compiler->addConfig(['parameters' => $configurator->getEnvironmentParameters()]);
