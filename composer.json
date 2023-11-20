@@ -44,7 +44,7 @@
     "contributte/qa": "^0.3",
     "contributte/tester": "^0.2",
     "contributte/phpstan": "^0.1",
-    "contributte/dev": "^0.4",
+    "contributte/dev": "^0.5",
     "mockery/mockery": "^1.3.0",
     "nelmio/alice": "^3.5.8",
     "phpstan/phpstan-doctrine": "^1.3.40"
