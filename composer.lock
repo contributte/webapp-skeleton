@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "570b88fa6191f54af2e9fdf3ac7f28a8",
+    "content-hash": "4304cf290e8fe7f9fd9f9ce9be6dee8f",
     "packages": [
         {
             "name": "contributte/application",
@@ -6209,32 +6209,32 @@
     "packages-dev": [
         {
             "name": "contributte/dev",
-            "version": "v0.4",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/dev.git",
-                "reference": "ad662e623a4d3d7e98b4d647eb4a6681f7c0ae1b"
+                "reference": "06d386f519b57ded20a2468fa696779a2d349e00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/dev/zipball/ad662e623a4d3d7e98b4d647eb4a6681f7c0ae1b",
-                "reference": "ad662e623a4d3d7e98b4d647eb4a6681f7c0ae1b",
+                "url": "https://api.github.com/repos/contributte/dev/zipball/06d386f519b57ded20a2468fa696779a2d349e00",
+                "reference": "06d386f519b57ded20a2468fa696779a2d349e00",
                 "shasum": ""
             },
             "require": {
-                "contributte/tracy": "^0.6.0",
-                "contributte/utils": "^0.6.0",
-                "php": ">=8.1"
+                "nette/utils": "^4.0.3",
+                "php": ">=8.1",
+                "tracy/tracy": "^2.10.2"
             },
             "require-dev": {
                 "contributte/phpstan": "^0.1.0",
-                "contributte/phpunit": "^0.1.0",
-                "contributte/qa": "^0.4.0"
+                "contributte/qa": "^0.4.0",
+                "contributte/tester": "^0.2.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5.x-dev"
+                    "dev-master": "0.6.x-dev"
                 }
             },
             "autoload": {
@@ -6266,7 +6266,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/dev/issues",
-                "source": "https://github.com/contributte/dev/tree/v0.4"
+                "source": "https://github.com/contributte/dev/tree/v0.5.0"
             },
             "funding": [
                 {
@@ -6278,7 +6278,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-09T19:56:08+00:00"
+            "time": "2023-11-17T15:55:03+00:00"
         },
         {
             "name": "contributte/phpstan",
