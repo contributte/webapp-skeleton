@@ -851,16 +851,16 @@
         },
         {
             "name": "contributte/mail",
-            "version": "v0.7.1",
+            "version": "v0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/mail.git",
-                "reference": "4eb695a91993a3ae29f67b9b645ec399fb51e3a5"
+                "reference": "e3a1834ab8f95743c42de866a846ec6f76faf5ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/mail/zipball/4eb695a91993a3ae29f67b9b645ec399fb51e3a5",
-                "reference": "4eb695a91993a3ae29f67b9b645ec399fb51e3a5",
+                "url": "https://api.github.com/repos/contributte/mail/zipball/e3a1834ab8f95743c42de866a846ec6f76faf5ab",
+                "reference": "e3a1834ab8f95743c42de866a846ec6f76faf5ab",
                 "shasum": ""
             },
             "require": {
@@ -912,7 +912,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/mail/issues",
-                "source": "https://github.com/contributte/mail/tree/v0.7.1"
+                "source": "https://github.com/contributte/mail/tree/v0.7.2"
             },
             "funding": [
                 {
@@ -924,7 +924,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-08-28T08:39:04+00:00"
+            "time": "2023-12-01T16:45:50+00:00"
         },
         {
             "name": "contributte/mailing",
@@ -3623,22 +3623,22 @@
         },
         {
             "name": "nette/mail",
-            "version": "v3.1.10",
+            "version": "v3.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/mail.git",
-                "reference": "23380ff0220c7a595d21253ac9ea64e32a1869c7"
+                "reference": "804d70278458452863a2d6be4c1d5bf5f91b3950"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/mail/zipball/23380ff0220c7a595d21253ac9ea64e32a1869c7",
-                "reference": "23380ff0220c7a595d21253ac9ea64e32a1869c7",
+                "url": "https://api.github.com/repos/nette/mail/zipball/804d70278458452863a2d6be4c1d5bf5f91b3950",
+                "reference": "804d70278458452863a2d6be4c1d5bf5f91b3950",
                 "shasum": ""
             },
             "require": {
                 "ext-iconv": "*",
                 "nette/utils": "^3.1 || ~4.0.0",
-                "php": ">=7.1 <8.3"
+                "php": "7.1 - 8.3"
             },
             "conflict": {
                 "nette/di": "<3.0-stable"
@@ -3691,9 +3691,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/mail/issues",
-                "source": "https://github.com/nette/mail/tree/v3.1.10"
+                "source": "https://github.com/nette/mail/tree/v3.1.11"
             },
-            "time": "2023-01-18T05:42:31+00:00"
+            "time": "2023-11-02T23:18:58+00:00"
         },
         {
             "name": "nette/neon",
