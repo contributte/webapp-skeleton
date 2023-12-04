@@ -6787,16 +6787,16 @@
         },
         {
             "name": "nelmio/alice",
-            "version": "3.13.0",
+            "version": "3.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/alice.git",
-                "reference": "48bf285f9b535322b730dd41727a0783185ba542"
+                "reference": "f495b126eb6f1d275c16a698e489cf3d96ab37e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/alice/zipball/48bf285f9b535322b730dd41727a0783185ba542",
-                "reference": "48bf285f9b535322b730dd41727a0783185ba542",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/f495b126eb6f1d275c16a698e489cf3d96ab37e6",
+                "reference": "f495b126eb6f1d275c16a698e489cf3d96ab37e6",
                 "shasum": ""
             },
             "require": {
@@ -6805,7 +6805,7 @@
                 "php": "^8.1",
                 "sebastian/comparator": "^3.0 || ^4.0 || ^5.0",
                 "symfony/property-access": "^6.4 || ^7.0",
-                "symfony/yaml": "^5.4 || ^6.0"
+                "symfony/yaml": "^6.0 || ^7.0"
             },
             "conflict": {
                 "symfony/framework-bundle": "<6.4.0"
@@ -6870,7 +6870,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nelmio/alice/issues",
-                "source": "https://github.com/nelmio/alice/tree/3.13.0"
+                "source": "https://github.com/nelmio/alice/tree/3.13.3"
             },
             "funding": [
                 {
@@ -6878,7 +6878,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-30T09:09:35+00:00"
+            "time": "2023-12-03T23:12:39+00:00"
         },
         {
             "name": "nette/tester",
