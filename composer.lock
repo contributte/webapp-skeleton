@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4304cf290e8fe7f9fd9f9ce9be6dee8f",
+    "content-hash": "5c7473828fdc49248b0aaaa750cf70da",
     "packages": [
         {
             "name": "contributte/application",
@@ -6421,51 +6421,41 @@
         },
         {
             "name": "contributte/tester",
-            "version": "v0.2.0",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tester.git",
-                "reference": "42f17211e0d65287c5ac307a12d394eba716ac2f"
+                "reference": "d7db5a9b2b76910805ce191fa96b59d51c3b4dc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tester/zipball/42f17211e0d65287c5ac307a12d394eba716ac2f",
-                "reference": "42f17211e0d65287c5ac307a12d394eba716ac2f",
+                "url": "https://api.github.com/repos/contributte/tester/zipball/d7db5a9b2b76910805ce191fa96b59d51c3b4dc1",
+                "reference": "d7db5a9b2b76910805ce191fa96b59d51c3b4dc1",
                 "shasum": ""
             },
             "require": {
-                "nette/tester": "^2.5.0",
-                "php": ">=7.4"
+                "nette/tester": "^2.5.1",
+                "php": ">=8.1"
             },
             "require-dev": {
-                "contributte/qa": "^0.1",
-                "janmarek/mockista": "^1.1.0",
-                "mockery/mockery": "^1.2.2",
-                "nette/di": "~3.0.0",
-                "nette/robot-loader": "^3.2",
-                "phpstan/phpstan": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-strict-rules": "^1.0"
+                "contributte/phpstan": "^0.1.0",
+                "contributte/qa": "^0.4.0",
+                "nette/di": "^3.1.2",
+                "nette/neon": "^3.4.0",
+                "nette/robot-loader": "^3.4.2"
             },
             "suggest": {
-                "janmarek/mockista": "to use BaseMockistaTestCase",
-                "mockery/mockery": "to use BaseMockeryTestCase",
-                "nette/di": "to use BaseContainerTestCase"
+                "nette/di": "for NEON handling",
+                "nette/neon": "for NEON handling",
+                "nette/robot-loader": "for class finding"
             },
-            "bin": [
-                "bin/nunjuck",
-                "bin/nunjuck-setup"
-            ],
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.2.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
-                "files": [
-                    "src/functions.php"
-                ],
                 "psr-4": {
                     "Contributte\\Tester\\": "src"
                 }
@@ -6480,7 +6470,7 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Special tuned version of nette/tester for your PHP projects",
+            "description": "Nette Tester with extra horse power",
             "homepage": "https://github.com/contributte/tester",
             "keywords": [
                 "nette",
@@ -6489,7 +6479,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/tester/issues",
-                "source": "https://github.com/contributte/tester/tree/v0.2.0"
+                "source": "https://github.com/contributte/tester/tree/v0.3.0"
             },
             "funding": [
                 {
@@ -6501,7 +6491,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-08T12:35:01+00:00"
+            "time": "2023-11-17T16:10:28+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
