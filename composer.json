@@ -17,7 +17,7 @@
     "contributte/bootstrap": "^0.6.0",
     "contributte/application": "^0.5.0",
     "contributte/cache": "^0.6.0",
-    "contributte/console": "^0.9.0",
+    "contributte/console": "^0.10.0",
     "contributte/console-extra": "^0.7.0",
     "contributte/event-dispatcher": "^0.8.0",
     "contributte/event-dispatcher-extra": "^0.9.0",
