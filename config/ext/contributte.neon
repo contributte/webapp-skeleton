@@ -9,6 +9,9 @@ extensions:
 	contributte.mailing: Contributte\Mailing\DI\MailingExtension
 	contributte.post: Contributte\Mail\DI\MailExtension
 
+contributte.events:
+	debug: %debugMode%
+
 contributte.console:
 	url: http://localhost/
 
