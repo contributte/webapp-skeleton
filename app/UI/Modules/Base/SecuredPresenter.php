@@ -3,7 +3,7 @@
 namespace App\UI\Modules\Base;
 
 use App\Model\App;
-use Nette\Security\UserStorage;
+use Nette\Security\User;
 
 abstract class SecuredPresenter extends BasePresenter
 {
@@ -11,7 +11,7 @@ abstract class SecuredPresenter extends BasePresenter
 	public function checkRequirements(mixed $element): void
 	{
 		if (!$this->user->isLoggedIn()) {
-			if ($this->user->getLogoutReason() === UserStorage::LOGOUT_INACTIVITY) {
+			if ($this->user->getLogoutReason() === User::LogoutInactivity) {
 				$this->flashInfo('You have been logged out for inactivity');
 			}
 
