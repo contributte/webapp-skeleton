@@ -20,7 +20,7 @@
     "contributte/console": "^0.10.0",
     "contributte/console-extra": "^0.8.0",
     "contributte/event-dispatcher": "^0.10.0",
-    "contributte/event-dispatcher-extra": "^0.9.0",
+    "contributte/event-dispatcher-extra": "^0.10.0",
     "contributte/di": "^0.5.0",
     "contributte/forms": "^0.5.0",
     "contributte/http": "^0.4.0",
