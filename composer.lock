@@ -5959,16 +5959,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v7.0.3",
+            "version": "v7.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "524aac4a280b90a4420d8d6a040718d0586505ac"
+                "reference": "f5832521b998b0bec40bee688ad5de98d4cf111b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/524aac4a280b90a4420d8d6a040718d0586505ac",
-                "reference": "524aac4a280b90a4420d8d6a040718d0586505ac",
+                "url": "https://api.github.com/repos/symfony/string/zipball/f5832521b998b0bec40bee688ad5de98d4cf111b",
+                "reference": "f5832521b998b0bec40bee688ad5de98d4cf111b",
                 "shasum": ""
             },
             "require": {
@@ -6025,7 +6025,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v7.0.3"
+                "source": "https://github.com/symfony/string/tree/v7.0.4"
             },
             "funding": [
                 {
@@ -6041,7 +6041,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-29T15:41:16+00:00"
+            "time": "2024-02-01T13:17:36+00:00"
         },
         {
             "name": "symfony/var-exporter",
@@ -6767,16 +6767,16 @@
         },
         {
             "name": "nelmio/alice",
-            "version": "3.13.4",
+            "version": "3.13.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nelmio/alice.git",
-                "reference": "9ca5eced5d7eeafdfcb9558a19df2ccad2ff5e02"
+                "reference": "f05bd9740f8513da8a9ca78df6a08451a1dea787"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nelmio/alice/zipball/9ca5eced5d7eeafdfcb9558a19df2ccad2ff5e02",
-                "reference": "9ca5eced5d7eeafdfcb9558a19df2ccad2ff5e02",
+                "url": "https://api.github.com/repos/nelmio/alice/zipball/f05bd9740f8513da8a9ca78df6a08451a1dea787",
+                "reference": "f05bd9740f8513da8a9ca78df6a08451a1dea787",
                 "shasum": ""
             },
             "require": {
@@ -6850,7 +6850,7 @@
             ],
             "support": {
                 "issues": "https://github.com/nelmio/alice/issues",
-                "source": "https://github.com/nelmio/alice/tree/3.13.4"
+                "source": "https://github.com/nelmio/alice/tree/3.13.5"
             },
             "funding": [
                 {
@@ -6858,7 +6858,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-06T22:28:18+00:00"
+            "time": "2024-04-02T09:07:42+00:00"
         },
         {
             "name": "nette/tester",
@@ -7354,16 +7354,16 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "6.0.0",
+            "version": "6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "3e3f502419518897a923aa1c64d51f9def2e0aff"
+                "reference": "ab83243ecc233de5655b76f577711de9f842e712"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/3e3f502419518897a923aa1c64d51f9def2e0aff",
-                "reference": "3e3f502419518897a923aa1c64d51f9def2e0aff",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/ab83243ecc233de5655b76f577711de9f842e712",
+                "reference": "ab83243ecc233de5655b76f577711de9f842e712",
                 "shasum": ""
             },
             "require": {
@@ -7409,7 +7409,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/diff/issues",
                 "security": "https://github.com/sebastianbergmann/diff/security/policy",
-                "source": "https://github.com/sebastianbergmann/diff/tree/6.0.0"
+                "source": "https://github.com/sebastianbergmann/diff/tree/6.0.1"
             },
             "funding": [
                 {
@@ -7417,20 +7417,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-02T05:56:35+00:00"
+            "time": "2024-03-02T07:30:33+00:00"
         },
         {
             "name": "sebastian/exporter",
-            "version": "6.0.0",
+            "version": "6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "d0c0a93fc746b0c066037f1e7d09104129e868ff"
+                "reference": "f291e5a317c321c0381fa9ecc796fa2d21b186da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/d0c0a93fc746b0c066037f1e7d09104129e868ff",
-                "reference": "d0c0a93fc746b0c066037f1e7d09104129e868ff",
+                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/f291e5a317c321c0381fa9ecc796fa2d21b186da",
+                "reference": "f291e5a317c321c0381fa9ecc796fa2d21b186da",
                 "shasum": ""
             },
             "require": {
@@ -7487,7 +7487,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/exporter/issues",
                 "security": "https://github.com/sebastianbergmann/exporter/security/policy",
-                "source": "https://github.com/sebastianbergmann/exporter/tree/6.0.0"
+                "source": "https://github.com/sebastianbergmann/exporter/tree/6.0.1"
             },
             "funding": [
                 {
@@ -7495,7 +7495,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-02T05:58:52+00:00"
+            "time": "2024-03-02T07:28:20+00:00"
         },
         {
             "name": "sebastian/recursion-context",
@@ -7708,16 +7708,16 @@
         },
         {
             "name": "symfony/property-access",
-            "version": "v7.0.3",
+            "version": "v7.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
-                "reference": "5c7814d1a84bc11254c5bc761d9878b04e708dec"
+                "reference": "44e3746d4de8d0961a44ee332c74dd0918266127"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/5c7814d1a84bc11254c5bc761d9878b04e708dec",
-                "reference": "5c7814d1a84bc11254c5bc761d9878b04e708dec",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/44e3746d4de8d0961a44ee332c74dd0918266127",
+                "reference": "44e3746d4de8d0961a44ee332c74dd0918266127",
                 "shasum": ""
             },
             "require": {
@@ -7764,7 +7764,7 @@
                 "reflection"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-access/tree/v7.0.3"
+                "source": "https://github.com/symfony/property-access/tree/v7.0.4"
             },
             "funding": [
                 {
@@ -7780,7 +7780,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T15:02:46+00:00"
+            "time": "2024-02-16T13:44:10+00:00"
         },
         {
             "name": "symfony/property-info",
