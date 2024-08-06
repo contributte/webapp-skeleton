@@ -29,7 +29,7 @@
     "contributte/mailing": "^0.5.0",
     "contributte/monolog": "^0.5.0",
     "contributte/security": "^0.4.0",
-    "contributte/utils": "^0.6.0",
+    "contributte/utils": "^0.7.0",
     "contributte/tracy": "^0.6.0",
     "contributte/pdf": "^7.0.0",
 
