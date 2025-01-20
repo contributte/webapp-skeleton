@@ -42,8 +42,8 @@ nettrine.orm.annotations:
 nettrine.migrations:
 	table: doctrine_migrations
 	column: version
-	directory: %rootDir%/db/Migrations
-	namespace: Database\Migrations
+	directories:
+		Database\Migrations: %rootDir%/db/Migrations
 	versionsOrganization: null
 
 nettrine.fixtures:
