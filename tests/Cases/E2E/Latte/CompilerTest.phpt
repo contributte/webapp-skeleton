@@ -10,6 +10,7 @@ use Nette\Bridges\ApplicationLatte\Template;
 use Nette\Utils\Finder;
 use SplFileInfo;
 use Tester\Assert;
+use Tests\Toolkit\Tests;
 use Throwable;
 
 require_once __DIR__ . '/../../../bootstrap.php';
@@ -23,7 +24,7 @@ Toolkit::test(function (): void {
 
 	/** @var Template $template */
 	$template = $templateFactory->createTemplate();
-	$finder = Finder::findFiles('*.latte')->from(APP_DIR);
+	$finder = Finder::findFiles('*.latte')->from(Tests::APP_PATH);
 
 	try {
 		/** @var SplFileInfo $file */

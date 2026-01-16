@@ -3,12 +3,12 @@
 namespace Tests\Cases\E2E\Container;
 
 use App\Bootstrap;
-use Contributte\Tester\TestCase\BaseTestCase;
 use Contributte\Utils\FileSystem;
 use Nette\Application\Application as WebApplication;
 use Nette\DI\Container;
 use Symfony\Component\Console\Application as ConsoleApplication;
 use Tester\Assert;
+use Tests\Toolkit\BaseTestCase;
 use Tests\Toolkit\Tests;
 
 require_once __DIR__ . '/../../../bootstrap.php';
