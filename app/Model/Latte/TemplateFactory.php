@@ -24,7 +24,7 @@ final class TemplateFactory extends NetteTemplateFactory
 		IRequest $httpRequest,
 		SecurityUser $user,
 		Storage $cacheStorage,
-		string $templateClass = null
+		?string $templateClass = null
 	)
 	{
 		parent::__construct($latteFactory, $httpRequest, $user, $cacheStorage, $templateClass);
@@ -37,7 +37,7 @@ final class TemplateFactory extends NetteTemplateFactory
 	 * @param class-string<T>|null $class
 	 * @return T
 	 */
-	public function createTemplate(Control $control = null, string $class = null): Template
+	public function createTemplate(?Control $control = null, ?string $class = null): Template
 	{
 		/** @var T $template */
 		$template = parent::createTemplate($control, $class);
