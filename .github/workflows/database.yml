@@ -1,0 +1,55 @@
+name: "Database"
+
+on:
+  pull_request:
+
+  push:
+    branches: ["*"]
+
+  schedule:
+    - cron: "0 8 * * 1"
+
+jobs:
+  database:
+    name: "Database"
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: contributte
+          POSTGRES_PASSWORD: contributte
+          POSTGRES_DB: contributte
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          extensions: pdo, pdo_pgsql
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Setup config
+        run: |
+          cp config/local.neon.example config/local.neon
+          sed -i 's/host: 0.0.0.0/host: 127.0.0.1/' config/local.neon
+          mkdir -p var/tmp var/log
+          chmod +0777 var/tmp var/log
+
+      - name: Run migrations
+        run: NETTE_DEBUG=1 bin/console migrations:migrate --no-interaction --allow-no-migration
+        env:
+          NETTE_ENV: test
