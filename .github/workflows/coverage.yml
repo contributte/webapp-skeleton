@@ -11,7 +11,8 @@ on:
 
 jobs:
   coverage:
-    name: "Phpunit"
+    name: "Coverage"
     uses: contributte/.github/.github/workflows/phpunit-coverage.yml@v1
     with:
+      php: "8.4"
       make: "init coverage"
