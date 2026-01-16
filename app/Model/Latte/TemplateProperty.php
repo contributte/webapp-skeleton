@@ -13,7 +13,7 @@ use Nette\Bridges\ApplicationLatte\Template;
  * @property-read BaseControl $control
  * @property-read string $baseUri
  * @property-read string $basePath
- * @property-read array $flashes
+ * @property-read array<\stdClass> $flashes
  */
 final class TemplateProperty extends Template
 {

@@ -17,6 +17,9 @@ class AbstractQuery implements Queryable
 		// Can be defined in child.
 	}
 
+	/**
+	 * @return Query<null, mixed>
+	 */
 	public function doQuery(EntityManagerInterface $em): Query
 	{
 		$qb = $em->createQueryBuilder();

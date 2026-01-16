@@ -7,6 +7,7 @@ use Nette\Localization\ITranslator;
 
 /**
  * @mixin BasePresenter
+ * @phpstan-ignore trait.unused
  */
 trait TTranslate
 {

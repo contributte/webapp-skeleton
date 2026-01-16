@@ -3,8 +3,8 @@
 namespace App\UI\Control;
 
 use App\UI\Modules\Base\BasePresenter;
-use Nette\HtmlStringable;
 use stdClass;
+use Stringable;
 
 /**
  * @mixin BasePresenter
@@ -13,7 +13,7 @@ trait TFlashMessage
 {
 
 	/**
-	 * @param string|stdClass|HtmlStringable $message
+	 * @param string|stdClass|Stringable $message
 	 * @internal
 	 */
 	public function flashMessage(mixed $message, string $type = 'info'): stdClass
