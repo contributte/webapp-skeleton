@@ -3,48 +3,44 @@
 extensions:
 	nettrine.annotations: Nettrine\Annotations\DI\AnnotationsExtension
 	nettrine.cache: Nettrine\Cache\DI\CacheExtension
+	nettrine.dbal: Nettrine\DBAL\DI\DbalExtension
+	nettrine.orm: Nettrine\ORM\DI\OrmExtension
 	nettrine.migrations: Nettrine\Migrations\DI\MigrationsExtension
 	nettrine.fixtures: Nettrine\Fixtures\DI\FixturesExtension
-
-	# Dbal
-	nettrine.dbal: Nettrine\DBAL\DI\DbalExtension
-	nettrine.dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension(%consoleMode%)
-
-	# Orm
-	nettrine.orm: Nettrine\ORM\DI\OrmExtension
-	nettrine.orm.cache: Nettrine\ORM\DI\OrmCacheExtension
-	nettrine.orm.console: Nettrine\ORM\DI\OrmConsoleExtension(%consoleMode%)
-	nettrine.orm.annotations: Nettrine\ORM\DI\OrmAnnotationsExtension
 
 nettrine.dbal:
 	debug:
 		panel: %debugMode%
-	configuration:
-		sqlLogger: Nettrine\DBAL\Logger\PsrLogger(@Monolog\Logger)
-	connection:
-		driver: %database.driver%
-		host: %database.host%
-		user: %database.user%
-		password: %database.password%
-		dbname: %database.dbname%
-		port: %database.port%
-		serverVersion: 10.0
+	connections:
+		default:
+			driver: %database.driver%
+			host: %database.host%
+			user: %database.user%
+			password: %database.password%
+			dbname: %database.dbname%
+			port: %database.port%
+			serverVersion: "16.0"
 
 nettrine.orm:
-	entityManagerDecoratorClass: App\Model\Database\EntityManagerDecorator
-	configuration:
-		autoGenerateProxyClasses: %debugMode%
-
-nettrine.orm.annotations:
-	mapping:
-		App\Domain: %appDir%/Domain
+	managers:
+		default:
+			connection: default
+			entityManagerDecoratorClass: App\Model\Database\EntityManagerDecorator
+			autoGenerateProxyClasses: %debugMode%
+			lazyNativeObjects: true
+			mapping:
+				App\Domain:
+					type: attributes
+					directories: [%appDir%/Domain]
+					namespace: App\Domain
 
 nettrine.migrations:
 	table: doctrine_migrations
 	column: version
+	connection: default
+	manager: default
 	directories:
 		Database\Migrations: %rootDir%/db/Migrations
-	versionsOrganization: null
 
 nettrine.fixtures:
 	paths:

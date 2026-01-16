@@ -37,7 +37,3 @@ services:
 	- App\Console\HelloCommand
 
 	- App\Model\Database\QueryManager
-
-latte:
-	macros:
-		- App\Model\Latte\Macros::register
