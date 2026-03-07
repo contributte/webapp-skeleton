@@ -2,6 +2,7 @@ name: "Coverage"
 
 on:
   pull_request:
+  workflow_dispatch:
 
   push:
     branches: ["*"]
@@ -12,7 +13,30 @@ on:
 jobs:
   coverage:
     name: "Coverage"
-    uses: contributte/.github/.github/workflows/phpunit-coverage.yml@v1
-    with:
-      php: "8.4"
-      make: "init coverage"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v4"
+
+      - name: "PHP"
+        uses: "contributte/.github/.github/actions/setup-php@master"
+        with:
+          php: "8.4"
+
+      - name: "Composer"
+        uses: "contributte/.github/.github/actions/setup-composer@master"
+        with:
+          command: "composer install --no-interaction --no-progress --prefer-dist"
+
+      - name: "Run coverage"
+        run: "make init coverage"
+
+      - name: "Codecov"
+        uses: "codecov/codecov-action@v4"
+        with:
+          files: "./coverage.xml"
+          fail_ci_if_error: true
+          verbose: true
+        env:
+          CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
