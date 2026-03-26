@@ -272,7 +272,7 @@ Take a detailed look :eyes: at each single package.
 
 ## Development
 
-See [how to contribute](https://contributte.org/contributing.html) to this package. Also see [CONTRIBUTING.md](CONTRIBUTING.md).
+See [how to contribute](https://contributte.org/contributing.html) to this package.
 
 This package is currently maintaining by these authors.
 
