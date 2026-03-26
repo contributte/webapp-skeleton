@@ -47,11 +47,11 @@ https://examples.contributte.org/webapp-skeleton/
 ```bash
 composer create-project -s dev contributte/webapp-skeleton acme
 cd acme
-cp config/local.neon.example config/local.neon  # or: make init
-make project                                     # composer install + setup dirs
-# Start PostgreSQL (see Docker section below)
-make build                                       # run migrations + load fixtures
-make dev                                         # start PHP dev server on port 8000
+make init                  # copy local.neon.example to local.neon
+make project               # composer install + setup dirs
+make docker-postgres       # start PostgreSQL (or use your own)
+make build                 # run migrations + load fixtures
+make dev                   # start PHP dev server on port 8000
 ```
 
 Open http://localhost:8000 and enjoy!

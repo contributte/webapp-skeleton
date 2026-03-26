@@ -15,11 +15,10 @@ PostgreSQL is not running or the connection settings are wrong.
 The database schema hasn't been created yet.
 
 ```bash
-NETTE_DEBUG=1 bin/console migrations:migrate --no-interaction
-NETTE_DEBUG=1 bin/console doctrine:fixtures:load --no-interaction --append
+make build
 ```
 
-Or simply: `make build`
+This runs schema drop, migrations, and fixture loading. For individual steps, see the [Database Guide](database.md).
 
 ### "Could not find driver"
 
@@ -53,11 +52,11 @@ The `Makefile` uses Unix shell commands (`find`, `chmod`). On Windows:
 
 - **Recommended:** Use [WSL2](https://learn.microsoft.com/en-us/windows/wsl/) (Windows Subsystem for Linux)
 - **Alternative:** Use Git Bash (included with [Git for Windows](https://gitforwindows.org/))
-- **Alternative:** Run commands manually:
+- **Alternative:** Run the equivalent commands manually:
   ```cmd
   composer install
   mkdir var\tmp var\log
-  php -S 0.0.0.0:8000 -t www
+  set NETTE_DEBUG=1 && set NETTE_ENV=dev && php -S 0.0.0.0:8000 -t www
   ```
 
 ### Docker performance is slow

@@ -95,7 +95,7 @@ Migrations are managed by Doctrine Migrations and stored in `db/Migrations/`.
 
 The migration tracking table is named `doctrine_migrations` (configured in `nettrine.neon`).
 
-Prefix commands with `NETTE_DEBUG=1` for development, or use `make build` which runs drop + migrate + fixtures.
+Use `make build` to run the full cycle (drop + migrate + fixtures). For individual commands, prefix with `NETTE_DEBUG=1`.
 
 ## Fixtures
 
@@ -124,12 +124,14 @@ class UserFixture extends AbstractFixture
 
 ### Loading Fixtures
 
-```bash
-bin/console doctrine:fixtures:load --append     # append to existing data
-bin/console doctrine:fixtures:load              # purge first, then load
-```
+Use `make build` to drop the schema, run migrations, and load fixtures in one step.
 
-Or use `make build` which drops the schema, runs migrations, and loads fixtures.
+For loading fixtures individually:
+
+```bash
+NETTE_DEBUG=1 bin/console doctrine:fixtures:load --append     # append to existing data
+NETTE_DEBUG=1 bin/console doctrine:fixtures:load              # purge first, then load
+```
 
 ## Query Object Pattern
 
