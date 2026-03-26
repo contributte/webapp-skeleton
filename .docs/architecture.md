@@ -4,14 +4,13 @@ This document describes the architecture of the webapp-skeleton project.
 
 ## Layered Architecture
 
-```
-www/index.php ──> app/Bootstrap.php ──> Nette DI Container
-                                              │
-                    ┌─────────────────────────┼──────────────────────────┐
-                    │                         │                          │
-               UI Layer                 Domain Layer               Model Layer
-           (app/UI/Modules)           (app/Domain)               (app/Model)
-         Presenters + Templates    Entities + Events     Database + Security + Router
+```mermaid
+graph TD
+    A[www/index.php] --> B[app/Bootstrap.php]
+    B --> C[Nette DI Container]
+    C --> D["UI Layer<br/>(app/UI/Modules)<br/>Presenters + Templates"]
+    C --> E["Domain Layer<br/>(app/Domain)<br/>Entities + Events"]
+    C --> F["Model Layer<br/>(app/Model)<br/>Database + Security + Router"]
 ```
 
 - **UI Layer** (`app/UI/`) - Presenters, templates (Latte), forms, and reusable controls
@@ -44,24 +43,35 @@ Routing is defined in `app/Model/Router/RouterFactory.php`. Each module gets its
 
 ## Presenter Hierarchy
 
-```
-Nette\Application\UI\Presenter
-  └── BasePresenter                    (app/UI/Modules/Base/BasePresenter.php)
-        │   Uses: StructuredTemplates, TFlashMessage, TModuleUtils
-        │   Properties: $template (TemplateProperty), $user (SecurityUser)
-        │
-        ├── SecuredPresenter           (app/UI/Modules/Base/SecuredPresenter.php)
-        │     Checks authentication in checkRequirements()
-        │     Redirects to sign-in if not logged in
-        │     └── BaseAdminPresenter   (app/UI/Modules/Admin/BaseAdminPresenter.php)
-        │           Checks admin role permission
-        │           └── Admin\HomePresenter, Admin\SignPresenter
-        │
-        ├── UnsecuredPresenter         (app/UI/Modules/Base/UnsecuredPresenter.php)
-        │     Redirects to homepage if already logged in
-        │
-        └── BaseFrontPresenter         (app/UI/Modules/Front/BaseFrontPresenter.php)
-              └── Front\HomePresenter, Front\Error4xxPresenter
+```mermaid
+classDiagram
+    class Presenter["Nette\\Application\\UI\\Presenter"]
+    class BasePresenter {
+        Uses: StructuredTemplates, TFlashMessage, TModuleUtils
+        $template : TemplateProperty
+        $user : SecurityUser
+    }
+    class SecuredPresenter {
+        +checkRequirements() checks auth
+        Redirects to sign-in if not logged in
+    }
+    class UnsecuredPresenter {
+        Redirects to homepage if already logged in
+    }
+    class BaseAdminPresenter {
+        Checks admin role permission
+    }
+    class BaseFrontPresenter
+
+    Presenter <|-- BasePresenter
+    BasePresenter <|-- SecuredPresenter
+    BasePresenter <|-- UnsecuredPresenter
+    BasePresenter <|-- BaseFrontPresenter
+    SecuredPresenter <|-- BaseAdminPresenter
+    BaseAdminPresenter <|-- AdminHomePresenter["Admin\\HomePresenter"]
+    BaseAdminPresenter <|-- AdminSignPresenter["Admin\\SignPresenter"]
+    BaseFrontPresenter <|-- FrontHomePresenter["Front\\HomePresenter"]
+    BaseFrontPresenter <|-- FrontError4xxPresenter["Front\\Error4xxPresenter"]
 ```
 
 Each module also has its own `@layout.latte` template that extends the base layout.
@@ -107,19 +117,30 @@ Uses Symfony EventDispatcher. Domain events are plain classes (e.g., `OrderCreat
 
 Configuration uses the NEON format with a layered approach:
 
-```
-config/env/base.neon          ← Core config, includes:
-  ├── config/app/parameters.neon   ← App parameters (database, SMTP, paths)
-  ├── config/app/services.neon     ← Service definitions
-  ├── config/ext/contributte.neon  ← Contributte extensions (console, events, monolog, mailing)
-  └── config/ext/nettrine.neon     ← Nettrine extensions (Doctrine ORM, DBAL, migrations, fixtures)
+```mermaid
+graph TD
+    BASE["config/env/base.neon<br/><i>Core config</i>"]
+    PARAMS["config/app/parameters.neon<br/><i>Database, SMTP, paths</i>"]
+    SERVICES["config/app/services.neon<br/><i>Service definitions</i>"]
+    CONTRIB["config/ext/contributte.neon<br/><i>Console, events, monolog, mailing</i>"]
+    NETTRINE["config/ext/nettrine.neon<br/><i>Doctrine ORM, DBAL, migrations, fixtures</i>"]
 
-config/env/dev.neon           ← Development overrides (includes base.neon)
-config/env/prod.neon          ← Production overrides (includes base.neon)
-config/env/test.neon          ← Test overrides (includes base.neon)
+    DEV["config/env/dev.neon<br/><i>Development overrides</i>"]
+    PROD["config/env/prod.neon<br/><i>Production overrides</i>"]
+    TEST["config/env/test.neon<br/><i>Test overrides</i>"]
+    LOCAL["config/local.neon<br/><i>Machine-specific (gitignored)</i>"]
 
-config/local.neon             ← Machine-specific overrides (gitignored)
-config/local.neon.example     ← Template for local.neon
+    BASE --> PARAMS
+    BASE --> SERVICES
+    BASE --> CONTRIB
+    BASE --> NETTRINE
+
+    DEV -->|includes| BASE
+    PROD -->|includes| BASE
+    TEST -->|includes| BASE
+
+    LOCAL -.->|loaded last by Bootstrap| DEV
+    LOCAL -.->|loaded last by Bootstrap| PROD
 ```
 
 `Bootstrap.php` selects the environment config based on the `NETTE_ENV` environment variable (`dev` or `prod`), then loads `config/local.neon` on top.
@@ -128,12 +149,30 @@ config/local.neon.example     ← Template for local.neon
 
 ### Authentication Flow
 
-1. User submits login form in `Admin\Sign\SignPresenter`
-2. `SecurityUser->login()` delegates to `UserAuthenticator`
-3. `UserAuthenticator` uses `QueryManager` with `UserQuery::ofEmail()` to find the user
-4. Verifies activation status and password hash via `Passwords` service
-5. Updates `lastLoggedAt` timestamp and flushes to database
-6. Creates an `Identity` object with user data and role
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant S as SignPresenter
+    participant SU as SecurityUser
+    participant A as UserAuthenticator
+    participant Q as QueryManager
+    participant P as Passwords
+    participant DB as Database
+
+    U->>S: Submit login form
+    S->>SU: login(email, password)
+    SU->>A: authenticate(email, password)
+    A->>Q: findOne(UserQuery::ofEmail())
+    Q->>DB: SELECT user
+    DB-->>A: User entity (or null)
+    A->>A: Check activation status
+    A->>P: verify(password, hash)
+    P-->>A: true/false
+    A->>DB: Update lastLoggedAt
+    A-->>SU: Identity (role + user data)
+    SU-->>S: Logged in
+    S-->>U: Redirect to admin dashboard
+```
 
 ### Authorization
 
