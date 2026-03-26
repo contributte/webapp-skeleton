@@ -2,7 +2,7 @@
 
 ## Overview
 
-The project uses [Nette Tester](https://tester.nette.org/) as its testing framework, with [Contributte Tester](https://contributte.org/packages/contributte/tester.html) providing additional utilities.
+The project uses [Nette Tester](https://tester.nette.org/) as its testing framework, with [Contributte Tester](https://github.com/contributte/tester) providing additional utilities.
 
 ## Test Structure
 
