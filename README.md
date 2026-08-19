@@ -42,6 +42,45 @@ Focused on:
 
 https://examples.contributte.org/webapp-skeleton/
 
+## Quick Start
+
+```bash
+composer create-project -s dev contributte/webapp-skeleton acme
+cd acme
+make init                  # copy local.neon.example to local.neon
+make project               # composer install + setup dirs
+make docker-postgres       # start PostgreSQL (or use your own)
+make build                 # run migrations + load fixtures
+make dev                   # start PHP dev server on port 8000
+```
+
+Open http://localhost:8000 and enjoy!
+
+> **Default credentials:**
+> - **Database:** `contributte` / `contributte` (host: `0.0.0.0`, dbname: `contributte`)
+> - **Admin login:** `admin@admin.cz` / `admin`
+
+## Makefile Commands
+
+| Command | Description |
+|---------|-------------|
+| `make project` | Full setup: install + setup |
+| `make init` | Copy `local.neon.example` to `local.neon` |
+| `make install` | Run `composer install` |
+| `make setup` | Create `var/tmp` and `var/log` directories |
+| `make clean` | Remove all temp and log files |
+| `make qa` | Run CodeSniffer + PHPStan |
+| `make cs` | Run CodeSniffer on `app` and `tests` |
+| `make csf` | Run CodeFixer on `app` and `tests` |
+| `make phpstan` | Run PHPStan static analysis |
+| `make tests` | Run Nette Tester |
+| `make coverage` | Run tests with coverage report |
+| `make dev` | Start PHP dev server on `0.0.0.0:8000` |
+| `make build` | Drop DB schema, run migrations, load fixtures |
+| `make deploy` | Full deployment: clean -> project -> build -> clean |
+| `make docker-postgres` | Start PostgreSQL 12 container |
+| `make docker-adminer` | Start Adminer on port 9999 |
+
 ## Installation
 
 To install latest version of `contributte/webapp-skeleton` use [Composer](https://getcomposer.org).
@@ -61,7 +100,7 @@ composer create-project -s dev contributte/webapp-skeleton acme
 2) After that, you have to setup Postgres >= 10 database. You can start it manually or use docker image `dockette/postgres:12`.
 
    ```
-   docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=webapp -e POSTGRES_USER=webapp dockette/postgres:12
+   docker run -it -p 5432:5432 -e POSTGRES_PASSWORD=contributte -e POSTGRES_USER=contributte dockette/postgres:12
    ```
 
    Or use make task, `make docker-postgres`.
@@ -76,9 +115,9 @@ composer create-project -s dev contributte/webapp-skeleton acme
        # Database
        database:
            host: localhost
-           dbname: webapp
-           user: webapp
-           password: webapp
+           dbname: contributte
+           user: contributte
+           password: contributte
    ```
 
 4) Ok database is now running and application is configured to connect to it. Let's create initial data.
@@ -97,12 +136,12 @@ composer create-project -s dev contributte/webapp-skeleton acme
     - http://localhost:8000.
     - http://localhost:8000/admin (admin@admin.cz / admin)
 
-### Install using [docker-compose](https://https://github.com/docker/compose/)
+### Install using [docker-compose](https://github.com/docker/compose/)
 
 1) At first, use composer to install this project.
 
    ```
-   composer create-project -s dev contributte/webapp-project
+   composer create-project -s dev contributte/webapp-skeleton
    ```
 
 2) Modify `config/local.neon` and set host to `database`
@@ -139,27 +178,30 @@ Here is a list of all features you can find in this project.
     - Nettrine
 - :deciduous_tree: Structure
     - `app`
-        - `config` - configuration files
-            - `env` - prod/dev/test environments
-            - `app` - application configs
-            - `ext` - extensions configs
-            - `local.neon` - local runtime config
-            - `local.neon.dist` - template for local config
-        - `domain` - business logic and domain specific classes
-        - `model` - application backbone
-        - `modules` - Front/Admin module, presenters and components
-        - `resources` - static content for mails and others
-        - `ui` - UI components and base classes
-        - `bootstrap.php` - Nette entrypoint
+        - `Bootstrap.php` - Nette entrypoint
+        - `Console` - CLI commands
+        - `Domain` - business logic and domain specific classes
+        - `Model` - application backbone (Database, Security, Router, Latte, Utils)
+        - `UI` - presenters, templates and components
+            - `Control` - reusable UI controls
+            - `Form` - form factory
+            - `Modules` - Front/Admin/Mailing/Pdf modules
     - `bin` - console entrypoint (`bin/console`)
+    - `config` - configuration files
+        - `app` - application configs (parameters.neon, services.neon)
+        - `env` - prod/dev/test environments (base.neon, dev.neon, prod.neon, test.neon)
+        - `ext` - extension configs (contributte.neon, nettrine.neon)
+        - `local.neon` - local runtime config (gitignored)
+        - `local.neon.example` - template for local config
     - `db` - database files
-        - `fixtures` - PHP fixtures
-        - `migrations` - migrations files
-    - `docs` - documentation
+        - `Fixtures` - PHP fixtures
+        - `Migrations` - migration files
+    - `.docs` - documentation assets
+    - `resources` - static content for mails and others
+    - `tests` - test engine and unit/integration tests
     - `var`
         - `log` - runtime and error logs
         - `tmp` - tmp files and cache
-    - `tests` - test engine and unit/integration tests
     - `vendor` - composer's folder
     - `www` - public content
 - :exclamation: Tracy
@@ -167,46 +209,47 @@ Here is a list of all features you can find in this project.
 
 ### Notable changes
 
-- `$user` variable in templates [is renamed](https://github.com/contributte/webapp-skeleton/blob/master/app/model/Latte/TemplateFactory.php) to `$_user`
+- `$user` variable in templates [is renamed](https://github.com/contributte/webapp-skeleton/blob/master/app/Model/Latte/TemplateFactory.php) to `$_user`
 
 ### Composer packages
 
 Take a detailed look :eyes: at each single package.
 
-- [contributte/bootstrap](https://contributte.org/packages/contributte/bootstrap.html)
-- [contributte/application](https://contributte.org/packages/contributte/application.html)
-- [contributte/di](https://contributte.org/packages/contributte/di.html)
-- [contributte/cache](https://contributte.org/packages/contributte/cache.html)
-- [contributte/http](https://contributte.org/packages/contributte/http.html)
-- [contributte/forms](https://contributte.org/packages/contributte/forms.html)
-- [contributte/latte](https://contributte.org/packages/contributte/latte.html)
-- [contributte/mail](https://contributte.org/packages/contributte/mail.html)
-- [contributte/security](https://contributte.org/packages/contributte/security.html)
-- [contributte/utils](https://contributte.org/packages/contributte/utils.html)
-- [contributte/tracy](https://contributte.org/packages/contributte/tracy.html)
-- [contributte/console](https://contributte.org/packages/contributte/console.html)
-- [contributte/webapp-skeleton](https://contributte.org/packages/contributte/webapp-skeleton.html)
-- [contributte/event-dispatcher](https://contributte.org/packages/contributte/event-dispatcher.html)
-- [contributte/event-dispatcher-extra](https://contributte.org/packages/contributte/event-dispatcher-extra.html)
-- [contributte/neonizer](https://contributte.org/packages/contributte/neonizer.html)
-- [contributte/mailing](https://contributte.org/packages/contributte/mailing.html)
-- [contributte/monolog](https://contributte.org/packages/contributte/monolog.html)
+- [contributte/bootstrap](https://github.com/contributte/bootstrap)
+- [contributte/application](https://github.com/contributte/application)
+- [contributte/di](https://github.com/contributte/di)
+- [contributte/cache](https://github.com/contributte/cache)
+- [contributte/http](https://github.com/contributte/http)
+- [contributte/forms](https://github.com/contributte/forms)
+- [contributte/latte](https://github.com/contributte/latte)
+- [contributte/mail](https://github.com/contributte/mail)
+- [contributte/security](https://github.com/contributte/security)
+- [contributte/utils](https://github.com/contributte/utils)
+- [contributte/tracy](https://github.com/contributte/tracy)
+- [contributte/console](https://github.com/contributte/console)
+- [contributte/webapp-skeleton](https://github.com/contributte/webapp-skeleton)
+- [contributte/event-dispatcher](https://github.com/contributte/event-dispatcher)
+- [contributte/event-dispatcher-extra](https://github.com/contributte/event-dispatcher-extra)
+- [contributte/neonizer](https://github.com/contributte/neonizer)
+- [contributte/mailing](https://github.com/contributte/mailing)
+- [contributte/monolog](https://github.com/contributte/monolog)
 
 **Doctrine**
 
-- [contributte/doctrine-orm](https://contributte.org/packages/contributte/doctrine-orm.html)
-- [contributte/doctrine-dbal](https://contributte.org/packages/contributte/doctrine-dbal.html)
-- [contributte/doctrine-annotations](https://contributte.org/packages/contributte/doctrine-annotations.html)
-- [contributte/doctrine-cache](https://contributte.org/packages/contributte/doctrine-cache.html)
-- [contributte/doctrine-migrations](https://contributte.org/packages/contributte/doctrine-migrations.html)
-- [contributte/doctrine-fixtures](https://contributte.org/packages/contributte/doctrine-fixtures.html)
+- [contributte/doctrine-orm](https://github.com/contributte/doctrine-orm)
+- [contributte/doctrine-dbal](https://github.com/contributte/doctrine-dbal)
+- [contributte/doctrine-annotations](https://github.com/contributte/doctrine-annotations)
+- [contributte/doctrine-cache](https://github.com/contributte/doctrine-cache)
+- [contributte/doctrine-migrations](https://github.com/contributte/doctrine-migrations)
+- [contributte/doctrine-fixtures](https://github.com/contributte/doctrine-fixtures)
 
 **Dev**
 
-- [contributte/dev](https://contributte.org/packages/contributte/dev.html)
-- [ninjify/qa](https://contributte.org/packages/ninjify/qa.html)
-- [ninjify/nunjuck](https://contributte.org/packages/ninjify/nunjuck.html)
-- [phpstan/phpstan](https://github.com/phpstan/phpstan)
+- [contributte/qa](https://github.com/contributte/qa)
+- [contributte/tester](https://github.com/contributte/tester)
+- [contributte/phpstan](https://github.com/contributte/phpstan)
+- [contributte/dev](https://github.com/contributte/dev)
+- [phpstan/phpstan-doctrine](https://github.com/phpstan/phpstan-doctrine)
 - [mockery/mockery](https://github.com/mockery/mockery)
 - [nelmio/alice](https://github.com/nelmio/alice)
 
@@ -219,6 +262,13 @@ Take a detailed look :eyes: at each single package.
 ![](.docs/assets/screenshot2.png)
 ![](.docs/assets/screenshot3.png)
 ![](.docs/assets/screenshot4.png)
+
+## Documentation
+
+- [Architecture Overview](.docs/architecture.md) - Layered architecture, module system, design patterns
+- [Database Guide](.docs/database.md) - Entities, migrations, fixtures, query objects
+- [Troubleshooting](.docs/troubleshooting.md) - Common issues and solutions
+- [Testing Guide](.docs/testing.md) - Running and writing tests
 
 ## Development
 
