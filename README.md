@@ -55,23 +55,12 @@ Requires PHP 8.4 or later and PostgreSQL.
 
 ## Startup
 
-Create the runtime folders and your local config, `config/local.neon`, with the database connection:
+Create the runtime folders and `config/local.neon` with your PostgreSQL connection, load the database, then start
+the built-in server:
 
 ```bash
 make setup
 make init
-```
-
-Start PostgreSQL on port 5432 with the `contributte` / `contributte` credentials. The container runs in the
-foreground, so keep it open:
-
-```bash
-make docker-postgres
-```
-
-In a second terminal, create the tables and the first user, then run the built-in server on http://localhost:8000:
-
-```bash
 make build
 make dev
 ```
@@ -80,18 +69,7 @@ make dev
 > `make build` drops every table in the configured database before it runs the migrations. Use it only on a
 > local database.
 
-Sign in to the admin at http://localhost:8000/admin with `admin@admin.cz` / `admin`.
-
-You can also run Nginx, PHP-FPM and PostgreSQL with Docker Compose. Set `host: database` in `config/local.neon`
-first, then start the stack on http://localhost:8080:
-
-```bash
-docker compose up
-```
-
-The `php` container installs dependencies, runs the migrations and reloads the fixtures on every start. Known
-limits of the skeleton, including port and version conflicts in `docker-compose.yml`, are listed in
-[TECH.md](TECH.md#known-limits).
+Docker Compose, the admin sign-in and the known limits are described in [TECH.md](TECH.md).
 
 ## Features
 
@@ -155,9 +133,20 @@ The secured admin page and the production error page:
 
 ## Development
 
+Install the dependencies, run the checks and start the app:
+
+```bash
+make install   # install dependencies
+make qa        # check code style and run static analysis
+make tests     # run tests
+make dev       # start the built-in server
+```
+
+Run `make` to list every target.
+
 See [how to contribute](https://contributte.org/contributing.html) to this package.
 
-This package is currently maintained by these authors.
+This package is maintained by these authors.
 
 <a href="https://github.com/f3l1x">
   <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
