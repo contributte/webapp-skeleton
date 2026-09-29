@@ -1,5 +1,3 @@
-version: '3.4'
-
 services:
   nginx:
     build:
@@ -48,4 +46,4 @@ services:
   adminer:
     image: dockette/adminer:dg
     ports:
-      - 8080:80
+      - 8081:80
