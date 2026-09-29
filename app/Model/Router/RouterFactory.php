@@ -26,25 +26,29 @@ final class RouterFactory
 
 	protected function buildAdmin(): void
 	{
-		$this->router[] = $list = new RouteList('Admin');
+		$list = new RouteList('Admin');
+		$this->router->add($list);
 		$list->addRoute('admin/<presenter>/<action>[/<id>]', 'Home:default');
 	}
 
 	protected function buildFront(): void
 	{
-		$this->router[] = $list = new RouteList('Front');
+		$list = new RouteList('Front');
+		$this->router->add($list);
 		$list->addRoute('<presenter>/<action>[/<id>]', 'Home:default');
 	}
 
 	protected function buildMailing(): void
 	{
-		$this->router[] = $list = new RouteList('Mailing');
+		$list = new RouteList('Mailing');
+		$this->router->add($list);
 		$list->addRoute('mailing/<presenter>/<action>[/<id>]', 'Home:default');
 	}
 
 	protected function buildPdf(): void
 	{
-		$this->router[] = $list = new RouteList('Pdf');
+		$list = new RouteList('Pdf');
+		$this->router->add($list);
 		$list->addRoute('pdf/<presenter>/<action>[/<id>]', 'Home:default');
 	}
 
