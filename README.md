@@ -122,11 +122,12 @@ composer create-project -s dev contributte/webapp-skeleton acme
 
 3) Run `docker-compose up`
 
-4) Open http://localhost and enjoy!
+4) Open http://localhost:8080 and enjoy!
 
    Take a look at:
-    - http://localhost.
-    - http://localhost/admin (admin@admin.cz / admin)
+    - http://localhost:8080.
+    - http://localhost:8080/admin (admin@admin.cz / admin)
+    - http://localhost:8081 (adminer)
 
 ## Features
 
