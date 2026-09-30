@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c775895f4de14ac1052f732ff284ab53",
+    "content-hash": "699384970ad6f1ee374bc5c8c24ead79",
     "packages": [
         {
             "name": "contributte/application",
@@ -6401,28 +6401,28 @@
         },
         {
             "name": "contributte/tester",
-            "version": "v0.3.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tester.git",
-                "reference": "d7db5a9b2b76910805ce191fa96b59d51c3b4dc1"
+                "reference": "7fef916ebdcc579cb9934c8a84cd46008f8a27ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tester/zipball/d7db5a9b2b76910805ce191fa96b59d51c3b4dc1",
-                "reference": "d7db5a9b2b76910805ce191fa96b59d51c3b4dc1",
+                "url": "https://api.github.com/repos/contributte/tester/zipball/7fef916ebdcc579cb9934c8a84cd46008f8a27ca",
+                "reference": "7fef916ebdcc579cb9934c8a84cd46008f8a27ca",
                 "shasum": ""
             },
             "require": {
-                "nette/tester": "^2.5.1",
-                "php": ">=8.1"
+                "nette/tester": "^2.5.7",
+                "php": ">=8.2"
             },
             "require-dev": {
-                "contributte/phpstan": "^0.1.0",
-                "contributte/qa": "^0.4.0",
-                "nette/di": "^3.1.2",
-                "nette/neon": "^3.4.0",
-                "nette/robot-loader": "^3.4.2"
+                "contributte/phpstan": "^0.3.0",
+                "contributte/qa": "^0.5.0",
+                "nette/di": "^3.2.5",
+                "nette/neon": "^3.4.6",
+                "nette/robot-loader": "^4.1.0"
             },
             "suggest": {
                 "nette/di": "for NEON handling",
@@ -6432,7 +6432,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4.x-dev"
+                    "dev-master": "0.5.x-dev"
                 }
             },
             "autoload": {
@@ -6459,7 +6459,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/tester/issues",
-                "source": "https://github.com/contributte/tester/tree/v0.3.0"
+                "source": "https://github.com/contributte/tester/tree/v0.4.1"
             },
             "funding": [
                 {
@@ -6471,7 +6471,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-17T16:10:28+00:00"
+            "time": "2026-01-12T16:40:09+00:00"
         },
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",
